@@ -27,11 +27,16 @@ actual_list: set[str] = {
     "Emporium",
 
     "Loners Landing",
-    "Shipwreck"
-    "LL Rope and Bounce Area"
-    "LL Boardwalk"
+    "Shipwreck",
+    "LL Fences",
+    "LL Bridge",
+    "LL Lower Bridge",
+    "LL Residence Road",
+    "LL Residence",
+    "LL Boardwalk",
     
-    "bayou",
+    "Bayou Entrance",
+
     "cryptB",
     "boneBeachA",
     "septemburgB",
@@ -44,13 +49,37 @@ actual_list: set[str] = {
     "Ossex Kear Institute",
     "Ossex Emporium",
 
-    "hub_overworld_east",
-    "hub_overworld_west",
+    "Eastern Heath Grassland",
+    "Eastern Heath Grassland Bridge"
+    "Eastern Heath Grassland Horizontal Spinner Room",
+    "Eastern Heath Grassland Bush Room"
+    "Eastern Heath Grassland Riverbed"
+    "Eastern Heath Choppe Shoppe",
+    "Eastern Heath Grotto",
+    "Eastern Heath Grassland Waterfall",
+    "Eastern Heath Grassland Vertical Spinner Room",
+    "Eastern Heath Under the Bridge"
+    "Eastern Heath Buckler's Bluff"
+    "Eastern Heath Grassland Poppit Cave",
+    "Eastern Heath Frozen Pass",
+
+    "Western Wilds Secret Passageway",
+    "Western Wilds Occupied Bridge",
+    "Western Wilds Molten Foundry",
+    "Western Wilds Western Pond",
+    "Western Wilds Balcony",
 
     "Southern Outskirts",
 
     "hub_mansion",
-    "bayou_overworld",
+
+    "Waterfall Backwaters",
+    "Upper Backwaters",
+    "Upper Backwaters Side Room",
+    "Backwaters Lantern Cave",
+    "Lower Backwaters",
+    "Backwaters Fishing Hole",
+
     "boneBeach_overworld",
     "septemburg_overworld",
     "crypt_overworld",
