@@ -3,8 +3,8 @@ from rule_builder.options import OptionFilter
 from rule_builder.rules import Has, True_
 from worlds.stardew_valley.strings.craftable_names import Fishing
 from .. import LocationData
-from ... import RegionConnectionData
-from ...rules.ability_rules import CanBurrow, CanJumpOneTile, CanJumpTiles, CanBlossomBounce
+from ... import RegionConnection
+from ...rules.ability_rules import CanBurrow, CanJumpOneTile, CanJumpTiles, CanBounce
 
 collectable_locations: dict[str, LocationData] = {
     "WW Balcony Dummy Cache" : LocationData(242, "Western Wilds Balcony", ),
@@ -27,20 +27,20 @@ collectable_locations: dict[str, LocationData] = {
     "WW Occupied Bridge Cuddlepus Shell" : LocationData(259, "Western Wilds Occupied Bridge", Has("Fishing Rod")),
 }
 
-connections: dict[str, RegionConnectionData] = {
+connections: dict[str, RegionConnection] = {
 
-    "Western Wilds Occupied Bridge_Southern Outskirts" : RegionConnectionData("Western Wilds Occupied Bridge","Southern Outskirts", CanJumpOneTile() & CanBurrow()),
-    "Western Wilds Occupied Bridge_Ossex" : RegionConnectionData("Western Wilds Occupied Bridge", "Ossex", CanJumpOneTile() & CanBurrow()),
-    "Western Wilds Occupied Bridge_Waterfall Shanty Swamp" : RegionConnectionData("Western Wilds Occupied Bridge","Waterfall Shanty Swamp", CanJumpOneTile() & CanBurrow()),
+    "Western Wilds Occupied Bridge_Southern Outskirts" : RegionConnection("Western Wilds Occupied Bridge","Southern Outskirts", CanJumpOneTile() & CanBurrow()),
+    "Western Wilds Occupied Bridge_Ossex" : RegionConnection("Western Wilds Occupied Bridge", "Ossex", CanJumpOneTile() & CanBurrow()),
+    "Western Wilds Occupied Bridge_Waterfall Shanty Swamp" : RegionConnection("Western Wilds Occupied Bridge","Waterfall Shanty Swamp", CanJumpOneTile() & CanBurrow()),
 
-    "Western Wilds Occupied Bridge_Western Wilds Secret Passageway" : RegionConnectionData("Western Wilds Occupied Bridge", "Western Wilds Secret Passageway"),
-    "Western Wilds Secret Passageway_Western Wilds Occupied Bridge" : RegionConnectionData("Western Wilds Secret Passageway", "Western Wilds Occupied Bridge"),
-    "Western Wilds Occupied Bridge_Western Wilds Molten Foundry" : RegionConnectionData("Western Wilds Occupied Bridge", "Western Wilds Molten Foundry"),
-    "Western Wilds Molten Foundry_Western Wilds Occupied Bridge" : RegionConnectionData("Western Wilds Molten Foundry","Western Wilds Occupied Bridge"),
-    "Western Wilds Occupied Bridge_Western Wilds Western Pond" : RegionConnectionData("Western Wilds Occupied Bridge", "Western Wilds Western Pond"),
-    "Western Wilds Western Pond_Western Wilds Occupied Bridge" : RegionConnectionData("Western Wilds Western Pond","Western Wilds Occupied Bridge"),
-    "Western Wilds Occupied Bridge_Western Wilds Balcony" : RegionConnectionData("Western Wilds Occupied Bridge", "Western Wilds Balcony"),
-    "Western Wilds Balcony_Western Wilds Occupied Bridge" : RegionConnectionData("Western Wilds Balcony","Western Wilds Occupied Bridge"),
+    "Western Wilds Occupied Bridge_Western Wilds Secret Passageway" : RegionConnection("Western Wilds Occupied Bridge", "Western Wilds Secret Passageway"),
+    "Western Wilds Secret Passageway_Western Wilds Occupied Bridge" : RegionConnection("Western Wilds Secret Passageway", "Western Wilds Occupied Bridge"),
+    "Western Wilds Occupied Bridge_Western Wilds Molten Foundry" : RegionConnection("Western Wilds Occupied Bridge", "Western Wilds Molten Foundry"),
+    "Western Wilds Molten Foundry_Western Wilds Occupied Bridge" : RegionConnection("Western Wilds Molten Foundry","Western Wilds Occupied Bridge"),
+    "Western Wilds Occupied Bridge_Western Wilds Western Pond" : RegionConnection("Western Wilds Occupied Bridge", "Western Wilds Western Pond"),
+    "Western Wilds Western Pond_Western Wilds Occupied Bridge" : RegionConnection("Western Wilds Western Pond","Western Wilds Occupied Bridge"),
+    "Western Wilds Occupied Bridge_Western Wilds Balcony" : RegionConnection("Western Wilds Occupied Bridge", "Western Wilds Balcony"),
+    "Western Wilds Balcony_Western Wilds Occupied Bridge" : RegionConnection("Western Wilds Balcony","Western Wilds Occupied Bridge"),
 
 
 }

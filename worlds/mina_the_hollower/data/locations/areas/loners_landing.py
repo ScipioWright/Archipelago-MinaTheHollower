@@ -41,8 +41,8 @@ regions: set[str] = {
 connections: dict[str, RegionConnection] = {
     "LL Boardwalk_Southern Outskirts" : RegionConnection("LL Boardwalk", "Southern Outskirts", CanJumpTiles(distance=2)),
 
-    "Loners Landing_Shipwreck" : RegionConnection("Loners Landing", "ShipWreck", CanReachLocation("Thorne 1", parent_region_name="mansion"), EntranceType.DOORS),
-    "Shipwreck_Loners Landing" : RegionConnection("ShipWreck", "Loners Landing", entrance_group=EntranceType.DOORS),
+    "Loners Landing_Shipwreck" : RegionConnection("Loners Landing", "ShipWreck", CanReachLocation("Thorne 1", parent_region_name="mansion")),
+    "Shipwreck_Loners Landing" : RegionConnection("ShipWreck", "Loners Landing"),
 
     "LL Fences_Loners Landing" : RegionConnection("LL Fences", "Loners Landing", CanJumpOneTile() & CanBurrow()),
     "Loners Landing_LL Fences" : RegionConnection("Loners Landing", "LL Fences", CanJumpOneTile() & CanBurrow() & CanCarry()),

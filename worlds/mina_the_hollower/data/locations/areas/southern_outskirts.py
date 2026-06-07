@@ -2,7 +2,7 @@ from BaseClasses import LocationProgressType
 from rule_builder.options import OptionFilter
 from rule_builder.rules import Has, True_
 from .. import LocationData
-from ... import RegionConnectionData
+from ... import RegionConnection
 from ...rules.ability_rules import CanBurrow, CanJumpOneTile, CanJumpTiles, CanBounce
 
 collectable_locations: dict[str, LocationData] = {
@@ -22,10 +22,10 @@ collectable_locations: dict[str, LocationData] = {
     "Fish_Crumble" : LocationData(274, "Southern Outskirts"),
 }
 
-connections: dict[str, RegionConnectionData] = {
+connections: dict[str, RegionConnection] = {
 
-    "Southern Outskirts_LL Boardwalk" : RegionConnectionData("Southern Outskirts", "LL Boardwalk", CanJumpTiles(distance=2)),
-    "Southern Outskirts_Ossex" : RegionConnectionData("Southern Outskirts", "Ossex"),
-    "Southern Outskirts_Western Wilds Occupied Bridge" : RegionConnectionData("Southern Outskirts", "Western Wilds Occupied Bridge", CanJumpOneTile() & CanBurrow()),
-    "Southern Outskirts_Eastern Heath Grassland" : RegionConnectionData("Southern Outskirts", "Eastern Heath Grassland", CanJumpOneTile()),
+    "Southern Outskirts_LL Boardwalk" : RegionConnection("Southern Outskirts", "LL Boardwalk", CanJumpTiles(distance=2)),
+    "Southern Outskirts_Ossex" : RegionConnection("Southern Outskirts", "Ossex"),
+    "Southern Outskirts_Western Wilds Occupied Bridge" : RegionConnection("Southern Outskirts", "Western Wilds Occupied Bridge", CanJumpOneTile() & CanBurrow()),
+    "Southern Outskirts_Eastern Heath Grassland" : RegionConnection("Southern Outskirts", "Eastern Heath Grassland", CanJumpOneTile()),
 }

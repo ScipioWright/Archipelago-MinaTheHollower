@@ -2,8 +2,17 @@ from BaseClasses import LocationProgressType
 from rule_builder.options import OptionFilter
 from rule_builder.rules import Has, True_
 from .. import LocationData
-from ... import RegionConnectionData, EntranceType
-from ...rules.ability_rules import CanBurrow, CanJumpOneTile, CanJumpTiles, CanBlossomBounce, HasVialsCount
+from ... import RegionConnection, Transition
+from ...rules.ability_rules import CanBurrow, CanJumpOneTile, CanJumpTiles, CanBounce, HasVialsCount
+
+regions: set[str] = {
+    "Ossex City Center"
+    "Ossex City Center"
+}
+
+transitions: dict[str, Transition] = {
+
+}
 
 collectable_locations: dict[str, LocationData] = {
     "OS Couple's Quarter Chest" : LocationData(146, "Ossex Couple's Quarter"),
@@ -84,22 +93,23 @@ collectable_locations: dict[str, LocationData] = {
     "OS City Center Triple Flagellum" : LocationData(220, "Ossex", Has("Fishing Rod")),
 }
 
-connections: dict[str, RegionConnectionData] = {
+connections: dict[str, RegionConnection] = {
 
-    "Ossex_Southern Outskirts" : RegionConnectionData("Ossex", "Southern Outskirts"),
-    "Ossex_Western Wilds Occupied Bridge" : RegionConnectionData("Ossex", "Western Wilds Occupied Bridge"),
-    "Ossex_Western Wilds Occupied Bridge" : RegionConnectionData("Ossex", "Western Wilds Occupied Bridge"),
+    "Ossex_Southern Outskirts" : RegionConnection("Ossex", "Southern Outskirts"),
+    "Ossex_Western Wilds Occupied Bridge" : RegionConnection("Ossex", "Western Wilds Occupied Bridge"),
+    "Ossex_Western Wilds Occupied Bridge" : RegionConnection("Ossex", "Western Wilds Occupied Bridge"),
 
-    "Ossex_Ossex Guild Back Room" : RegionConnectionData("Ossex", "Ossex Guild Back Room", CanBurrow() & CanJumpOneTile(), entrance_group=EntranceType.DOORS),
-    "Ossex Guild Back Room_Ossex" : RegionConnectionData("Ossex Guild Back Room","Ossex", CanBurrow() & CanJumpOneTile(), entrance_group=EntranceType.DOORS),
-    "Ossex_Ossex Kear Institute" : RegionConnectionData("Ossex", "Ossex Kear Institute", entrance_group=EntranceType.DOORS),
-    "Ossex Kear Institute_Ossex" : RegionConnectionData("Ossex Kear Institute", "Ossex", entrance_group=EntranceType.DOORS),
-    "Ossex Emporium_Ossex" : RegionConnectionData("Ossex Emporium", "Ossex", entrance_group=EntranceType.DOORS),
-    "Ossex_Ossex Emporium" : RegionConnectionData("Ossex", "Ossex Emporium", entrance_group=EntranceType.DOORS),
-    "Ossex_Ossex Legovich's Arms" : RegionConnectionData("Ossex", "Ossex Legovich's Arms", entrance_group=EntranceType.DOORS),
-    "Ossex Legovich's Arms_Ossex" : RegionConnectionData("Ossex Legovich's Arms","Ossex", entrance_group=EntranceType.DOORS),
-    "Ossex_Ossex Trinket Bazaar" : RegionConnectionData("Ossex", "Ossex Trinket Bazaar", CanBurrow() & CanJumpOneTile(), entrance_group=EntranceType.DOORS),
-    "Ossex Trinket Bazaar_Ossex" : RegionConnectionData("Ossex Trinket Bazaar", "Ossex", CanBurrow() & CanJumpOneTile(), entrance_group=EntranceType.DOORS),
-    "Ossex_Ossex Couple's Quarter" : RegionConnectionData("Ossex", "Ossex Couple's Quarter", CanBurrow() & CanJumpOneTile(), entrance_group=EntranceType.DOORS),
-    "Ossex Couple's Quarter_Ossex" : RegionConnectionData("Ossex Couple's Quarter","Ossex", CanBurrow() & CanJumpOneTile(), entrance_group=EntranceType.DOORS),
+    "Ossex_Ossex Guild Back Room" : RegionConnection("Ossex", "Ossex Guild Back Room", CanBurrow() & CanJumpOneTile()),
+    "Ossex Guild Back Room_Ossex" : RegionConnection("Ossex Guild Back Room","Ossex", CanBurrow() & CanJumpOneTile()),
+    "Ossex_Ossex Kear Institute" : RegionConnection("Ossex", "Ossex Kear Institute"),
+    "Ossex Kear Institute_Ossex" : RegionConnection("Ossex Kear Institute", "Ossex"),
+    "Ossex Emporium_Ossex" : RegionConnection("Ossex Emporium", "Ossex"),
+    "Ossex_Ossex Emporium" : RegionConnection("Ossex", "Ossex Emporium"),
+    "Ossex_Ossex Legovich's Arms" : RegionConnection("Ossex", "Ossex Legovich's Arms"),
+    "Ossex Legovich's Arms_Ossex" : RegionConnection("Ossex Legovich's Arms","Ossex"),
+    "Ossex_Ossex Trinket Bazaar" : RegionConnection("Ossex", "Ossex Trinket Bazaar", CanBurrow() & CanJumpOneTile()),
+    "Ossex Trinket Bazaar_Ossex" : RegionConnection("Ossex Trinket Bazaar", "Ossex", CanBurrow() & CanJumpOneTile()),
+    "Ossex_Ossex Couple's Quarter" : RegionConnection("Ossex", "Ossex Couple's Quarter", CanBurrow() & CanJumpOneTile()),
+    "Ossex Couple's Quarter_Ossex" : RegionConnection("Ossex Couple's Quarter","Ossex", CanBurrow() & CanJumpOneTile()),
 }
+

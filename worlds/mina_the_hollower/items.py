@@ -14,6 +14,9 @@ def create_item(world, name: str, item: ItemData):
 
 
 def create_items(world):
+    #TODO: create logic for what items are in the world
+    #TODO: calculate how much filler needs to go in the world
+    #TODO: calculate traps
     for item, data in all_items.items():
         create_item(world, item, data)
     total_location_count = len(world.multiworld.get_unfilled_locations(world.player))

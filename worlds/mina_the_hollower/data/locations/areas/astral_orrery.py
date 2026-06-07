@@ -40,7 +40,7 @@ collectable_locations: dict[str, LocationData] = {
 
     # Check ID - Imported and guessed
     "AO Mirror's End West Ledge Trinket Bag": LocationData(279, "Astral Orrery Mirror's End",
-                                                           Has("Kear")),
+                                                           Has("Astral Orrery Mirror's End Kear")),
 
     "AO Mirror's End Trunkstar Core": LocationData(282, "Astral Orrery Mirror's End",
                                                    Has("Fishing Rod")),
@@ -51,13 +51,13 @@ collectable_locations: dict[str, LocationData] = {
 
     # Check ID - Imported and guessed
     "AO Stellarium East Chest": LocationData(129, "Astral Orrery Stellarium",
-                                             Has("Kear")),
+                                             Has("Astral Orrery Stellarium Kear")),
 
     "AO Tubert Vial Salvo": LocationData(137, "Astral Orrery Stellarium"),
 
     # Mirror requirement noted in sheet but not expressible in current rule set
-    "AO Tubert Vial Kear": LocationData(135, "Astral Orrery Stellarium",
-                                        Has("Kear")),
+    "AO Tubert Vial": LocationData(135, "Astral Orrery Stellarium",
+                                        Has("Astral Orrery Stellarium Kear")),
 
     # Special rules - 2 tiles air movement + Void Portal switch
     "AO Gravity Zone Long Hallway Chest": LocationData(130, "Astral Orrery Gravity Zone Long Hallway",

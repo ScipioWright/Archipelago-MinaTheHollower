@@ -66,7 +66,7 @@ collectable_locations: dict[str, LocationData] = {
     "CTP Rail Yard Casket Chest": LocationData(120, "Coltrane Peak Rail Yard",
                                                CanBurrow() & CanClimb()),
 
-    # Special rules - Kear requirement (1 Kear + Fishing Rod)
+
     "CTP Rail Yard Kear Room Fish": LocationData(122, "Coltrane Peak Rail Yard",
                                                  CanBurrow() & CanClimb() &
                                                  Has("Coltrane Peak Rail Yard Kear") & Has("Fishing Rod")),
@@ -74,7 +74,7 @@ collectable_locations: dict[str, LocationData] = {
     # Check ID - Imported and guessed
     "CTP Rail Yard Kear Room Rupert Shop Trinket": LocationData(119, "Coltrane Peak Rail Yard",
                                                                 CanBurrow() & CanClimb() &
-                                                                Has("Kear")),
+                                                                Has("Coltrane Peak Rail Yard Kear")),
 
     # Check ID - Imported and guessed
     "CTP Rail Yard Kear Room Rupert Shop": LocationData(121, "Coltrane Peak Rail Yard",

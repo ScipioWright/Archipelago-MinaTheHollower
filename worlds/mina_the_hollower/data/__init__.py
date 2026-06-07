@@ -5,19 +5,83 @@ from BaseClasses import ItemClassification, LocationProgressType, CollectionStat
 from rule_builder.rules import Rule, True_
 from ..world_base import MinaTheHollowerBase
 
+
+
+
 class TransitionType(IntEnum):
     DO_NOT_RANDOMIZE_ENTRANCE = 0
-    SCREENS = 1
-    AREA_SCREENS = 2
-    DOORS = 3
-    MIRRORS = 4
-    TREES = 5
+    SCREENS = 1 << 3
+    AREA_SCREENS = 2 << 3
+    DOORS = 3 << 3
+    MIRRORS = 4 << 3
+    STAIRS = 5 << 3
+    TRANSITION_MASK = 1 << 3
+
 
 class DirectionType(IntEnum):
     NORTH = 0
     EAST = 1
     SOUTH = 2
-    WEST = 2
+    WEST = 3
+    ASTRAL = 4
+    OVERWORLD = 5
+    DIRECTION_MASK = (1 << 2) | (1 << 1) | 1
+
+matching_transition_types = {
+    TransitionType.SCREENS | DirectionType.NORTH: [TransitionType.SCREENS | DirectionType.SOUTH],
+    TransitionType.SCREENS | DirectionType.EAST: [TransitionType.SCREENS | DirectionType.WEST],
+    TransitionType.SCREENS | DirectionType.SOUTH: [TransitionType.SCREENS | DirectionType.NORTH],
+    TransitionType.SCREENS | DirectionType.WEST: [TransitionType.SCREENS | DirectionType.EAST],
+
+    TransitionType.AREA_SCREENS | DirectionType.NORTH: [TransitionType.AREA_SCREENS | DirectionType.SOUTH],
+    TransitionType.AREA_SCREENS | DirectionType.EAST: [TransitionType.AREA_SCREENS | DirectionType.WEST],
+    TransitionType.AREA_SCREENS | DirectionType.SOUTH: [TransitionType.AREA_SCREENS | DirectionType.NORTH],
+    TransitionType.AREA_SCREENS | DirectionType.WEST: [TransitionType.AREA_SCREENS | DirectionType.EAST],
+
+    TransitionType.DOORS | DirectionType.NORTH: [TransitionType.DOORS | DirectionType.SOUTH,
+                                                 TransitionType.STAIRS | DirectionType.SOUTH,
+                                                 TransitionType.STAIRS | DirectionType.NORTH],
+
+    TransitionType.DOORS | DirectionType.EAST: [TransitionType.DOORS | DirectionType.WEST,
+                                                TransitionType.STAIRS | DirectionType.WEST,
+                                                TransitionType.STAIRS | DirectionType.EAST],
+
+    TransitionType.DOORS | DirectionType.SOUTH: [TransitionType.DOORS | DirectionType.NORTH,
+                                                 TransitionType.STAIRS | DirectionType.NORTH,
+                                                 TransitionType.STAIRS | DirectionType.SOUTH],
+
+    TransitionType.DOORS | DirectionType.WEST: [TransitionType.DOORS | DirectionType.EAST,
+                                                TransitionType.STAIRS | DirectionType.EAST,
+                                                TransitionType.STAIRS | DirectionType.WEST],
+
+    TransitionType.MIRRORS | DirectionType.ASTRAL: [TransitionType.MIRRORS | DirectionType.OVERWORLD],
+    TransitionType.MIRRORS | DirectionType.OVERWORLD: [TransitionType.MIRRORS | DirectionType.ASTRAL],
+
+    TransitionType.STAIRS | DirectionType.NORTH: [TransitionType.DOORS | DirectionType.SOUTH,
+                                                TransitionType.DOORS | DirectionType.NORTH,
+                                                TransitionType.STAIRS | DirectionType.SOUTH,
+                                                TransitionType.STAIRS | DirectionType.NORTH],
+
+    TransitionType.STAIRS | DirectionType.EAST: [TransitionType.DOORS | DirectionType.WEST,
+                                                TransitionType.DOORS | DirectionType.EAST,
+                                                TransitionType.STAIRS | DirectionType.WEST,
+                                                TransitionType.STAIRS | DirectionType.EAST],
+
+    TransitionType.STAIRS | DirectionType.SOUTH: [TransitionType.DOORS | DirectionType.NORTH,
+                                                TransitionType.DOORS | DirectionType.SOUTH,
+                                                TransitionType.STAIRS | DirectionType.NORTH,
+                                                TransitionType.STAIRS | DirectionType.SOUTH],
+
+    TransitionType.STAIRS | DirectionType.WEST: [TransitionType.DOORS | DirectionType.EAST,
+                                                TransitionType.DOORS | DirectionType.WEST,
+                                                TransitionType.STAIRS | DirectionType.EAST,
+                                                TransitionType.STAIRS | DirectionType.WEST],
+
+}
+
+
+def get_target_groups(group: int) -> list[int]:
+    return matching_transition_types[group]
 
 class ItemData(NamedTuple):
     item_id: int
@@ -31,7 +95,7 @@ class MovementItemData(NamedTuple):
     amount: int = 1
 
 class RegionConnection(NamedTuple):
-    exiting_sub_region: str
+    exiting_region: str
     entering_region: str
     rule: CollectionRule | Rule[MinaTheHollowerBase] = True_()
 

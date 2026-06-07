@@ -2,7 +2,7 @@ from BaseClasses import LocationProgressType
 from rule_builder.options import OptionFilter
 from rule_builder.rules import Has, True_
 from .. import LocationData
-from ... import RegionConnectionData
+from ... import RegionConnection
 from ...rules.ability_rules import CanBurrow, CanJumpOneTile, CanJumpTiles, CanBounce, ReachingSideArm, CanClimb
 
 collectable_locations: dict[str, LocationData] = {
@@ -33,35 +33,35 @@ boss_locations: dict[str, LocationData] = {
     "EH Grassland Maxi": LocationData(0, "Eastern Heath Grassland", CanJumpOneTile() & CanBurrow()),
 }
 
-connections: dict[str, RegionConnectionData] = {
-    "Eastern Hearth Grassland_Ossex" : RegionConnectionData("Eastern Hearth Grassland", "Ossex"),
-    "Eastern Hearth Grassland_Southern Outskirts" : RegionConnectionData("Eastern Hearth Grassland", "Southern Outskirts"),
+connections: dict[str, RegionConnection] = {
+    "Eastern Hearth Grassland_Ossex" : RegionConnection("Eastern Hearth Grassland", "Ossex"),
+    "Eastern Hearth Grassland_Southern Outskirts" : RegionConnection("Eastern Hearth Grassland", "Southern Outskirts"),
 
-    "Eastern Hearth Grassland_Eastern Heath Grassland Bridge" : RegionConnectionData("Eastern Hearth Grassland", "Eastern Heath Grassland Bridge"),
-    "Eastern Heath Grassland Bridge_Eastern Hearth Grassland" : RegionConnectionData("Eastern Heath Grassland Bridge", "Eastern Hearth Grassland"),
+    "Eastern Hearth Grassland_Eastern Heath Grassland Bridge" : RegionConnection("Eastern Hearth Grassland", "Eastern Heath Grassland Bridge"),
+    "Eastern Heath Grassland Bridge_Eastern Hearth Grassland" : RegionConnection("Eastern Heath Grassland Bridge", "Eastern Hearth Grassland"),
 
-    "Eastern Hearth Grassland_Eastern Heath Grassland Bush Room" : RegionConnectionData("Eastern Hearth Grassland", "Eastern Heath Grassland Bush Room"),
-    "Eastern Heath Grassland Bush Room_Eastern Hearth Grassland" : RegionConnectionData("Eastern Heath Grassland Bush Room", "Eastern Hearth Grassland"),
+    "Eastern Hearth Grassland_Eastern Heath Grassland Bush Room" : RegionConnection("Eastern Hearth Grassland", "Eastern Heath Grassland Bush Room"),
+    "Eastern Heath Grassland Bush Room_Eastern Hearth Grassland" : RegionConnection("Eastern Heath Grassland Bush Room", "Eastern Hearth Grassland"),
 
-    "Eastern Hearth Grassland_Eastern Heath Grassland Riverbed" : RegionConnectionData("Eastern Hearth Grassland", "Eastern Heath Grassland Riverbed"),
-    "Eastern Heath Grassland Riverbed_Eastern Hearth Grassland" : RegionConnectionData("Eastern Heath Grassland Riverbed", "Eastern Hearth Grassland"),
+    "Eastern Hearth Grassland_Eastern Heath Grassland Riverbed" : RegionConnection("Eastern Hearth Grassland", "Eastern Heath Grassland Riverbed"),
+    "Eastern Heath Grassland Riverbed_Eastern Hearth Grassland" : RegionConnection("Eastern Heath Grassland Riverbed", "Eastern Hearth Grassland"),
 
-    "Eastern Hearth Grassland_Eastern Heath Choppe Shoppe" : RegionConnectionData("Eastern Hearth Grassland", "Eastern Heath Choppe Shoppe"),
-    "Eastern Heath Choppe Shoppe_Eastern Hearth Grassland" : RegionConnectionData("Eastern Heath Choppe Shoppe", "Eastern Hearth Grassland"),
+    "Eastern Hearth Grassland_Eastern Heath Choppe Shoppe" : RegionConnection("Eastern Hearth Grassland", "Eastern Heath Choppe Shoppe"),
+    "Eastern Heath Choppe Shoppe_Eastern Hearth Grassland" : RegionConnection("Eastern Heath Choppe Shoppe", "Eastern Hearth Grassland"),
 
-    "Eastern Hearth Grassland_Eastern Heath Grassland Waterfall" : RegionConnectionData("Eastern Hearth Grassland", "Eastern Heath Grassland Waterfall"),
-    "Eastern Heath Grassland Waterfall_Eastern Hearth Grassland" : RegionConnectionData("Eastern Heath Grassland Waterfall", "Eastern Hearth Grassland"),
+    "Eastern Hearth Grassland_Eastern Heath Grassland Waterfall" : RegionConnection("Eastern Hearth Grassland", "Eastern Heath Grassland Waterfall"),
+    "Eastern Heath Grassland Waterfall_Eastern Hearth Grassland" : RegionConnection("Eastern Heath Grassland Waterfall", "Eastern Hearth Grassland"),
 
-    "Eastern Hearth Grassland_Eastern Heath Grassland Vertical Spinner Room" : RegionConnectionData("Eastern Hearth Grassland", "Eastern Heath Grassland Vertical Spinner Room"),
-    "Eastern Heath Grassland Vertical Spinner Room_Eastern Hearth Grassland" : RegionConnectionData("Eastern Heath Grassland Vertical Spinner Room", "Eastern Hearth Grassland"),
+    "Eastern Hearth Grassland_Eastern Heath Grassland Vertical Spinner Room" : RegionConnection("Eastern Hearth Grassland", "Eastern Heath Grassland Vertical Spinner Room"),
+    "Eastern Heath Grassland Vertical Spinner Room_Eastern Hearth Grassland" : RegionConnection("Eastern Heath Grassland Vertical Spinner Room", "Eastern Hearth Grassland"),
 
-    "Eastern Hearth Grassland_Eastern Heath Under the Bridge" : RegionConnectionData("Eastern Hearth Grassland", "Eastern Heath Under the Bridge"),
-    "Eastern Heath Under the Bridge_Eastern Hearth Grassland" : RegionConnectionData("Eastern Heath Under the Bridge", "Eastern Hearth Grassland"),
+    "Eastern Hearth Grassland_Eastern Heath Under the Bridge" : RegionConnection("Eastern Hearth Grassland", "Eastern Heath Under the Bridge"),
+    "Eastern Heath Under the Bridge_Eastern Hearth Grassland" : RegionConnection("Eastern Heath Under the Bridge", "Eastern Hearth Grassland"),
 
-    "Eastern Hearth Grassland_Eastern Heath Grassland Poppit Cave" : RegionConnectionData("Eastern Hearth Grassland", "Eastern Heath Grassland Poppit Cave"),
-    "Eastern Heath Grassland Poppit Cave_Eastern Hearth Grassland" : RegionConnectionData("Eastern Heath Grassland Poppit Cave", "Eastern Hearth Grassland"),
+    "Eastern Hearth Grassland_Eastern Heath Grassland Poppit Cave" : RegionConnection("Eastern Hearth Grassland", "Eastern Heath Grassland Poppit Cave"),
+    "Eastern Heath Grassland Poppit Cave_Eastern Hearth Grassland" : RegionConnection("Eastern Heath Grassland Poppit Cave", "Eastern Hearth Grassland"),
 
-    "Eastern Hearth Grassland_Eastern Heath Frozen Pass" : RegionConnectionData("Eastern Hearth Grassland", "Eastern Heath Frozen Pass"),
-    "Eastern Heath Frozen Pass_Eastern Hearth Grassland" : RegionConnectionData("Eastern Heath Frozen Pass", "Eastern Hearth Grassland"),
+    "Eastern Hearth Grassland_Eastern Heath Frozen Pass" : RegionConnection("Eastern Hearth Grassland", "Eastern Heath Frozen Pass"),
+    "Eastern Heath Frozen Pass_Eastern Hearth Grassland" : RegionConnection("Eastern Heath Frozen Pass", "Eastern Hearth Grassland"),
 
 }

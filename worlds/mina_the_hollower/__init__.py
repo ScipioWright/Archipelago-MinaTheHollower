@@ -1,18 +1,34 @@
 from typing import ClassVar, Dict, Any, Optional
 
-from BaseClasses import ItemClassification
+from BaseClasses import ItemClassification, Tutorial
 from Utils import visualize_regions
+from entrance_rando import randomize_entrances, bake_target_group_lookup
 from rule_builder.rules import Has
 from . import locations, items, tracker
+from .data import get_target_groups
 from .items import MinaTheHollowerItem
 from .data.items import all_filler_items, all_items
 from .data.locations import all_locations
+from .options import mina_the_hollower_option_groups
 
 from .world_base import MinaTheHollowerBase
 
-from .world_base import MinaTheHollowerWeb
 from .constants import MINA_THE_HOLLOWER
+from ..AutoWorld import WebWorld
 
+
+class MinaTheHollowerWeb(WebWorld):
+    theme = "partyTime"
+    setup_en = Tutorial(
+        tutorial_name="Multiworld Setup Guide",
+        description="A guide to setting up the Mina The Hollower randomizer connected to an Archipelago Multiworld.",
+        language="English",
+        file_name="setup_en.md",
+        link="setup/en",
+        authors=["FyreDay"]
+    )
+    option_groups = mina_the_hollower_option_groups
+    tutorials = [setup_en]
 
 class MinaTheHollowerWorld(MinaTheHollowerBase):
     game = MINA_THE_HOLLOWER
@@ -50,11 +66,11 @@ class MinaTheHollowerWorld(MinaTheHollowerBase):
     def create_regions(self):
         self.regions = locations.get_regions(self)
         locations.create_regions(self, self.regions)
-        locations.connect_entrances(self, self.regions)
+        locations.create_entrances(self, self.regions)
 
-    # def connect_entrances(self) -> None:
-    #     if self.options.entrance_rando.value:
-    #         connect_random_entrances(self)
+    def connect_entrances(self) -> None:
+        target_group_lookup = bake_target_group_lookup(self, get_target_groups)
+        randomize_entrances(self, False, target_group_lookup)
 
     def create_item(self, item: str) -> MinaTheHollowerItem:
         if item in all_filler_items.keys():
