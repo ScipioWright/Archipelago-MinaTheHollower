@@ -1,7 +1,6 @@
 from collections import ChainMap
-from .areas import astral_orrery, bayou, bone_beach, coltrane_peak, eastern_hearth, kindlewood, loners_landing, mourners_mile, ossex, queensbury_crypt, radient_manor, sandfalls, septemburg, southern_outskirts, shanty_swamp, western_wilds
+from .areas import astral_orrery, bayou, bone_beach, coltrane_peak, eastern_hearth, kindlewood, loners_landing, mourners_mile, ossex, queensbury_crypt, radient_manor, sandfalls, septemburg, southern_outskirts, backwaters, western_wilds
 from .. import LocationData, RegionConnection, Transition
-from .game_locations import collectable_locations
 
 all_collectables: ChainMap[str, LocationData] = ChainMap(
 astral_orrery.collectable_locations,
@@ -18,7 +17,7 @@ radient_manor.collectable_locations,
 sandfalls.collectable_locations,
 septemburg.collectable_locations,
 southern_outskirts.collectable_locations,
-shanty_swamp.collectable_locations,
+backwaters.collectable_locations,
 western_wilds.collectable_locations,
 )
 
@@ -37,7 +36,7 @@ all_bosses: ChainMap[str, LocationData] = ChainMap(
     sandfalls.bosses,
     septemburg.bosses,
     southern_outskirts.bosses,
-    shanty_swamp.bosses,
+    backwaters.bosses,
     western_wilds.bosses,
 )
 
@@ -45,6 +44,7 @@ all_locations: ChainMap[str, LocationData] = ChainMap(
     all_collectables,
     all_bosses
 )
+
 
 all_regions: set[str] = set.union(
     astral_orrery.regions,
@@ -61,7 +61,7 @@ all_regions: set[str] = set.union(
     sandfalls.regions,
     septemburg.regions,
     southern_outskirts.regions,
-    shanty_swamp.regions,
+    backwaters.regions,
     western_wilds.regions,
 )
 
@@ -80,7 +80,7 @@ all_internal_region_connections: ChainMap[str, RegionConnection] = ChainMap(
     sandfalls.connections,
     septemburg.connections,
     southern_outskirts.connections,
-    shanty_swamp.connections,
+    backwaters.connections,
     western_wilds.connections,
 )
 
@@ -99,8 +99,26 @@ all_region_transitions: ChainMap[str, Transition] = ChainMap(
     sandfalls.transitions,
     septemburg.transitions,
     southern_outskirts.transitions,
-    shanty_swamp.transitions,
+    backwaters.transitions,
     western_wilds.transitions,
 )
 
+finished_regions: set[str] = set.union(
+    ossex.regions,
+    eastern_hearth.regions,
+    southern_outskirts.regions,
+    western_wilds.regions
+)
 
+finished_region_transitions: ChainMap[str, Transition] = ChainMap(
+    ossex.transitions
+)
+
+finished_locations: ChainMap[str, LocationData] = ChainMap(
+    ossex.collectable_locations
+)
+
+
+finished_internal_region_connections: ChainMap[str, RegionConnection] = ChainMap(
+    ossex.connections
+)

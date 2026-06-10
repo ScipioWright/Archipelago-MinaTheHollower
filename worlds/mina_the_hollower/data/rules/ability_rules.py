@@ -13,7 +13,7 @@ from ...options import AbilityRando
 from ...world_base import MinaTheHollowerBase
 
 def ReachingSideArm():
-    return Has("Axe") & Has("Throwing Sword")
+    return Has("ThrowingAxe")
 
 @dataclasses.dataclass(kw_only=True)
 class CanBurrow(Rule[MinaTheHollowerBase], game=MINA_THE_HOLLOWER):

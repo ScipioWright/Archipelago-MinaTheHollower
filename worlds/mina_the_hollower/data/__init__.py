@@ -15,6 +15,9 @@ class TransitionType(IntEnum):
     DOORS = 3 << 3
     MIRRORS = 4 << 3
     STAIRS = 5 << 3
+    GEYSER_UP = 6 << 3
+    GEYSER_DOWN = 7 << 3
+    BURROW = 8 << 3
     TRANSITION_MASK = 1 << 3
 
 
@@ -94,6 +97,12 @@ class MovementItemData(NamedTuple):
     classification: ItemClassification
     amount: int = 1
 
+class KeyItemData(NamedTuple):
+    item_id: int
+    key_id: int
+    classification: ItemClassification
+    amount: int = 1
+
 class RegionConnection(NamedTuple):
     exiting_region: str
     entering_region: str
@@ -113,4 +122,4 @@ class LocationData(NamedTuple):
     rule: CollectionRule | Rule[MinaTheHollowerBase] = True_()
     progress_type: LocationProgressType = LocationProgressType.DEFAULT
 
-AnyItemData: type = Union[ItemData, MovementItemData]
+AnyItemData: type = Union[ItemData, MovementItemData, KeyItemData]

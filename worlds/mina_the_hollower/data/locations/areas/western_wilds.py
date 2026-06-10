@@ -1,9 +1,7 @@
 from BaseClasses import LocationProgressType
 from rule_builder.options import OptionFilter
 from rule_builder.rules import Has, True_
-from worlds.stardew_valley.strings.craftable_names import Fishing
-from .. import LocationData
-from ... import RegionConnection
+from ... import RegionConnection, Transition, LocationData
 from ...rules.ability_rules import CanBurrow, CanJumpOneTile, CanJumpTiles, CanBounce
 
 collectable_locations: dict[str, LocationData] = {
@@ -42,5 +40,15 @@ connections: dict[str, RegionConnection] = {
     "Western Wilds Occupied Bridge_Western Wilds Balcony" : RegionConnection("Western Wilds Occupied Bridge", "Western Wilds Balcony"),
     "Western Wilds Balcony_Western Wilds Occupied Bridge" : RegionConnection("Western Wilds Balcony","Western Wilds Occupied Bridge"),
 
+
+}
+
+bosses: dict[str, LocationData] = {
+}
+regions: set[str] = {
+    "Western Wilds Ossex Bridge",
+"Western Wilds Overgrown Path"
+}
+transitions: dict[str, Transition] = {
 
 }

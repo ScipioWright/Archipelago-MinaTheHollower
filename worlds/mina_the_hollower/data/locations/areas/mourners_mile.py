@@ -1,7 +1,6 @@
 from BaseClasses import LocationProgressType
 from rule_builder.rules import Has, CanReachLocation
-from .. import LocationData
-from ... import RegionConnection, TransitionType, Transition
+from ... import RegionConnection, Transition, LocationData
 from ...rules.ability_rules import CanBurrow, CanJumpOneTile, CanBounce, CanJumpTiles, CanClimb, CanCarry
 
 regions: set[str] = {
@@ -16,7 +15,8 @@ regions: set[str] = {
     "Mourner's Mile Mina's Grave",
     "Mourner's Mile Spike Hell",
 }
-
+bosses: dict[str, LocationData] = {
+}
 transitions: dict[str, Transition] = {
 
 }

@@ -55,6 +55,7 @@ class MinaTheHollowerWorld(MinaTheHollowerBase):
     def __init__(self, multiworld, player):
         self.regions = {}
         self.itempool = []
+        self.entrance_rando = False
         self.hints = {}
 
         super().__init__(multiworld, player)
@@ -69,8 +70,9 @@ class MinaTheHollowerWorld(MinaTheHollowerBase):
         locations.create_entrances(self, self.regions)
 
     def connect_entrances(self) -> None:
-        target_group_lookup = bake_target_group_lookup(self, get_target_groups)
-        randomize_entrances(self, False, target_group_lookup)
+        if self.entrance_rando:
+            target_group_lookup = bake_target_group_lookup(self, get_target_groups)
+            randomize_entrances(self, False, target_group_lookup)
 
     def create_item(self, item: str) -> MinaTheHollowerItem:
         if item in all_filler_items.keys():
@@ -95,13 +97,11 @@ class MinaTheHollowerWorld(MinaTheHollowerBase):
     def fill_slot_data(self) -> id:
         #print("Filling Slot Data")
         return {
-            "sem_ver": "0.1.0",
+            "sem_ver": "0.1.X",
             "goal" : self.options.goal.value,
             "entrance_rando" : self.options.entrance_rando.value,
             "death_link" : self.options.death_link.value,
-            "shuffled_sidearms" : self.options.shuffled_sidearms.value,
-            "shuffle_enemy_level" : self.options.shuffle_enemy_level.value,
-            "shuffled_items" : self.options.shuffled_items.value,
+
         }
 
     def extend_hint_information(self, hint_data: Dict[int, Dict[int, str]]):
@@ -122,8 +122,8 @@ class MinaTheHollowerWorld(MinaTheHollowerBase):
         self.options.goal.value = slot_data["goal"]
         self.options.death_link.value = slot_data["death_link"]
         self.options.entrance_rando.value = slot_data["entrance_rando"]
-        self.options.shuffled_sidearms.value = slot_data["shuffled_sidearms"]
-        self.options.shuffle_enemy_level.value = slot_data["shuffle_enemy_level"]
-        self.options.shuffled_items.value = slot_data["shuffled_items"]
+        # self.options.shuffled_sidearms.value = slot_data["shuffled_sidearms"]
+        # self.options.shuffle_enemy_level.value = slot_data["shuffle_enemy_level"]
+        # self.options.shuffled_items.value = slot_data["shuffled_items"]
 
         return slot_data

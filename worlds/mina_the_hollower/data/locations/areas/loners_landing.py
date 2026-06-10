@@ -1,9 +1,10 @@
 from BaseClasses import LocationProgressType
 from rule_builder.rules import Has, CanReachLocation
-from .. import LocationData
-from ... import RegionConnection, TransitionType, Transition
+from ... import RegionConnection, Transition, LocationData
 from ...rules.ability_rules import CanBurrow, CanJumpOneTile, CanBounce, CanJumpTiles, CanClimb, CanCarry
 
+bosses: dict[str, LocationData] = {
+}
 collectable_locations: dict[str, LocationData] = {
     "Left Shipwreck Weapon": LocationData(17, "ShipWreck", Has("Left Shipwreck Weapon Kear")),
     "Right Shipwreck Weapon": LocationData(18, "ShipWreck", Has("Right Shipwreck Weapon Kear")),

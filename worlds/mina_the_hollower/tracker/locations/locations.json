@@ -1,0 +1,24 @@
+[
+    {
+        "name": "Abundant Shrine",
+        "sections": [
+            {"name": "Abundant Shrine - Center hidden item"},
+            {"name": "Abundant Shrine - Center item"},
+            {"name": "Abundant Shrine - East hidden item"},
+            {"name": "Abundant Shrine - East item"},
+            {"name": "Abundant Shrine - Hidden item near northern lake"},
+            {"name": "Abundant Shrine - Hidden item on southern lake"},
+            {"name": "Abundant Shrine - Item near ledge"},
+            {"name": "Abundant Shrine - North east item"},
+            {"name": "Abundant Shrine - North west hidden item"},
+            {"name": "Abundant Shrine - South west item"}
+        ],
+        "map_locations": [
+            {
+                "map": "ossex",
+                "x": 394,
+                "y": 154
+            }
+        ]
+    }
+]

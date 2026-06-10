@@ -1,8 +1,7 @@
 from BaseClasses import LocationProgressType
 from rule_builder.options import OptionFilter
 from rule_builder.rules import Has, True_
-from .. import LocationData
-from ... import RegionConnection, Transition
+from ... import RegionConnection, Transition, LocationData
 from ...rules.ability_rules import CanBurrow, CanJumpOneTile, CanJumpTiles, CanBounce, CanSwim, CanCarry, CanClimb
 
 regions: set[str] = {

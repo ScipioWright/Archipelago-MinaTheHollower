@@ -2,7 +2,7 @@ from BaseClasses import ItemClassification
 from .. import ItemData
 
 filler: dict[str, ItemData] = {
-    "BoneDust" : ItemData(50, ItemClassification.filler,  169),
+    "BoneDust" : ItemData(50, ItemClassification.filler),
     "Bonestone" : ItemData(51, ItemClassification.filler),
     "Bonestone01" : ItemData(52, ItemClassification.filler),
     "Bonestone02" : ItemData(53, ItemClassification.filler),

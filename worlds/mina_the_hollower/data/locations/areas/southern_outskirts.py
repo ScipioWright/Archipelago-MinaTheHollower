@@ -1,8 +1,7 @@
 from BaseClasses import LocationProgressType
 from rule_builder.options import OptionFilter
 from rule_builder.rules import Has, True_
-from .. import LocationData
-from ... import RegionConnection
+from ... import RegionConnection, Transition, LocationData
 from ...rules.ability_rules import CanBurrow, CanJumpOneTile, CanJumpTiles, CanBounce
 
 collectable_locations: dict[str, LocationData] = {
@@ -28,4 +27,13 @@ connections: dict[str, RegionConnection] = {
     "Southern Outskirts_Ossex" : RegionConnection("Southern Outskirts", "Ossex"),
     "Southern Outskirts_Western Wilds Occupied Bridge" : RegionConnection("Southern Outskirts", "Western Wilds Occupied Bridge", CanJumpOneTile() & CanBurrow()),
     "Southern Outskirts_Eastern Heath Grassland" : RegionConnection("Southern Outskirts", "Eastern Heath Grassland", CanJumpOneTile()),
+}
+bosses: dict[str, LocationData] = {
+}
+regions: set[str] = {
+    "Southern Outskirts Commons Ossex Entry",
+"Southern Outskirts Commons Western Pit Room"
+}
+transitions: dict[str, Transition] = {
+
 }

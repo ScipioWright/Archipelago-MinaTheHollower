@@ -1,9 +1,17 @@
 from BaseClasses import LocationProgressType
 from rule_builder.options import OptionFilter
 from rule_builder.rules import Has, True_
-from .. import LocationData
-from ... import RegionConnection
+from ... import RegionConnection, Transition, LocationData
 from ...rules.ability_rules import CanBurrow, CanJumpOneTile, CanJumpTiles, CanBounce, ReachingSideArm, CanClimb
+
+bosses: dict[str, LocationData] = {
+}
+regions: set[str] = {
+    "Eastern Hearth Grassland"
+}
+transitions: dict[str, Transition] = {
+
+}
 
 collectable_locations: dict[str, LocationData] = {
     "EH Grassland Trinket Bag" : LocationData(221, "Eastern Heath Grassland", CanJumpOneTile() & CanBurrow()),

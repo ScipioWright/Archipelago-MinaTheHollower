@@ -1,0 +1,5 @@
+[
+  {"name": "Ossex", "img": "images/ossex/ossex_main.png", "location_size": 16, "location_border_thickness": 2},
+  {"name": "Board Walk", "img": "images/loners_landing/boardwalk.png", "location_size": 16, "location_border_thickness": 2},
+  {"name": "Loner's Landing", "img": "images/loners_landing/loners_landing.png", "location_size": 16, "location_border_thickness": 2},
+]

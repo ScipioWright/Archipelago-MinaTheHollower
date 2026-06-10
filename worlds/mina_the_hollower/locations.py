@@ -1,5 +1,6 @@
 from BaseClasses import Region, Location
-from .data.locations import all_regions, all_region_transitions, all_internal_region_connections, all_locations
+from .data.locations import all_regions, all_region_transitions, all_internal_region_connections, all_locations, \
+    finished_locations, finished_regions, finished_region_transitions, finished_internal_region_connections
 from .data import LocationData, RegionConnection, Transition, matching_transition_types
 
 
@@ -22,23 +23,27 @@ def create_region(world, name: str, hint: str = ""):
         world.set_rule(location, data.rule)
 
 def create_regions(world, regions: set[str]):
+    create_region(world, "Menu")
     for region in regions:
         create_region(world, region)
 
 def get_regions(world) ->  set[str]:
     #TODO: logic to handle which regions are being created based on yaml
-    return all_regions
+    return finished_regions
 
 
 def create_entrances(world, regions):
-    for name, data in all_region_transitions.items():
+    menu = world.get_region("Menu")
+    starting_region = world.get_region("Ossex City Center Main")
+    world.create_entrance(menu, starting_region, name="Menu To Ossex")
+    for name, data in finished_region_transitions.items():
         exiting_region = world.get_region(data.exiting_screen)
         entering_region = world.get_region(data.entering_screen)
         entrance = world.create_entrance(exiting_region, entering_region, rule=data.rule, name=name, force_creation=True)
-        if data.entrance_group != 0 and world.options.entrance_rando.value > 0:
+        if data.entrance_group != 0 and world.entrance_rando > 0:
             entrance.randomization_group = data.entrance_group
             world.disconnect_entrance_for_randomization(entrance)
-    for name, data in all_internal_region_connections.items():
+    for name, data in finished_internal_region_connections.items():
         exiting_region = world.get_region(data.exiting_region)
         entering_region = world.get_region(data.entering_region)
         entrance = world.create_entrance(exiting_region, entering_region, rule=data.rule, name=name,
