@@ -21,7 +21,7 @@ class CanBurrow(Rule[MinaTheHollowerBase], game=MINA_THE_HOLLOWER):
     @override
     def _instantiate(self, world: MinaTheHollowerBase) -> Rule.Resolved:
         # caching_enabled only needs to be passed in when your world inherits from CachedRuleBuilderWorld
-        return Has("Burrow", options=[OptionFilter(AbilityRando, AbilityRando.option_false, operator="ne") ]).resolve(world)
+        return Has("Burrow", options=[OptionFilter(AbilityRando, AbilityRando.option_false, operator="eq") ]).resolve(world)
 
 @dataclasses.dataclass(kw_only=True)
 class CanCarry(Rule[MinaTheHollowerBase], game=MINA_THE_HOLLOWER):
@@ -29,7 +29,7 @@ class CanCarry(Rule[MinaTheHollowerBase], game=MINA_THE_HOLLOWER):
     @override
     def _instantiate(self, world: MinaTheHollowerBase) -> Rule.Resolved:
         # caching_enabled only needs to be passed in when your world inherits from CachedRuleBuilderWorld
-        return Has("Carry", options=[OptionFilter(AbilityRando, AbilityRando.option_false, operator="ne") ]).resolve(world)
+        return Has("Carry", options=[OptionFilter(AbilityRando, AbilityRando.option_false, operator="eq") ]).resolve(world)
 
 @dataclasses.dataclass(kw_only=True)
 class CanClimb(Rule[MinaTheHollowerBase], game=MINA_THE_HOLLOWER):
@@ -37,7 +37,7 @@ class CanClimb(Rule[MinaTheHollowerBase], game=MINA_THE_HOLLOWER):
     @override
     def _instantiate(self, world: MinaTheHollowerBase) -> Rule.Resolved:
         # caching_enabled only needs to be passed in when your world inherits from CachedRuleBuilderWorld
-        return Has("Climb", options=[OptionFilter(AbilityRando, AbilityRando.option_false, operator="ne") ]).resolve(world)
+        return Has("Climb", options=[OptionFilter(AbilityRando, AbilityRando.option_false, operator="eq") ]).resolve(world)
 
 @dataclasses.dataclass(kw_only=True)
 class CanSwim(Rule[MinaTheHollowerBase], game=MINA_THE_HOLLOWER):
@@ -45,7 +45,7 @@ class CanSwim(Rule[MinaTheHollowerBase], game=MINA_THE_HOLLOWER):
     @override
     def _instantiate(self, world: MinaTheHollowerBase) -> Rule.Resolved:
         # caching_enabled only needs to be passed in when your world inherits from CachedRuleBuilderWorld
-        return Has("Swim", options=[OptionFilter(AbilityRando, AbilityRando.option_false, operator="ne") ]).resolve(world)
+        return Has("Swim", options=[OptionFilter(AbilityRando, AbilityRando.option_false, operator="eq") ]).resolve(world)
 
 @dataclasses.dataclass(kw_only=True)
 class CanBounce(Rule[MinaTheHollowerBase], game=MINA_THE_HOLLOWER):
@@ -53,7 +53,7 @@ class CanBounce(Rule[MinaTheHollowerBase], game=MINA_THE_HOLLOWER):
     @override
     def _instantiate(self, world: MinaTheHollowerBase) -> Rule.Resolved:
         # caching_enabled only needs to be passed in when your world inherits from CachedRuleBuilderWorld
-        return Has("Bounce", options=[OptionFilter(AbilityRando, AbilityRando.option_false, operator="ne") ]).resolve(world)
+        return Has("Bounce", options=[OptionFilter(AbilityRando, AbilityRando.option_false, operator="eq") ]).resolve(world)
 
 @dataclasses.dataclass(kw_only=True)
 class HasVialsCount(Rule[MinaTheHollowerBase], game=MINA_THE_HOLLOWER):
@@ -61,7 +61,7 @@ class HasVialsCount(Rule[MinaTheHollowerBase], game=MINA_THE_HOLLOWER):
     @override
     def _instantiate(self, world: MinaTheHollowerBase) -> Rule.Resolved:
         # caching_enabled only needs to be passed in when your world inherits from CachedRuleBuilderWorld
-        return (Has("HealingVialFirst") & Has("Vial_Upgrade", count=self.count)).resolve(world)
+        return (Has("HealingVialFirst") & Has("VialUpgrade", count=self.count)).resolve(world)
 
 
 
@@ -71,7 +71,7 @@ class CanJumpOneTile(Rule[MinaTheHollowerBase], game=MINA_THE_HOLLOWER):
     @override
     def _instantiate(self, world: MinaTheHollowerBase) -> Rule.Resolved:
         # caching_enabled only needs to be passed in when your world inherits from CachedRuleBuilderWorld
-        return Has("Jump", options=[OptionFilter(AbilityRando, AbilityRando.option_false, operator="ne") ]).resolve(world)
+        return Has("Jump", options=[OptionFilter(AbilityRando, AbilityRando.option_false, operator="eq") ]).resolve(world)
 
 
 

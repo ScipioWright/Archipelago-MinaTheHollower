@@ -24,7 +24,7 @@ all_traps: ChainMap[str, AnyItemData] = ChainMap(
 )
 
 required_test_items: dict[str, AnyItemData] = {
-    "SparkUpgrade" : ItemData(70, ItemClassification.progression),
+    "SparkUpgrade" : ItemData(70, ItemClassification.progression, 5),
     "TrainPass" : ItemData(94, ItemClassification.progression),
     "HealingVial": ItemData(17, ItemClassification.progression),
     "HealingVialFirst": ItemData(18, ItemClassification.progression),
@@ -38,4 +38,5 @@ required_test_items: dict[str, AnyItemData] = {
     "Bounce" : ItemData(OFFSET_ABILITY_ITEMS+2, ItemClassification.progression),
     "Carry" : ItemData(OFFSET_ABILITY_ITEMS+3, ItemClassification.progression),
     "Climb" : ItemData(OFFSET_ABILITY_ITEMS+4, ItemClassification.progression),
+
 }

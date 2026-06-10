@@ -68,13 +68,16 @@ transitions: dict[str, Transition] = {
     "Ossex City Center Main Door North Kear": Transition("Ossex City Center Main Door North Kear",
                                                          "Ossex City Center Main", "Ossex Kear Institute",
                                                          DirectionType.NORTH, TransitionType.DOORS),
+    "Ossex Guild Hall Door": Transition("Ossex Guild Hall Door",
+                                                             "Ossex City Center Main", "Ossex Guild Hall",
+                                                             DirectionType.NORTH, TransitionType.DOORS),
     "Ossex City Center Main To Bowery": Transition("Ossex City Center Main To Bowery", "Ossex City Center Main",
                                                    "Ossex Bowery Main", DirectionType.NORTH,
                                                    TransitionType.DO_NOT_RANDOMIZE_ENTRANCE),  # NOT RANDOMIZED
     "Ossex City Center Main Door North Residence": Transition("Ossex City Center Main Door North Residence",
                                                               "Ossex City Center Main", "Ossex Residence",
                                                               DirectionType.NORTH, TransitionType.DOORS,
-                                                              Has("Sparks", count=2)),
+                                                              Has("SparkUpgrade", count=2)),
 
     "Ossex City Center Main To High Street": Transition("Ossex City Center Main To High Street",
                                                         "Ossex City Center Main", "Ossex High Street Main",
@@ -139,8 +142,8 @@ transitions: dict[str, Transition] = {
     # --- Ossex Guild Hall ---
     "Ossex Guild Hall Door South": Transition("Ossex Guild Hall Door South", "Ossex Guild Hall",
                                               "Ossex City Center Main", DirectionType.SOUTH, TransitionType.DOORS),
-    "Ossex Guild Hall South": Transition("Ossex Guild Hall South", "Ossex Guild Hall", "Ossex City Center Main",
-                                         DirectionType.SOUTH, TransitionType.SCREENS),
+    "Ossex Guild Hall North": Transition("Ossex Guild Hall North", "Ossex Guild Hall", "Ossex Guild Back Room",
+                                         DirectionType.NORTH, TransitionType.BURROW),
     # two separate south exits from guild hall - door vs open transition
 
     # --- Ossex Guild Back Room ---
@@ -149,7 +152,7 @@ transitions: dict[str, Transition] = {
                                                       TransitionType.SCREENS, HasVialsCount(count=1) & Has("Ossex Guild Secret Kear")),
     # sheet says "[transition] South - Ossex Guild Back Room" which is self-referential; guessing this is the entrance from the burrow tunnel # noqa: self-ref
     "Ossex Guild Back Room South To Hall": Transition("Ossex Guild Back Room South To Hall", "Ossex Guild Back Room",
-                                                      "Ossex Guild Hall", DirectionType.SOUTH, TransitionType.SCREENS,
+                                                      "Ossex Guild Hall", DirectionType.SOUTH, TransitionType.BURROW,
                                                       CanBurrow()),
     # --- Ossex Guild Secret Room ---
     "Ossex Guild Secret Room South To Back": Transition("Ossex Guild Back Secret South To Back", "Ossex Guild Secret Room",
@@ -207,7 +210,6 @@ transitions: dict[str, Transition] = {
                                                              "Ossex Bowery Begger Residence",
                                                              "Ossex Bowery Begger Residence Back", DirectionType.NORTH,
                                                              TransitionType.BURROW),
-    # BURROW not in enum # noqa: custom type BURROW
 
     # --- Ossex Bowery Begger Residence Back ---
     "Ossex Bowery Begger Residence Back Burrow South Residence": Transition(
@@ -306,11 +308,11 @@ transitions: dict[str, Transition] = {
     "Ossex High Street Main Door North Strategy": Transition("Ossex High Street Main Door North Strategy",
                                                              "Ossex High Street Main", "Ossex Strategy Center",
                                                              DirectionType.NORTH, TransitionType.DOORS,
-                                                             Has("SparkUpgrade", count=1)),  # "1 Spark"
+                                                             Has("SparkUpgrade", count=1)),
     "Ossex High Street Main Door North Atelier": Transition("Ossex High Street Main Door North Atelier",
                                                             "Ossex High Street Main", "Ossex Atelier",
                                                             DirectionType.NORTH, TransitionType.DOORS,
-                                                            Has("SparkUpgrade", count=2)),  # "2 Sparks"
+                                                            Has("SparkUpgrade", count=2)),
     "Ossex High Street Main Area East": Transition("Ossex High Street Main Area East", "Ossex High Street Main",
                                                    "Eastern Hearth Grassland", DirectionType.EAST,
                                                    TransitionType.AREA_SCREENS),
@@ -376,21 +378,21 @@ transitions: dict[str, Transition] = {
     "Ossex High Street Residence Balcony East Stair North Puzzle": Transition(
         "Ossex High Street Residence Balcony East Stair North Puzzle", "Ossex High Street Residence Balcony East",
         "Ossex High Street Residence Upper Puzzle", DirectionType.NORTH, TransitionType.STAIRS),
+
     "Ossex High Street Residence Balcony East West Puzzle": Transition(
         "Ossex High Street Residence Balcony East West Puzzle", "Ossex High Street Residence Balcony East",
-        "Ossex High Street Residence Upper Puzzle", DirectionType.WEST, TransitionType.SCREENS),
+        "Ossex High Street Residence Balcony West", DirectionType.WEST, TransitionType.SCREENS),
 
     # --- Ossex High Street Residence Balcony West ---
-    # NOTE: sheet says "[transition] East - Ossex High Street Residence Balcony West" which appears to be a self-referential typo; guessing it should connect to Balcony East
     "Ossex High Street Residence Balcony West East": Transition("Ossex High Street Residence Balcony West East",
                                                                 "Ossex High Street Residence Balcony West",
                                                                 "Ossex High Street Residence Balcony East",
                                                                 DirectionType.EAST, TransitionType.SCREENS),
-    # noqa: possible typo in sheet - target was "Ossex High Street Residence Balcony West" (self)
+
     "Ossex High Street Residence Balcony West NR City Center": Transition(
         "Ossex High Street Residence Balcony West NR City Center", "Ossex High Street Residence Balcony West",
         "Ossex City Center Main", DirectionType.SOUTH, TransitionType.DO_NOT_RANDOMIZE_ENTRANCE, CanBurrow()),
-    # NOT RANDOMIZED; guessed SOUTH direction
+
 
     # --- Ossex Strategy Center ---
     "Ossex Strategy Center Door South": Transition("Ossex Strategy Center Door South", "Ossex Strategy Center",
