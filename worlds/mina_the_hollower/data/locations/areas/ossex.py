@@ -355,7 +355,7 @@ collectable_locations: dict[str, LocationData] = {
     # "Lock" : LocationData(157, "Ossex"),
 "Trinket_BoneSaver" : LocationData(158, "Ossex Courtyard East"),
 "OS Bowery Upper Chest" : LocationData(159, "Ossex Bowery Upper"),
-"OS City Center 2nd Race Kear" : LocationData(160, "Ossex City Center", CanBurrow()),
+"OS City Center 2nd Race Kear" : LocationData(160, "Ossex City Center Main", CanBurrow()),
 "OS Courtyard East Deboning Wand" : LocationData(161, "Ossex Courtyard East"),
 "OS City Center Steady Soles": LocationData(162, "Ossex High Street Residence Balcony West"),
 "Whip_Level_2" : LocationData(163, "Ossex Legovich's Arms"),

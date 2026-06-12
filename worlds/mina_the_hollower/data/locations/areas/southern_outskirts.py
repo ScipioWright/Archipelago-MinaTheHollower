@@ -266,7 +266,8 @@ transitions: dict[str, Transition] = {
     # --- SO Rebel Barracks Fight ---
     "SO Rebel Barracks Fight Stair North Companion End":
         Transition("SO Rebel Barracks Fight","SO Rebel Barracks Companion End", DirectionType.NORTH, TransitionType.STAIRS),
-
+    "SO Rebel Barracks Fight Stair North To Rebel":
+        Transition("SO Rebel Barracks Fight","SO Commons Rebel", DirectionType.NORTH, TransitionType.STAIRS),
     # --- SO Commons East Ossex ---
     "SO Commons East Ossex West Ossex Entry":
         Transition("SO Commons East Ossex","SO Commons Ossex Entry", DirectionType.WEST, TransitionType.SCREENS),
@@ -325,6 +326,8 @@ transitions: dict[str, Transition] = {
     "SO Commons Western Pit Room Pit East West Ossex": 
         Transition("SO Commons Western Pit Room Pit", "SO Commons West Ossex", DirectionType.EAST, TransitionType.SCREENS),
 
+    "SO Commons Western Pit Room Pit South":
+        Transition("SO Commons Western Pit Room Pit", "SO Commons Southern Pit Room Roof", DirectionType.SOUTH, TransitionType.SCREENS),
     # --- SO Cave Network Main ---
     "SO Cave Network Main Stair North Commons Cave Entrance": 
         Transition( "SO Cave Network Main", "SO Commons Cave Entrance", DirectionType.NORTH, TransitionType.STAIRS),
