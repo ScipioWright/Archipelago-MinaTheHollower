@@ -1,7 +1,7 @@
 from collections import ChainMap
 
 from ._generated import eastern_hearth_edges, mourners_mile_edges, ossex_edges, queensbury_crypt_edges, \
-    southern_outskirts_edges, western_wilds_edges, ossex_train_edges
+    southern_outskirts_edges, western_wilds_edges, ossex_train_edges, sandfalls_edges
 from .areas import astral_orrery, bayou, bone_beach, coltrane_peak, eastern_hearth, kindlewood, loners_landing, mourners_mile, ossex, queensbury_crypt, radient_manor, sandfalls, septemburg, southern_outskirts, backwaters, western_wilds
 from .. import LocationData, RegionConnection, Transition
 
@@ -51,7 +51,6 @@ all_locations: ChainMap[str, LocationData] = ChainMap(
 temp_regions: set[str] = {
     "Radiant Manor Foyer",
     "Loners Landing ???",
-    "Sandfalls ???",
     "Kindlewood Overgrowth entry region from WW",
     "Swamp ???",
     "Sandfalls ???? Bone junction)",
@@ -72,11 +71,11 @@ all_regions: set[str] = set.union(
     ossex_train_edges.regions,
     queensbury_crypt_edges.regions,
     # radient_manor.regions,
-    # sandfalls.regions,
+    sandfalls_edges.regions,
     # septemburg.regions,
     southern_outskirts_edges.regions,
     # backwaters.regions,
-    # western_wilds.regions,
+    western_wilds_edges.regions,
 )
 
 all_internal_region_connections: ChainMap[str, RegionConnection] = ChainMap(
@@ -92,7 +91,7 @@ all_internal_region_connections: ChainMap[str, RegionConnection] = ChainMap(
     ossex_train_edges.connections,
     queensbury_crypt_edges.connections,
     # radient_manor.connections,
-    # sandfalls.connections,
+    sandfalls_edges.connections,
     # septemburg.connections,
     southern_outskirts_edges.connections,
     # backwaters.connections,
@@ -112,7 +111,7 @@ all_region_transitions: ChainMap[str, Transition] = ChainMap(
     ossex_train_edges.transitions,
     queensbury_crypt_edges.transitions,
     # radient_manor.transitions,
-    # sandfalls.transitions,
+    sandfalls_edges.transitions,
     # septemburg.transitions,
     southern_outskirts_edges.transitions,
     # backwaters.transitions,

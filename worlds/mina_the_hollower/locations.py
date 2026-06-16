@@ -38,6 +38,8 @@ def create_entrances(world, regions):
     for name, data in all_region_transitions.items():
         exiting_region = world.get_region(data.exiting_screen)
         entering_region = world.get_region(data.entering_screen)
+        if data.entering_screen == "Mourner's Mile Spike Vault Upper":
+            print("Mourner's Mile Spike Vault Upper creating")
         entrance = world.create_entrance(exiting_region, entering_region, rule=data.rule, name=name, force_creation=True)
         if data.entrance_group != 0 and world.entrance_rando > 0:
             entrance.randomization_group = data.entrance_group

@@ -17,6 +17,7 @@ regions: set[str] = {
     'Ossex Train Coupling',
     'Ossex Train Interior',
     'Ossex Train Private Cabin Left',
+    'Ossex Train Private Cabin Middle',
     'Ossex Train Private Cabin Right',
 }
 
@@ -31,9 +32,11 @@ transitions: dict[str, Transition] = {
     'Ossex Train Coupling_Ossex Train Cab': Transition('Ossex Train Coupling', 'Ossex Train Cab', DirectionType.OVERWORLD, TransitionType.DO_NOT_RANDOMIZE_ENTRANCE),
     'Ossex Train Coupling_Ossex Train Interior': Transition('Ossex Train Coupling', 'Ossex Train Interior', DirectionType.OVERWORLD, TransitionType.DO_NOT_RANDOMIZE_ENTRANCE),
     'Ossex Train Interior Cabin Door': Transition('Ossex Train Interior', 'Ossex Train Private Cabin Middle', DirectionType.OVERWORLD, TransitionType.DO_NOT_RANDOMIZE_ENTRANCE),
+    'Ossex Train Interior East Exit': Transition('Ossex Train Interior', 'Ossex Train Coupling', DirectionType.OVERWORLD, TransitionType.DO_NOT_RANDOMIZE_ENTRANCE),
     'Ossex Train Interior Sneaky Burrow': Transition('Ossex Train Interior', 'Ossex Train Private Cabin Right', DirectionType.OVERWORLD, TransitionType.DO_NOT_RANDOMIZE_ENTRANCE, CanBurrow()),
     'Ossex Train Interior West Transition': Transition('Ossex Train Interior', 'Ossex Train Caboose', DirectionType.OVERWORLD, TransitionType.DO_NOT_RANDOMIZE_ENTRANCE),
     'Ossex Train Private Cabin Left Burrow': Transition('Ossex Train Private Cabin Left', 'Ossex Train Private Cabin Right', DirectionType.OVERWORLD, TransitionType.DO_NOT_RANDOMIZE_ENTRANCE, CanBurrow()),
+    'Ossex Train Private Cabin Middle Exit': Transition('Ossex Train Private Cabin Middle', 'Ossex Train Interior', DirectionType.OVERWORLD, TransitionType.DO_NOT_RANDOMIZE_ENTRANCE),
     'Ossex Train Private Cabin Right Burrow': Transition('Ossex Train Private Cabin Right', 'Ossex Train Private Cabin Left', DirectionType.OVERWORLD, TransitionType.DO_NOT_RANDOMIZE_ENTRANCE, CanBurrow()),
     'Ossex Train Private Cabin Right Sneaky Burrow': Transition('Ossex Train Private Cabin Right', 'Ossex Train Interior', DirectionType.OVERWORLD, TransitionType.DO_NOT_RANDOMIZE_ENTRANCE, CanBurrow()),
 }

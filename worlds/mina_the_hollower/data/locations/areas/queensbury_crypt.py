@@ -7,7 +7,7 @@ from ...rules.ability_rules import CanBurrow, CanJumpOneTile, CanBounce, CanJump
 collectable_locations: dict[str, LocationData] = {
     "QC Old Graveyard Bonestone": LocationData(51, "Queensbury Crypt Old Graveyard Main"),
     "QC Old Graveyard Kear": LocationData(52, "Queensbury Crypt Old Graveyard Sodsby"),  # needs burrow,
-    "QC Bonnet Tomb Desperation Bonnet": LocationData(57, "Queensbury Crypt Bonnet Tomb"),  # needs burrow, kear,
+    "QC Bonnet Tomb Desperation Bonnet": LocationData(57, "Queensbury Crypt Bonnet Tomb Inner"),  # needs burrow, kear,
     "QC Broken Bridge Bonestone": LocationData(54, "Queensbury Crypt Broken Bridge"),
     "QC Pipe Room Bonestone": LocationData(53, "Queensbury Crypt Pipe Room"),
     "QC Castle Entry Weapon Chest": LocationData(56, "Queensbury Crypt Castle Entry"),

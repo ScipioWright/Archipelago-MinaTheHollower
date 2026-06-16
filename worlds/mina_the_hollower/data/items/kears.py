@@ -13,11 +13,17 @@ kears: dict[str, KeyItemData] = {
     "Astral Orrey Mirror Room Left Side": KeyItemData(OFFSET_KEAR_ITEMS+6, 278,ItemClassification.progression),
     "Choppe Shoppe Kear": KeyItemData(OFFSET_KEAR_ITEMS+7, 225,ItemClassification.progression),
     "Eastern Hearth Mountain Path": KeyItemData(OFFSET_KEAR_ITEMS+8, 222,ItemClassification.progression),
-    "Eastern Hearth Bucklers Bluff": KeyItemData(OFFSET_KEAR_ITEMS+9, 224,ItemClassification.progression),
-    "Mourners miles bike": KeyItemData(OFFSET_KEAR_ITEMS+10, 304, ItemClassification.progression),
-    "Ossex Guild Secret Kear": KeyItemData(OFFSET_KEAR_ITEMS+11, 1, ItemClassification.progression),
-    "Eastern Hearth Waterfall Kear": KeyItemData(OFFSET_KEAR_ITEMS+12, 1, ItemClassification.progression),
-    "Eastern Hearth Grassland Bushroom Kear": KeyItemData(OFFSET_KEAR_ITEMS+13, 1, ItemClassification.progression),
+    "Eastern Hearth Bucklers Bluff Kear": KeyItemData(OFFSET_KEAR_ITEMS+9, 224,ItemClassification.progression),
+    "Mourners miles bike Kear": KeyItemData(OFFSET_KEAR_ITEMS+10, 307, ItemClassification.progression),
+    "Eastern Hearth Waterfall Kear": KeyItemData(OFFSET_KEAR_ITEMS+11, 1, ItemClassification.progression),
+    "Eastern Hearth Grassland Bushroom Kear": KeyItemData(OFFSET_KEAR_ITEMS+12, 1, ItemClassification.progression),
+    "Mourners mile After Generator Kear": KeyItemData(OFFSET_KEAR_ITEMS+13, 304, ItemClassification.progression), #both 304 and 306
+    "Queensbury Crypt Bonnet Tomb Kear": KeyItemData(OFFSET_KEAR_ITEMS+14, 1, ItemClassification.progression),
+    "Frozen Pass Kear": KeyItemData(OFFSET_KEAR_ITEMS+15, 109, ItemClassification.progression),
+    "Ossex Train Kear 1": KeyItemData(OFFSET_KEAR_ITEMS+16, 358, ItemClassification.progression),
+    "Ossex Train Kear 2": KeyItemData(OFFSET_KEAR_ITEMS+17, 359, ItemClassification.progression),
+    "Ossex East Garden Kear": KeyItemData(OFFSET_KEAR_ITEMS+18, 157, ItemClassification.progression),
+
 }
 
 

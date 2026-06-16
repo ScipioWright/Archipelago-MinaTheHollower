@@ -53,7 +53,7 @@ collectable_locations: dict[str, LocationData] = {
     "OS Legovich's Arms Starting Weapon Upgrade" : LocationData(174, "Ossex Legovich's Arms"),
     "OS Legovich's Arms Unchosen Weapon #1" : LocationData(175, "Ossex Legovich's Arms"),
     "OS Legovich's Arms Unchosen Weapon #2" : LocationData(176, "Ossex Legovich's Arms"),
-    "OS Legovich's Arms Guardian Casket" : LocationData(198, "Ossex Legovich's Arms"),
+    "OS Legovich's Arms Guardian Casket" : LocationData(178, "Ossex Legovich's Arms"),
     "OS Legovich's Arms Battery Buster" : LocationData(177, "Ossex Legovich's Arms"),
     "OS Gutterways Bonestone" : LocationData(172, "Ossex Gutterways"), #needs 2 sparks, iron steed, burrow,
     "OS High Street Valor Medallion" : LocationData(154, "Ossex High Street Main"), #needs kear, burrow, carry/throw,
