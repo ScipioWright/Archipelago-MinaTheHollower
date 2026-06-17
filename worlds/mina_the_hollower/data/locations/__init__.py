@@ -2,7 +2,7 @@ from collections import ChainMap
 
 from ._generated import eastern_hearth_edges, mourners_mile_edges, ossex_edges, queensbury_crypt_edges, \
     southern_outskirts_edges, western_wilds_edges, ossex_train_edges, sandfalls_edges, loners_landing_edges, \
-    backwaters_edges, bayou_edges
+    backwaters_edges, bayou_edges, septemburg_edges
 from .areas import astral_orrery, bayou, bone_beach, coltrane_peak, eastern_hearth, kindlewood, loners_landing, mourners_mile, ossex, queensbury_crypt, radient_manor, sandfalls, septemburg, southern_outskirts, backwaters, western_wilds
 from .. import LocationData, RegionConnection, Transition
 
@@ -71,7 +71,7 @@ all_regions: set[str] = set.union(
     queensbury_crypt_edges.regions,
     # radient_manor.regions,
     sandfalls_edges.regions,
-    # septemburg.regions,
+    septemburg_edges.regions,
     southern_outskirts_edges.regions,
     backwaters_edges.regions,
     western_wilds_edges.regions,
@@ -91,7 +91,7 @@ all_internal_region_connections: ChainMap[str, RegionConnection] = ChainMap(
     queensbury_crypt_edges.connections,
     # radient_manor.connections,
     sandfalls_edges.connections,
-    # septemburg.connections,
+    septemburg_edges.connections,
     southern_outskirts_edges.connections,
     backwaters_edges.connections,
     western_wilds_edges.connections,
@@ -111,7 +111,7 @@ all_region_transitions: ChainMap[str, Transition] = ChainMap(
     queensbury_crypt_edges.transitions,
     # radient_manor.transitions,
     sandfalls_edges.transitions,
-    # septemburg.transitions,
+    septemburg_edges.transitions,
     southern_outskirts_edges.transitions,
     backwaters_edges.transitions,
     western_wilds_edges.transitions,

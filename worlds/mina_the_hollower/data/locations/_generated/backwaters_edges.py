@@ -84,7 +84,7 @@ connections: dict[str, RegionConnection] = {
 
 transitions: dict[str, Transition] = {
     'Backwaters Bayou Falls East East Transition': Transition('Backwaters Bayou Falls East', 'Backwaters Lower Swamp Bayou Entrance', DirectionType.EAST, TransitionType.SCREENS),
-    'Backwaters Bayou Falls West Area Transition': Transition('Backwaters Bayou Falls West', "Nox's Bayou Boat Station", DirectionType.WEST, TransitionType.AREA_SCREENS),
+    'Backwaters Bayou Falls West Area Transition': Transition('Backwaters Bayou Falls West', "Nox's Bayou Boat Station Path", DirectionType.WEST, TransitionType.AREA_SCREENS),
     'Backwaters Fishing Hole East Transition': Transition('Backwaters Fishing Hole', 'Backwaters Thalessian Way Lower', DirectionType.EAST, TransitionType.SCREENS),
     'Backwaters Fishing Hole West Transition': Transition('Backwaters Fishing Hole', 'Backwaters Lower Swamp Fishing', DirectionType.WEST, TransitionType.SCREENS),
     'Backwaters Lower Swamp Bayou Entrance Lucky Burrow': Transition('Backwaters Lower Swamp Bayou Entrance', "Backwaters Lucky's Lair", DirectionType.NORTH, TransitionType.BURROW, CanBurrow()),
@@ -96,6 +96,7 @@ transitions: dict[str, Transition] = {
     'Backwaters Lower Swamp Station South Area Transition': Transition('Backwaters Lower Swamp Station', "Loner's Landing Bay", DirectionType.SOUTH, TransitionType.AREA_SCREENS),
     'Backwaters Lower Swamp Station Train': Transition('Backwaters Lower Swamp Station', 'Ossex Train Caboose', DirectionType.OVERWORLD, TransitionType.DO_NOT_RANDOMIZE_ENTRANCE, Has("TrainPass") & Has("BayouTicket")),
     "Backwaters Lucky's Lair Burrow Exit": Transition("Backwaters Lucky's Lair", 'Backwaters Lower Swamp Bayou Entrance', DirectionType.SOUTH, TransitionType.BURROW, CanBurrow()),
+    "Backwaters Lucky's Lair Pipe": Transition("Backwaters Lucky's Lair", "Nox's Bayou Bog Pipe Room", DirectionType.OVERWORLD, TransitionType.DO_NOT_RANDOMIZE_ENTRANCE, CanBurrow()),
     'Backwaters Pinky Back Pond Board South Transition': Transition('Backwaters Pinky Back Pond Board', 'Backwaters Pinky Front Lawn West', DirectionType.SOUTH, TransitionType.SCREENS),
     'Backwaters Pinky Back Pond Lawn West Shop Entrance': Transition('Backwaters Pinky Back Pond Lawn', 'Backwaters Pinky Shop Back', DirectionType.WEST, TransitionType.SCREENS, Has("Pinky Back Kear")),
     'Backwaters Pinky Front Lawn East West Transition': Transition('Backwaters Pinky Front Lawn East', 'Backwaters Pinky Outside', DirectionType.WEST, TransitionType.SCREENS),
