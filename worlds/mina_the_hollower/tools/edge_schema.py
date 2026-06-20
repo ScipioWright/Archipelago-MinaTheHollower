@@ -37,9 +37,10 @@ MATCHABLE_DIRECTIONS = {
 RULE_ALLOWED_CALLS = {
     "Has", "True_", "CanReachLocation",
     "CanBurrow", "CanCarry", "CanClimb", "CanSwim", "CanBounce",
-    "HasVialsCount", "CanJumpOneTile", "CanJumpTiles", "HasReachingSideArm", "HasCompletedBoneGenerator",
-    "HasLadder", "HasAccessToTorch", "HasDoneColtraneGenerator, AnyThreeAstralPlatforms, CompletedAllGenerators",
-    "InFinale",
+    "HasVialsCount", "CanJumpTiles", "HasReachingSideArm", "HasFishingRod",
+    "HasRepairedSolemnGenerator", "HasRepairedSwampyGenerator", "HasRepairedWindyGenerator", "HasRepairedShorelineGenerator",
+    "HasRepairedFrozenGenerator", "HasRepairedStarryGenerator", "HasRepairedAllGenerators",
+    "HasLadder", "HasAccessToTorch", "AnyThreeAstralPlatforms","InFinale",
 }
 
 

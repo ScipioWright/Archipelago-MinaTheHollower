@@ -15,19 +15,43 @@ class HasCompletedOneSparkGenerator(Rule[MinaTheHollowerBase], game=MINA_THE_HOL
         # caching_enabled only needs to be passed in when your world inherits from CachedRuleBuilderWorld
         return True_[MinaTheHollowerBase]().resolve(world)
 
-def HasCompletedBoneGenerator():
-    return True_()
+def HasRepairedSolemnGenerator():
+    return Has("Repair Solemn Generator")
+def HasRepairedSwampyGenerator():
+    return Has("Repair Swampy Generator")
+def HasRepairedWindyGenerator():
+    return Has("Repair Windy Generator")
+def HasRepairedShorelineGenerator():
+    return Has("Repair Shoreline Generator")
+def HasRepairedFrozenGenerator():
+    return Has("Repair Frozen Generator")
+def HasRepairedStarryGenerator():
+    return Has("Repair Starry Generator")
+
 def AnyThreeAstralPlatforms():
-    return True_()
-def HasDoneColtraneGenerator():
-    return True_()
-def CompletedAllGenerators():
-    return True_()
+    green = Has("Green Astral Platforms")
+    red = Has("Red Astral Platforms")
+    blue = Has("Blue Astral Platforms")
+    yellow = Has("Yellow Astral Platforms")
+
+    return (
+        (green & red & blue) |
+        (green & red & yellow) |
+        (green & blue & yellow) |
+        (red & blue & yellow)
+    )
+
+def HasRepairedAllGenerators():
+    return HasRepairedSolemnGenerator() & HasRepairedSwampyGenerator() & HasRepairedWindyGenerator() & HasRepairedShorelineGenerator() & HasRepairedFrozenGenerator() & HasRepairedStarryGenerator()
+
+#depricated
 def InFinale():
     return True_()
 
+#figure out when screen rando exists
 def HasAccessToTorch():
     return True_()
 
+#figure out when screen rando exists
 def HasLadder():
     return Has("Pinky Kear") & Has("Pinky Back Kear") & (CanSwim() | CanJumpTiles(distance=3)) & CanCarry()

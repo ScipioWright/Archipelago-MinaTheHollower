@@ -7,11 +7,13 @@ from rule_builder.rules import Has, True_, CanReachLocation
 from ... import RegionConnection, Transition, DirectionType, TransitionType
 from ...rules.ability_rules import (
     CanBurrow, CanCarry, CanClimb, CanSwim, CanBounce,
-    HasVialsCount, CanJumpOneTile, CanJumpTiles, HasReachingSideArm,
+    HasVialsCount, CanJumpTiles, HasReachingSideArm, HasFishingRod, 
 )
 from ...rules.state_rules import (
-   HasLadder, HasCompletedBoneGenerator, HasAccessToTorch, HasDoneColtraneGenerator,
-   AnyThreeAstralPlatforms, CompletedAllGenerators, InFinale
+   HasLadder, HasRepairedShorelineGenerator, HasAccessToTorch,
+   AnyThreeAstralPlatforms, HasRepairedAllGenerators, InFinale,
+   HasRepairedSolemnGenerator, HasRepairedSwampyGenerator, HasRepairedWindyGenerator,
+   HasRepairedShorelineGenerator, HasRepairedFrozenGenerator, HasRepairedStarryGenerator,
 )
 
 
@@ -56,6 +58,7 @@ regions: set[str] = {
     'Bone Beach Pulsing Tract Moving Top',
     'Bone Beach Pulsing Tract Secret',
     'Bone Beach Secret Shoals',
+    'Bone Beach Shoreline Generator',
     'Bone Beach Stomach Mine Lower',
     'Bone Beach Stomach Mine Start',
     'Bone Beach Stomach Mine Upper',
@@ -66,7 +69,6 @@ regions: set[str] = {
     'Bone Beach Worms Back Chest',
     'Bone Beach Worms Back Conveyor',
     'Bone Beach Worms Back Fall',
-    'Bone Beach Worms Back Generator',
     'Bone Beach Worms Back Hide Tent',
     'Bone Beach Worms Back Left',
     'Bone Beach Worms Back Mining Ledge',
@@ -172,6 +174,9 @@ transitions: dict[str, Transition] = {
     'Bone Beach Pulsing Tract South Transition': Transition('Bone Beach Pulsing Tract', 'Bone Beach Dreadworms Maw Back', DirectionType.SOUTH, TransitionType.SCREENS),
     'Bone Beach Pulsing Tract West Transition': Transition('Bone Beach Pulsing Tract', 'Bone Beach Pulsing Tract Moving', DirectionType.WEST, TransitionType.SCREENS),
     'Bone Beach Secret Shoals Burrow North': Transition('Bone Beach Secret Shoals', 'Bone Beach Mining Camp', DirectionType.NORTH, TransitionType.BURROW, CanSwim()),
+    'Bone Beach Shoreline Generator East Top Transition': Transition('Bone Beach Shoreline Generator', 'Bone Beach Worms Back Rush Tail', DirectionType.EAST, TransitionType.SCREENS),
+    'Bone Beach Shoreline Generator East Transition': Transition('Bone Beach Shoreline Generator', 'Bone Beach Worms Back Rush Corner', DirectionType.EAST, TransitionType.SCREENS),
+    'Bone Beach Shoreline Generator West Transition': Transition('Bone Beach Shoreline Generator', 'Sandfalls Bone Junction', DirectionType.WEST, TransitionType.SCREENS),
     'Bone Beach Stomach Mine Lower Drop': Transition('Bone Beach Stomach Mine Lower', 'Bone Beach Gut Depths', DirectionType.OVERWORLD, TransitionType.DO_NOT_RANDOMIZE_ENTRANCE, CanBurrow() & CanBounce()),
     'Bone Beach Stomach Mine Lower Geyser Up': Transition('Bone Beach Stomach Mine Lower', 'Bone Beach Stomach Mine Upper', DirectionType.OVERWORLD, TransitionType.DO_NOT_RANDOMIZE_ENTRANCE, CanBurrow() & CanBounce()),
     'Bone Beach Stomach Mine Lower South Transition': Transition('Bone Beach Stomach Mine Lower', 'Bone Beach Stomach Mine Start', DirectionType.SOUTH, TransitionType.SCREENS),
@@ -193,9 +198,6 @@ transitions: dict[str, Transition] = {
     'Bone Beach Worms Back Conveyor South Transition': Transition('Bone Beach Worms Back Conveyor', 'Bone Beach Worms Back Overlook', DirectionType.SOUTH, TransitionType.SCREENS),
     'Bone Beach Worms Back Fall Pit': Transition('Bone Beach Worms Back Fall', 'Bone Beach Stomach Mine Start', DirectionType.OVERWORLD, TransitionType.DO_NOT_RANDOMIZE_ENTRANCE),
     'Bone Beach Worms Back Fall West Transition': Transition('Bone Beach Worms Back Fall', 'Bone Beach Worms Back Right', DirectionType.WEST, TransitionType.SCREENS),
-    'Bone Beach Worms Back Generator East Top Transition': Transition('Bone Beach Worms Back Generator', 'Bone Beach Worms Back Rush Tail', DirectionType.EAST, TransitionType.SCREENS),
-    'Bone Beach Worms Back Generator East Transition': Transition('Bone Beach Worms Back Generator', 'Bone Beach Worms Back Rush Corner', DirectionType.EAST, TransitionType.SCREENS),
-    'Bone Beach Worms Back Generator West Transition': Transition('Bone Beach Worms Back Generator', 'Sandfalls Bone Junction', DirectionType.WEST, TransitionType.SCREENS),
     'Bone Beach Worms Back Hide Tent Burrow South': Transition('Bone Beach Worms Back Hide Tent', 'Bone Beach Worms Back Camp', DirectionType.SOUTH, TransitionType.BURROW, CanBurrow()),
     'Bone Beach Worms Back Hide Tent Mirror': Transition('Bone Beach Worms Back Hide Tent', 'Astral Orrery Bone Beach Mirror', DirectionType.OVERWORLD, TransitionType.MIRRORS),
     'Bone Beach Worms Back Mining Ledge Burrow North': Transition('Bone Beach Worms Back Mining Ledge', 'Bone Beach Worms Back Camp', DirectionType.NORTH, TransitionType.BURROW, CanBurrow()),
@@ -206,8 +208,8 @@ transitions: dict[str, Transition] = {
     'Bone Beach Worms Back Overlook North Transition': Transition('Bone Beach Worms Back Overlook', 'Bone Beach Worms Back Conveyor', DirectionType.NORTH, TransitionType.SCREENS),
     'Bone Beach Worms Back Right East Transition': Transition('Bone Beach Worms Back Right', 'Bone Beach Worms Back Fall', DirectionType.EAST, TransitionType.SCREENS),
     'Bone Beach Worms Back Rush Corner South Transition': Transition('Bone Beach Worms Back Rush Corner', 'Bone Beach Worms Back Spine Smugglers', DirectionType.SOUTH, TransitionType.SCREENS),
-    'Bone Beach Worms Back Rush Corner West Transition': Transition('Bone Beach Worms Back Rush Corner', 'Bone Beach Worms Back Generator', DirectionType.WEST, TransitionType.SCREENS),
-    'Bone Beach Worms Back Rush Tail West Transition': Transition('Bone Beach Worms Back Rush Tail', 'Bone Beach Worms Back Generator', DirectionType.WEST, TransitionType.SCREENS),
+    'Bone Beach Worms Back Rush Corner West Transition': Transition('Bone Beach Worms Back Rush Corner', 'Bone Beach Shoreline Generator', DirectionType.WEST, TransitionType.SCREENS),
+    'Bone Beach Worms Back Rush Tail West Transition': Transition('Bone Beach Worms Back Rush Tail', 'Bone Beach Shoreline Generator', DirectionType.WEST, TransitionType.SCREENS),
     'Bone Beach Worms Back Spine Converyor Corner North Transition': Transition('Bone Beach Worms Back Spine Converyor Corner', 'Bone Beach Worms Back Spine Smugglers', DirectionType.NORTH, TransitionType.SCREENS),
     'Bone Beach Worms Back Spine East Transition': Transition('Bone Beach Worms Back Spine', 'Bone Beach Worms Back Neck', DirectionType.EAST, TransitionType.SCREENS),
     'Bone Beach Worms Back Spine Miner East Transition': Transition('Bone Beach Worms Back Spine Miner', 'Bone Beach Worms Back Spine', DirectionType.EAST, TransitionType.SCREENS),

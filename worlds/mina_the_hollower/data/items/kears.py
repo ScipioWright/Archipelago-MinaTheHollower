@@ -1,8 +1,19 @@
 from BaseClasses import ItemClassification
-from .. import KeyItemData
+from .. import KeyItemData, ItemData
 from ...constants import OFFSET_KEAR_ITEMS
 
-kears: dict[str, KeyItemData] = {
+single_kear: dict[str, ItemData] = {
+    "Kear": ItemData(63, ItemClassification.progression, 50)
+}
+area_kears: dict[str, ItemData] = {
+    "Ossex Kears": ItemData(OFFSET_KEAR_ITEMS + 50, ItemClassification.progression),
+    "Western Wilds Kears": ItemData(OFFSET_KEAR_ITEMS + 51, ItemClassification.progression),
+    "Southern Outskirts Kears": ItemData(OFFSET_KEAR_ITEMS + 52, ItemClassification.progression),
+    "Eastern Hearth Kears": ItemData(OFFSET_KEAR_ITEMS + 53, ItemClassification.progression)
+}
+
+
+unique_kears: dict[str, KeyItemData] = {
     "Ossex Highstreet Balcony Kear": KeyItemData(OFFSET_KEAR_ITEMS, 151, ItemClassification.progression),
     "Ossex High Street SE Garden Kear": KeyItemData(OFFSET_KEAR_ITEMS+1, 152, ItemClassification.progression),
     "Southern Outskirts Rooftop Kear": KeyItemData(OFFSET_KEAR_ITEMS+2, 260,ItemClassification.progression),
@@ -38,7 +49,6 @@ kears: dict[str, KeyItemData] = {
     "Kindlewood Train Tunnel Kear": KeyItemData(OFFSET_KEAR_ITEMS+26, 337, ItemClassification.progression),
     "Coltrane Rail Yard Kear": KeyItemData(OFFSET_KEAR_ITEMS+27, 115, ItemClassification.progression),
     "Astral Orrery Stellarium Kear": KeyItemData(OFFSET_KEAR_ITEMS+28, 127, ItemClassification.progression),
-
 }
 
 

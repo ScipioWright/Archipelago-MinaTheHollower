@@ -91,12 +91,6 @@ class ItemData(NamedTuple):
     classification: ItemClassification
     amount: int = 1
 
-class MovementItemData(NamedTuple):
-    item_id: int
-    distance: int
-    classification: ItemClassification
-    amount: int = 1
-
 class KeyItemData(NamedTuple):
     item_id: int
     key_id: int
@@ -121,4 +115,4 @@ class LocationData(NamedTuple):
     rule: CollectionRule | Rule[MinaTheHollowerBase] = True_()
     progress_type: LocationProgressType = LocationProgressType.DEFAULT
 
-AnyItemData: type = Union[ItemData, MovementItemData, KeyItemData]
+AnyItemData: type = Union[ItemData, KeyItemData]

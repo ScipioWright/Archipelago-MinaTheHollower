@@ -21,15 +21,16 @@ class NumberOfGenerators(Range):
     range_end = 6
     default = 6
 
-class EssexStart(Toggle):
+class OssexStart(Toggle):
     """
-    Start In Essex
+    Start In Ossex
     """
-    display_name = "Essex Start"
+    display_name = "Ossex Start"
 
 class AbilityRando(Toggle):
     """
     Randomize abilities. You will always start in Ossex
+    NOT IMPLEMENTED. WILL BE SET TO FALSE.
     """
     display_name = "Abilty Rando"
 
@@ -44,18 +45,26 @@ class RandomizeEntrances(OptionSet):
     """
     display_name = "Entrance Randomization"
     valid_keys = []
+
     # valid_keys = ["Doors", "Stairs", "Area Transitions", "Screen Transitions"]
 
 class ExcludedAreas(OptionSet):
     """
-    Each Region you add to this list will not have any location in them have any items. If it includes a Spark Generator Area, that generator will be marked complete
+    Each Region you add to this list will not have any location in them have any items. That generator will be marked complete
 
-    Valid Area Names
-    - **Mourner's Mile** -
-    - **Queensbury Crypt** -
+    Example value: ["Astral Orrery", "Queensbury Crypt"]
+
+    Valid Area Names. Copy "NAME" into the brackets [] below. Seperate all names by Commas ,
+    - **"Queensbury Crypt"** -
+    - **"Nox's Bayou"** -
+    - **"Bone Beach"** -
+    - **"Queensbury Crypt"** -
+    - **"Coltrane Peak"** -
+    - **"Astral Orrery"** -
     """
     display_name = "Excluded Areas"
-    valid_keys = ["Astral Orrery", "Queensbury Crypt", "Coltrane Peak", "Septemburg", "Bone Beach", "Nox's Bayou", "Queensbury"]
+    default = []
+    valid_keys = ["Astral Orrery", "Queensbury Crypt", "Coltrane Peak", "Septemburg", "Bone Beach", "Nox's Bayou"]
 
 class KearRandomization(Choice):
     """
@@ -79,11 +88,11 @@ class ShuffledSidearms(Toggle):
 mina_the_hollower_option_groups= [
     OptionGroup("AP Options", [
         Goal,
-        EssexStart,
+        OssexStart,
         KearRandomization,
         ExcludedAreas,
         # RandomizeEntrances,
-        # AbilityRando,
+        AbilityRando,
         DeathLink,
     ]),
 ]
@@ -91,11 +100,11 @@ mina_the_hollower_option_groups= [
 @dataclass
 class MinaTheHollowerOptions(PerGameCommonOptions):
     goal: Goal
-    essex_start: EssexStart
+    ossex_start: OssexStart
     kear_rando: KearRandomization
     excluded_areas : ExcludedAreas
     # entrance_rando: RandomizeEntrances
-    # ability_rando: AbilityRando
+    ability_rando: AbilityRando
     death_link: DeathLink
     # shuffled_sidearms: ShuffledSidearms
     # shuffle_enemy_level: ShuffleEnemyLevel

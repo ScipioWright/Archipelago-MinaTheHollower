@@ -7,11 +7,13 @@ from rule_builder.rules import Has, True_, CanReachLocation
 from ... import RegionConnection, Transition, DirectionType, TransitionType
 from ...rules.ability_rules import (
     CanBurrow, CanCarry, CanClimb, CanSwim, CanBounce,
-    HasVialsCount, CanJumpOneTile, CanJumpTiles, HasReachingSideArm,
+    HasVialsCount, CanJumpTiles, HasReachingSideArm, HasFishingRod, 
 )
 from ...rules.state_rules import (
-   HasLadder, HasCompletedBoneGenerator, HasAccessToTorch, HasDoneColtraneGenerator,
-   AnyThreeAstralPlatforms, CompletedAllGenerators, InFinale
+   HasLadder, HasRepairedShorelineGenerator, HasAccessToTorch,
+   AnyThreeAstralPlatforms, HasRepairedAllGenerators, InFinale,
+   HasRepairedSolemnGenerator, HasRepairedSwampyGenerator, HasRepairedWindyGenerator,
+   HasRepairedShorelineGenerator, HasRepairedFrozenGenerator, HasRepairedStarryGenerator,
 )
 
 

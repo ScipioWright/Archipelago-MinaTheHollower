@@ -7,11 +7,13 @@ from rule_builder.rules import Has, True_, CanReachLocation
 from ... import RegionConnection, Transition, DirectionType, TransitionType
 from ...rules.ability_rules import (
     CanBurrow, CanCarry, CanClimb, CanSwim, CanBounce,
-    HasVialsCount, CanJumpOneTile, CanJumpTiles, HasReachingSideArm,
+    HasVialsCount, CanJumpTiles, HasReachingSideArm, HasFishingRod, 
 )
 from ...rules.state_rules import (
-   HasLadder, HasCompletedBoneGenerator, HasAccessToTorch, HasDoneColtraneGenerator,
-   AnyThreeAstralPlatforms, CompletedAllGenerators, InFinale
+   HasLadder, HasRepairedShorelineGenerator, HasAccessToTorch,
+   AnyThreeAstralPlatforms, HasRepairedAllGenerators, InFinale,
+   HasRepairedSolemnGenerator, HasRepairedSwampyGenerator, HasRepairedWindyGenerator,
+   HasRepairedShorelineGenerator, HasRepairedFrozenGenerator, HasRepairedStarryGenerator,
 )
 
 
@@ -82,7 +84,7 @@ transitions: dict[str, Transition] = {
     "Mourner's Mile Knight's Gate Main North Transition": Transition("Mourner's Mile Knight's Gate Main", "Mourner's Mile Knight's Guard Main", DirectionType.NORTH, TransitionType.SCREENS),
     "Mourner's Mile Knight's Gate Main South Burrow Transition": Transition("Mourner's Mile Knight's Gate Main", "Mourner's Mile Knight's Rest Chest", DirectionType.SOUTH, TransitionType.BURROW, CanBurrow()),
     "Mourner's Mile Knight's Gate Main South Transition": Transition("Mourner's Mile Knight's Gate Main", "Mourner's Mile Knight's Rest Main", DirectionType.SOUTH, TransitionType.SCREENS),
-    "Mourner's Mile Knight's Guard Bike Mina's Grave Door": Transition("Mourner's Mile Knight's Guard Bike", "Mourner's Mile Mina's Grave", DirectionType.NORTH, TransitionType.DOORS, CanJumpTiles(distance=2) & Has("SparkUpgrade", count=3)),
+    "Mourner's Mile Knight's Guard Bike Mina's Grave Door": Transition("Mourner's Mile Knight's Guard Bike", "Mourner's Mile Mina's Grave", DirectionType.NORTH, TransitionType.DOORS, CanJumpTiles(distance=2) & Has("Spark Container", count=3)),
     "Mourner's Mile Knight's Guard Generator Outside Door": Transition("Mourner's Mile Knight's Guard Generator", "Mourner's Mile Tower Tunnel Main", DirectionType.NORTH, TransitionType.STAIRS),
     "Mourner's Mile Knight's Guard Ledge East Transition": Transition("Mourner's Mile Knight's Guard Ledge", "Mourner's Mile Graveyard ledge", DirectionType.EAST, TransitionType.SCREENS),
     "Mourner's Mile Knight's Guard Ledge West Burrow": Transition("Mourner's Mile Knight's Guard Ledge", "Mourner's Mile Tower Tunnel Dark", DirectionType.WEST, TransitionType.BURROW, CanBurrow()),

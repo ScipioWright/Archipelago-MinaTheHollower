@@ -7,11 +7,13 @@ from rule_builder.rules import Has, True_, CanReachLocation
 from ... import RegionConnection, Transition, DirectionType, TransitionType
 from ...rules.ability_rules import (
     CanBurrow, CanCarry, CanClimb, CanSwim, CanBounce,
-    HasVialsCount, CanJumpOneTile, CanJumpTiles, HasReachingSideArm,
+    HasVialsCount, CanJumpTiles, HasReachingSideArm, HasFishingRod, 
 )
 from ...rules.state_rules import (
-   HasLadder, HasCompletedBoneGenerator, HasAccessToTorch, HasDoneColtraneGenerator,
-   AnyThreeAstralPlatforms, CompletedAllGenerators, InFinale
+   HasLadder, HasRepairedShorelineGenerator, HasAccessToTorch,
+   AnyThreeAstralPlatforms, HasRepairedAllGenerators, InFinale,
+   HasRepairedSolemnGenerator, HasRepairedSwampyGenerator, HasRepairedWindyGenerator,
+   HasRepairedShorelineGenerator, HasRepairedFrozenGenerator, HasRepairedStarryGenerator,
 )
 
 
@@ -66,7 +68,7 @@ connections: dict[str, RegionConnection] = {
     'Backwaters Pinky Front Lawn East_Backwaters Pinky Front Lawn West': RegionConnection('Backwaters Pinky Front Lawn East', 'Backwaters Pinky Front Lawn West', CanBurrow()),
     'Backwaters Pinky Front Lawn West_Backwaters Pinky Front Lawn East': RegionConnection('Backwaters Pinky Front Lawn West', 'Backwaters Pinky Front Lawn East', CanBurrow()),
     'Backwaters Pinky Shop Back_Backwaters Pinky Shop': RegionConnection('Backwaters Pinky Shop Back', 'Backwaters Pinky Shop'),
-    'Backwaters Thalessian Way Lower_Backwaters Thalessian Way Upper': RegionConnection('Backwaters Thalessian Way Lower', 'Backwaters Thalessian Way Upper', Has("FishingRod") & HasReachingSideArm()),
+    'Backwaters Thalessian Way Lower_Backwaters Thalessian Way Upper': RegionConnection('Backwaters Thalessian Way Lower', 'Backwaters Thalessian Way Upper', HasFishingRod() & HasReachingSideArm()),
     'Backwaters Thalessian Way Upper_Backwaters Thalessian Way Lower': RegionConnection('Backwaters Thalessian Way Upper', 'Backwaters Thalessian Way Lower'),
     'Backwaters Upper Lantern Pad_Backwaters Upper Swamp East': RegionConnection('Backwaters Upper Lantern Pad', 'Backwaters Upper Swamp East', CanJumpTiles(distance=3) | CanSwim()),
     'Backwaters Upper Lantern Pad_Backwaters Upper Swamp Entrance Exit': RegionConnection('Backwaters Upper Lantern Pad', 'Backwaters Upper Swamp Entrance Exit', CanBurrow()),
@@ -111,7 +113,7 @@ transitions: dict[str, Transition] = {
     'Backwaters Thalessian Way Lower West Transition': Transition('Backwaters Thalessian Way Lower', 'Backwaters Fishing Hole', DirectionType.WEST, TransitionType.SCREENS),
     'Backwaters Thalessian Way Upper East Transition': Transition('Backwaters Thalessian Way Upper', 'Backwaters Thalessian Lillies', DirectionType.EAST, TransitionType.SCREENS),
     'Backwaters Upper Lantern Cave_Backwaters Upper Lantern Pad': Transition('Backwaters Upper Lantern Cave', 'Backwaters Upper Lantern Pad', DirectionType.SOUTH, TransitionType.DOORS),
-    'Backwaters Upper Lantern Pad_Backwaters Upper Lantern Cave': Transition('Backwaters Upper Lantern Pad', 'Backwaters Upper Lantern Cave', DirectionType.NORTH, TransitionType.DOORS, Has("SparkUpgrade", count=2) & HasLadder()),
+    'Backwaters Upper Lantern Pad_Backwaters Upper Lantern Cave': Transition('Backwaters Upper Lantern Pad', 'Backwaters Upper Lantern Cave', DirectionType.NORTH, TransitionType.DOORS, Has("Spark Container", count=2) & HasLadder()),
     'Backwaters Upper Swamp Back East Transition': Transition('Backwaters Upper Swamp Back', 'Backwaters Upper Swamp Secret Room', DirectionType.EAST, TransitionType.SCREENS),
     'Backwaters Upper Swamp Entrance North Area Transition': Transition('Backwaters Upper Swamp Entrance', 'Western Wilds Western Pond', DirectionType.NORTH, TransitionType.AREA_SCREENS),
     'Backwaters Upper Swamp Lily East Locked Transition': Transition('Backwaters Upper Swamp Lily', 'Backwaters Pinky Outside', DirectionType.EAST, TransitionType.SCREENS, Has("Pinky Kear")),

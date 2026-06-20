@@ -7,11 +7,13 @@ from rule_builder.rules import Has, True_, CanReachLocation
 from ... import RegionConnection, Transition, DirectionType, TransitionType
 from ...rules.ability_rules import (
     CanBurrow, CanCarry, CanClimb, CanSwim, CanBounce,
-    HasVialsCount, CanJumpOneTile, CanJumpTiles, HasReachingSideArm,
+    HasVialsCount, CanJumpTiles, HasReachingSideArm, HasFishingRod, 
 )
 from ...rules.state_rules import (
-   HasLadder, HasCompletedBoneGenerator, HasAccessToTorch, HasDoneColtraneGenerator,
-   AnyThreeAstralPlatforms, CompletedAllGenerators, InFinale
+   HasLadder, HasRepairedShorelineGenerator, HasAccessToTorch,
+   AnyThreeAstralPlatforms, HasRepairedAllGenerators, InFinale,
+   HasRepairedSolemnGenerator, HasRepairedSwampyGenerator, HasRepairedWindyGenerator,
+   HasRepairedShorelineGenerator, HasRepairedFrozenGenerator, HasRepairedStarryGenerator,
 )
 
 
@@ -131,7 +133,7 @@ transitions: dict[str, Transition] = {
     'Ossex Bowery Upper Tall Residence Upper Stairs': Transition('Ossex Bowery Upper', 'Ossex Bowery Tall Residence Upper Top Entrance', DirectionType.NORTH, TransitionType.STAIRS),
     'Ossex City Center Bike Geyser Drop': Transition('Ossex City Center Bike', 'Ossex Gutterways', DirectionType.OVERWORLD, TransitionType.GEYSER_DOWN, CanBurrow()),
     'Ossex City Center Bike Residence Burrow': Transition('Ossex City Center Bike', 'Ossex Bike Residence', DirectionType.SOUTH, TransitionType.BURROW, CanBurrow()),
-    'Ossex City Center Main Bike Residence Door': Transition('Ossex City Center Main', 'Ossex Bike Residence', DirectionType.NORTH, TransitionType.DOORS, Has("SparkUpgrade", count=2)),
+    'Ossex City Center Main Bike Residence Door': Transition('Ossex City Center Main', 'Ossex Bike Residence', DirectionType.NORTH, TransitionType.DOORS, Has("Spark Container", count=2)),
     "Ossex City Center Main Couple's Quarter Door": Transition('Ossex City Center Main', "Ossex Couple's Quarter", DirectionType.NORTH, TransitionType.DOORS),
     'Ossex City Center Main Emporium Door': Transition('Ossex City Center Main', 'Ossex Emporium', DirectionType.NORTH, TransitionType.DOORS),
     'Ossex City Center Main Guild Hall Door': Transition('Ossex City Center Main', 'Ossex Guild Hall', DirectionType.NORTH, TransitionType.DOORS),
@@ -168,9 +170,9 @@ transitions: dict[str, Transition] = {
     'Ossex Gutterways Geyser Up': Transition('Ossex Gutterways', 'Ossex City Center Bike', DirectionType.NORTH, TransitionType.GEYSER_UP, CanBurrow()),
     'Ossex High Street Balcony North Ossex Balcony East': Transition('Ossex High Street Balcony', 'Ossex Balcony East', DirectionType.NORTH, TransitionType.SCREENS),
     'Ossex High Street Main  Residence Door': Transition('Ossex High Street Main', 'Ossex High Street Residence', DirectionType.NORTH, TransitionType.DOORS),
-    'Ossex High Street Main Atelier Door': Transition('Ossex High Street Main', 'Ossex Atelier', DirectionType.NORTH, TransitionType.DOORS, Has("SparkUpgrade", count=2)),
+    'Ossex High Street Main Atelier Door': Transition('Ossex High Street Main', 'Ossex Atelier', DirectionType.NORTH, TransitionType.DOORS, Has("Spark Container", count=2)),
     'Ossex High Street Main East Area Transition': Transition('Ossex High Street Main', 'Eastern Hearth Grassland', DirectionType.EAST, TransitionType.AREA_SCREENS),
-    'Ossex High Street Main Strategy Center Door': Transition('Ossex High Street Main', 'Ossex Strategy Center', DirectionType.NORTH, TransitionType.DOORS, Has("SparkUpgrade", count=1)),
+    'Ossex High Street Main Strategy Center Door': Transition('Ossex High Street Main', 'Ossex Strategy Center', DirectionType.NORTH, TransitionType.DOORS, Has("Spark Container", count=1)),
     'Ossex High Street Residence Balcony East Stairs': Transition('Ossex High Street Residence Balcony East', 'Ossex High Street Residence Upper Puzzle', DirectionType.NORTH, TransitionType.STAIRS),
     'Ossex High Street Residence Balcony East West Transition': Transition('Ossex High Street Residence Balcony East', 'Ossex High Street Residence Balcony West', DirectionType.WEST, TransitionType.SCREENS),
     'Ossex High Street Residence Balcony West Drop': Transition('Ossex High Street Residence Balcony West', 'Ossex City Center Main', DirectionType.OVERWORLD, TransitionType.DO_NOT_RANDOMIZE_ENTRANCE, CanBurrow()),

@@ -50,13 +50,7 @@ all_locations: ChainMap[str, LocationData] = ChainMap(
     all_bosses
 )
 
-temp_regions: set[str] = {
-    "Radiant Manor Foyer",
-    "Astral Orrey Mirror's End"
-}
-
 all_regions: set[str] = set.union(
-    temp_regions,
     astral_orrery_edges.regions,
     bayou_edges.regions,
     bone_beach_edges.regions,

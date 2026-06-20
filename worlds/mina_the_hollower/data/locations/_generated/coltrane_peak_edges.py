@@ -7,11 +7,13 @@ from rule_builder.rules import Has, True_, CanReachLocation
 from ... import RegionConnection, Transition, DirectionType, TransitionType
 from ...rules.ability_rules import (
     CanBurrow, CanCarry, CanClimb, CanSwim, CanBounce,
-    HasVialsCount, CanJumpOneTile, CanJumpTiles, HasReachingSideArm,
+    HasVialsCount, CanJumpTiles, HasReachingSideArm, HasFishingRod, 
 )
 from ...rules.state_rules import (
-   HasLadder, HasCompletedBoneGenerator, HasAccessToTorch, HasDoneColtraneGenerator,
-   AnyThreeAstralPlatforms, CompletedAllGenerators, InFinale
+   HasLadder, HasRepairedShorelineGenerator, HasAccessToTorch,
+   AnyThreeAstralPlatforms, HasRepairedAllGenerators, InFinale,
+   HasRepairedSolemnGenerator, HasRepairedSwampyGenerator, HasRepairedWindyGenerator,
+   HasRepairedShorelineGenerator, HasRepairedFrozenGenerator, HasRepairedStarryGenerator,
 )
 
 
@@ -200,9 +202,9 @@ transitions: dict[str, Transition] = {
     'Coltrane Peak Spiral Wolf Stairs North Transition': Transition('Coltrane Peak Spiral Wolf Stairs', 'Coltrane Peak Spiral Summit Climb', DirectionType.NORTH, TransitionType.SCREENS),
     'Coltrane Peak Station Do_Not_Randomize_Entrance': Transition('Coltrane Peak Station', 'Ossex Train Caboose', DirectionType.OVERWORLD, TransitionType.DO_NOT_RANDOMIZE_ENTRANCE, Has("TrainPass") & Has("FrozenTrainyardTicket")),
     'Coltrane Peak Station East Transition': Transition('Coltrane Peak Station', 'Coltrane Peak Gorge Engine', DirectionType.EAST, TransitionType.SCREENS),
-    'Coltrane Peak Station East Transition': Transition('Coltrane Peak Station', 'Coltrane Peak Station Tracks', DirectionType.WEST, TransitionType.SCREENS, HasDoneColtraneGenerator()),
+    'Coltrane Peak Station East Transition': Transition('Coltrane Peak Station', 'Coltrane Peak Station Tracks', DirectionType.WEST, TransitionType.SCREENS, HasRepairedFrozenGenerator()),
     'Coltrane Peak Station South Area Transition': Transition('Coltrane Peak Station', 'Coltrane Peak Frozen Pass Top', DirectionType.SOUTH, TransitionType.AREA_SCREENS),
-    'Coltrane Peak Station Tracks West Transition': Transition('Coltrane Peak Station Tracks', 'Coltrane Peak Station', DirectionType.EAST, TransitionType.SCREENS, HasDoneColtraneGenerator()),
+    'Coltrane Peak Station Tracks West Transition': Transition('Coltrane Peak Station Tracks', 'Coltrane Peak Station', DirectionType.EAST, TransitionType.SCREENS, HasRepairedFrozenGenerator()),
     'Coltrane Peak Thorne Arena South Exit': Transition('Coltrane Peak Thorne Arena', 'Coltrane Peak Thorne Bridge', DirectionType.OVERWORLD, TransitionType.DO_NOT_RANDOMIZE_ENTRANCE),
     'Coltrane Peak Thorne Bridge South Drop': Transition('Coltrane Peak Thorne Bridge', 'Coltrane Peak Station', DirectionType.OVERWORLD, TransitionType.DO_NOT_RANDOMIZE_ENTRANCE),
     'Coltrane Peak Train Tracks East Transition': Transition('Coltrane Peak Train Tracks', 'Coltrane Peak Train Tracks End', DirectionType.EAST, TransitionType.SCREENS),

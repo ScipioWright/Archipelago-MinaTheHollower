@@ -23,6 +23,6 @@ collectable_locations: dict[str, LocationData] = {
 boss_locations: dict[str, LocationData] = {
     "SF Miner's Den Major Miner": LocationData(None, "Sandfalls Miners Den"),
     # needs 3 vials && burrow && (spike spurs || carry/throw),
-    "SF Shoreline Generator Activated": LocationData(None, "Bone Beach Worms Back Generator"),  # needs burrow,
+    "SF Shoreline Generator Activated": LocationData(None, "Bone Beach Shoreline Generator"),  # needs burrow,
 }
 

@@ -26,11 +26,13 @@ IMPORTS = (
     "from ... import RegionConnection, Transition, DirectionType, TransitionType\n"
     "from ...rules.ability_rules import (\n"
     "    CanBurrow, CanCarry, CanClimb, CanSwim, CanBounce,\n"
-    "    HasVialsCount, CanJumpOneTile, CanJumpTiles, HasReachingSideArm,\n"
+    "    HasVialsCount, CanJumpTiles, HasReachingSideArm, HasFishingRod, \n"
     ")\n"
     "from ...rules.state_rules import (\n"
-    "   HasLadder, HasCompletedBoneGenerator, HasAccessToTorch, HasDoneColtraneGenerator,\n"
-    "   AnyThreeAstralPlatforms, CompletedAllGenerators, InFinale\n"
+    "   HasLadder, HasRepairedShorelineGenerator, HasAccessToTorch,\n"
+    "   AnyThreeAstralPlatforms, HasRepairedAllGenerators, InFinale,\n"
+    "   HasRepairedSolemnGenerator, HasRepairedSwampyGenerator, HasRepairedWindyGenerator,\n"
+    "   HasRepairedShorelineGenerator, HasRepairedFrozenGenerator, HasRepairedStarryGenerator,\n"
     ")\n"
 )
 

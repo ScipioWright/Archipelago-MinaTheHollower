@@ -7,11 +7,13 @@ from rule_builder.rules import Has, True_, CanReachLocation
 from ... import RegionConnection, Transition, DirectionType, TransitionType
 from ...rules.ability_rules import (
     CanBurrow, CanCarry, CanClimb, CanSwim, CanBounce,
-    HasVialsCount, CanJumpOneTile, CanJumpTiles, HasReachingSideArm,
+    HasVialsCount, CanJumpTiles, HasReachingSideArm, HasFishingRod, 
 )
 from ...rules.state_rules import (
-   HasLadder, HasCompletedBoneGenerator, HasAccessToTorch, HasDoneColtraneGenerator,
-   AnyThreeAstralPlatforms, CompletedAllGenerators, InFinale
+   HasLadder, HasRepairedShorelineGenerator, HasAccessToTorch,
+   AnyThreeAstralPlatforms, HasRepairedAllGenerators, InFinale,
+   HasRepairedSolemnGenerator, HasRepairedSwampyGenerator, HasRepairedWindyGenerator,
+   HasRepairedShorelineGenerator, HasRepairedFrozenGenerator, HasRepairedStarryGenerator,
 )
 
 
@@ -199,7 +201,7 @@ transitions: dict[str, Transition] = {
     'Septemburg Wastewater Canal Boxes North Transition': Transition('Septemburg Wastewater Canal Boxes', 'Septemburg Wastewater Canal Hog Secret', DirectionType.NORTH, TransitionType.SCREENS),
     'Septemburg Wastewater Canal Boxes Pipes South Transition': Transition('Septemburg Wastewater Canal Boxes Pipes', 'Septemburg Wastewater Canal Well Rope', DirectionType.SOUTH, TransitionType.SCREENS),
     'Septemburg Wastewater Canal Hog North Transition': Transition('Septemburg Wastewater Canal Hog', 'Septemburg Wastewater Canal Pumps Bottom', DirectionType.NORTH, TransitionType.SCREENS),
-    'Septemburg Wastewater Canal Hog Secret Doors': Transition('Septemburg Wastewater Canal Hog Secret', 'Septemburg Wastewater Luxy Pipe', DirectionType.NORTH, TransitionType.DOORS, Has("SparkUpgrade", count=2)),
+    'Septemburg Wastewater Canal Hog Secret Doors': Transition('Septemburg Wastewater Canal Hog Secret', 'Septemburg Wastewater Luxy Pipe', DirectionType.NORTH, TransitionType.DOORS, Has("Spark Container", count=2)),
     'Septemburg Wastewater Canal Hog Secret South Transition': Transition('Septemburg Wastewater Canal Hog Secret', 'Septemburg Wastewater Canal Boxes', DirectionType.SOUTH, TransitionType.SCREENS),
     'Septemburg Wastewater Canal Pipe South Transition': Transition('Septemburg Wastewater Canal Pipe', 'Septemburg Wastewater Canal Pumps Top', DirectionType.SOUTH, TransitionType.SCREENS),
     'Septemburg Wastewater Canal Pipe Stairs': Transition('Septemburg Wastewater Canal Pipe', 'Septemburg Windy Pipe', DirectionType.NORTH, TransitionType.STAIRS),
