@@ -10,7 +10,8 @@ from ...rules.ability_rules import (
     HasVialsCount, CanJumpOneTile, CanJumpTiles, HasReachingSideArm,
 )
 from ...rules.state_rules import (
-   HasLadder, HasCompletedBoneGenerator, 
+   HasLadder, HasCompletedBoneGenerator, HasAccessToTorch, HasDoneColtraneGenerator,
+   AnyThreeAstralPlatforms, CompletedAllGenerators, InFinale
 )
 
 
@@ -31,6 +32,10 @@ transitions: dict[str, Transition] = {
     'Bayou Stop': Transition('Ossex Train Interior', 'Backwaters Lower Swamp Station', DirectionType.OVERWORLD, TransitionType.DO_NOT_RANDOMIZE_ENTRANCE, Has("BayouTicket")),
     'Bayou Stop 2': Transition('Ossex Train Cab', 'Ossex Station', DirectionType.OVERWORLD, TransitionType.DO_NOT_RANDOMIZE_ENTRANCE, Has("HUBTicket")),
     'Bayou Stop 2': Transition('Ossex Train Cab', 'Backwaters Lower Swamp Station', DirectionType.OVERWORLD, TransitionType.DO_NOT_RANDOMIZE_ENTRANCE, Has("BayouTicket")),
+    'Coltrane Peak Stop': Transition('Ossex Train Interior', 'Coltrane Peak Thorne Arena', DirectionType.OVERWORLD, TransitionType.DO_NOT_RANDOMIZE_ENTRANCE, Has("FrozenTrainyardTicket")),
+    'Coltrane Peak Stop 2': Transition('Ossex Train Cab', 'Coltrane Peak Thorne Arena', DirectionType.OVERWORLD, TransitionType.DO_NOT_RANDOMIZE_ENTRANCE, Has("FrozenTrainyardTicket")),
+    'Kindlewood Stop': Transition('Ossex Train Interior', 'Kindlewood Farm Crossing', DirectionType.OVERWORLD, TransitionType.DO_NOT_RANDOMIZE_ENTRANCE, Has("SeptemburgTicket")),
+    'Kindlewood Stop 2': Transition('Ossex Train Cab', 'Kindlewood Farm Crossing', DirectionType.OVERWORLD, TransitionType.DO_NOT_RANDOMIZE_ENTRANCE, Has("SeptemburgTicket")),
     'Ossex Stop': Transition('Ossex Train Interior', 'Ossex Station', DirectionType.OVERWORLD, TransitionType.DO_NOT_RANDOMIZE_ENTRANCE, Has("HUBTicket")),
     'Ossex Train Cab Left Exit': Transition('Ossex Train Cab', 'Ossex Train Coupling', DirectionType.OVERWORLD, TransitionType.DO_NOT_RANDOMIZE_ENTRANCE),
     'Ossex Train Caboose East Transition': Transition('Ossex Train Caboose', 'Ossex Train Interior', DirectionType.OVERWORLD, TransitionType.DO_NOT_RANDOMIZE_ENTRANCE),

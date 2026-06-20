@@ -9,8 +9,8 @@ kears: dict[str, KeyItemData] = {
     "Southern Outskirts Cave Network Kear": KeyItemData(OFFSET_KEAR_ITEMS+3, 262,ItemClassification.progression),
     "Western Wilds Balcony Kear": KeyItemData(OFFSET_KEAR_ITEMS+4, 246,ItemClassification.progression),
     "Western Wilds Foundry Kear": KeyItemData(OFFSET_KEAR_ITEMS+5, 247,ItemClassification.progression),
-    "Astral Orrey Mirror Room Right Side": KeyItemData(OFFSET_KEAR_ITEMS+5, 277,ItemClassification.progression),
-    "Astral Orrey Mirror Room Left Side": KeyItemData(OFFSET_KEAR_ITEMS+6, 278,ItemClassification.progression),
+    "Astral Orrey Mirror Room Right Side Kear": KeyItemData(OFFSET_KEAR_ITEMS+5, 277,ItemClassification.progression),
+    "Astral Orrey Mirror Room Left Side Kear": KeyItemData(OFFSET_KEAR_ITEMS+6, 278,ItemClassification.progression),
     "Choppe Shoppe Kear": KeyItemData(OFFSET_KEAR_ITEMS+7, 225,ItemClassification.progression),
     "Eastern Hearth Mountain Path": KeyItemData(OFFSET_KEAR_ITEMS+8, 222,ItemClassification.progression),
     "Eastern Hearth Bucklers Bluff Kear": KeyItemData(OFFSET_KEAR_ITEMS+9, 224,ItemClassification.progression),
@@ -32,6 +32,12 @@ kears: dict[str, KeyItemData] = {
     "Sandfall Cave Kear": KeyItemData(OFFSET_KEAR_ITEMS+22, 320, ItemClassification.progression),
     "Sandfalls Payload Passage Bottom kear": KeyItemData(OFFSET_KEAR_ITEMS+23, 318, ItemClassification.progression),
     "Bone Beach Mining Camp Cave Kear": KeyItemData(OFFSET_KEAR_ITEMS+24, 69, ItemClassification.progression),
+    "Kindlewood Hollowers Path Trinket Kear": KeyItemData(OFFSET_KEAR_ITEMS+25, 344, ItemClassification.progression),
+    "Septemburg Crow Town Tunnel Kear": KeyItemData(OFFSET_KEAR_ITEMS+26, 98, ItemClassification.progression),
+    "Kindlewood Tomato Patch Kear": KeyItemData(OFFSET_KEAR_ITEMS+25, 338, ItemClassification.progression),
+    "Kindlewood Train Tunnel Kear": KeyItemData(OFFSET_KEAR_ITEMS+26, 337, ItemClassification.progression),
+    "Coltrane Rail Yard Kear": KeyItemData(OFFSET_KEAR_ITEMS+27, 115, ItemClassification.progression),
+    "Astral Orrery Stellarium Kear": KeyItemData(OFFSET_KEAR_ITEMS+28, 127, ItemClassification.progression),
 
 }
 

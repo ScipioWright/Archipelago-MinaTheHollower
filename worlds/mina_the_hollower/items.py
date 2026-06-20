@@ -1,4 +1,4 @@
-from BaseClasses import Item
+from BaseClasses import Item, Location, ItemClassification
 from .data import ItemData, AnyItemData
 from .data.items import all_items, required_test_items
 from .constants import MINA_THE_HOLLOWER
@@ -36,3 +36,16 @@ def create_items(world):
     world.multiworld.itempool += world.itempool
     starting_items = {}
     return starting_items
+
+
+
+def create_events(world):
+
+
+    starry = Location(world.player, "Repair Starry Generator", None, world.get_region("Astral Orrery Starry Generator"))
+    frozen = Location(world.player, "Repair Frozen Generator", None, world.get_region("Coltrane Peak Frozen Generator"))
+    windy = Location(world.player, "Repair Windy Generator", None, world.get_region("Septemburg Windy Generator"))
+    Shoreline = Location(world.player, "Repair Shoreline Generator", None, world.get_region("Bone Beach Worms Back Generator"))
+    Swampy = Location(world.player, "Repair Swampy Generator", None, world.get_region("Nox's Bayou Swampy Generator"))
+    Solemn = Location(world.player, "Repair Solemn Generator", None, world.get_region("Queensbury Crypt Solemn Generator"))
+    starry.place_locked_item(MinaTheHollowerItem("Repair Starry Generator", ItemClassification.progression, None, world.player))

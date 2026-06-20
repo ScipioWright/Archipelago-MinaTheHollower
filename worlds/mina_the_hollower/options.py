@@ -10,10 +10,11 @@ class Goal(Choice):
     """
     display_name = "Goal"
     option_radientManorGenerator = 0
+    default = 0
 
 class NumberOfGenerators(Range):
     """
-    The number of generators required to go to radient manor
+    The number of generators required to go to radiant manor
     """
     display_name = "Generators Required"
     range_start = 1
@@ -54,34 +55,35 @@ class ExcludedAreas(OptionSet):
     - **Queensbury Crypt** -
     """
     display_name = "Excluded Areas"
-    valid_keys = []
-    # valid_keys = ["Mourner's Mile", "Queensbury Crypt"]
+    valid_keys = ["Astral Orrery", "Queensbury Crypt", "Coltrane Peak", "Septemburg", "Bone Beach", "Nox's Bayou", "Queensbury"]
 
 class KearRandomization(Choice):
     """
-    Vanilla: Universal Kears are in the multiworld. Every Kear Lock you open before receiving all universal Kears will be OUT OF LOGIC
+    Vanilla: Universal Kears are in the multiworld. Every Kear Lock you open before receiving every single Kear will be OUT OF LOGIC
     AP Items: Each Kear Lock is removed by a unique AP item
     Area AP Items: All Kear Locks in an area are removed by a single AP Item
     """
-    # option_vanilla = 0
+    option_vanilla = 0
     option_apItems = 1
     option_areaApItems = 2
     default = 1
 
-#TODO:implement this
-# class ShuffledSidearms(Toggle):
-#     """
-#     Sidearms are shuffled so each type always becomes the same other type
-#     """
-#     display_name = "Shuffled Sidearms"
+class ShuffledSidearms(Toggle):
+    """
+    Sidearms are shuffled so each type always becomes the same other type
+    """
+    display_name = "Shuffled Sidearms"
 
 
 
 mina_the_hollower_option_groups= [
     OptionGroup("AP Options", [
         Goal,
-        RandomizeEntrances,
-        AbilityRando,
+        EssexStart,
+        KearRandomization,
+        ExcludedAreas,
+        # RandomizeEntrances,
+        # AbilityRando,
         DeathLink,
     ]),
 ]
@@ -89,8 +91,11 @@ mina_the_hollower_option_groups= [
 @dataclass
 class MinaTheHollowerOptions(PerGameCommonOptions):
     goal: Goal
-    entrance_rando: RandomizeEntrances
-    ability_rando: AbilityRando
+    essex_start: EssexStart
+    kear_rando: KearRandomization
+    excluded_areas : ExcludedAreas
+    # entrance_rando: RandomizeEntrances
+    # ability_rando: AbilityRando
     death_link: DeathLink
     # shuffled_sidearms: ShuffledSidearms
     # shuffle_enemy_level: ShuffleEnemyLevel

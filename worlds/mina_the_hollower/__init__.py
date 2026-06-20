@@ -1,10 +1,14 @@
+import json
 from typing import ClassVar, Dict, Any, Optional
 
-from BaseClasses import ItemClassification, Tutorial
+from BaseClasses import ItemClassification, Tutorial, Location
+from Options import OptionError
 from Utils import visualize_regions
 from entrance_rando import randomize_entrances, bake_target_group_lookup
 from rule_builder.rules import Has
+from pathlib import Path
 from . import locations, items, tracker
+from .constants import MINA_THE_HOLLOWER
 from .data import get_target_groups
 from .items import MinaTheHollowerItem
 from .data.items import all_filler_items, all_items
@@ -13,7 +17,6 @@ from .options import mina_the_hollower_option_groups
 
 from .world_base import MinaTheHollowerBase
 
-from .constants import MINA_THE_HOLLOWER
 from ..AutoWorld import WebWorld
 
 
@@ -30,9 +33,22 @@ class MinaTheHollowerWeb(WebWorld):
     option_groups = mina_the_hollower_option_groups
     tutorials = [setup_en]
 
+
+def load_manifest():
+    manifest_path = Path(__file__).parent / "archipelago.json"
+
+    with manifest_path.open("r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+
 class MinaTheHollowerWorld(MinaTheHollowerBase):
+
+    manifest = load_manifest()
+
     game = MINA_THE_HOLLOWER
     web = MinaTheHollowerWeb()
+
 
     item_name_to_id: ClassVar[Dict[str, int]] = {item_name: item_data.item_id for item_name, item_data in
                                                  all_items.items()}
@@ -51,6 +67,8 @@ class MinaTheHollowerWorld(MinaTheHollowerBase):
         "map_page_setting_key": "mina_the_hollower_map_{team}_{player}",
     }
 
+
+
     @staticmethod
     def interpret_slot_data(slot_data: Dict[str, Any]) -> Dict[str, Any]:
         return slot_data
@@ -64,12 +82,15 @@ class MinaTheHollowerWorld(MinaTheHollowerBase):
         super().__init__(multiworld, player)
 
     def generate_early(self) -> None:
-
+        print(self.options.excluded_areas.value)
+        print(self.options.excluded_areas.value[0])
+        raise OptionError("test")
         self.handle_ut_yamless(None)
 
     def create_regions(self):
         self.regions = locations.get_regions(self)
         locations.create_regions(self, self.regions)
+        items.create_events(self)
         locations.create_entrances(self, self.regions)
 
     def connect_entrances(self) -> None:
@@ -100,9 +121,11 @@ class MinaTheHollowerWorld(MinaTheHollowerBase):
     def fill_slot_data(self) -> id:
         #print("Filling Slot Data")
         return {
-            "sem_ver": "0.1.X",
+            "sem_ver": self.manifest["mod_version"],
             "goal" : self.options.goal.value,
-            "entrance_rando" : self.options.entrance_rando.value,
+            "essex_start": self.options.essex_start.value,
+            "kear_rando": self.options.kear_rando.value,
+            # "entrance_rando" : self.options.entrance_rando.value,
             "death_link" : self.options.death_link.value,
 
         }
@@ -124,7 +147,9 @@ class MinaTheHollowerWorld(MinaTheHollowerBase):
 
         self.options.goal.value = slot_data["goal"]
         self.options.death_link.value = slot_data["death_link"]
-        self.options.entrance_rando.value = slot_data["entrance_rando"]
+        self.options.kear_rando.value = slot_data["kear_rando"]
+        self.options.essex_start.value = slot_data["essex_start"]
+        # self.options.entrance_rando.value = slot_data["entrance_rando"]
         # self.options.shuffled_sidearms.value = slot_data["shuffled_sidearms"]
         # self.options.shuffle_enemy_level.value = slot_data["shuffle_enemy_level"]
         # self.options.shuffled_items.value = slot_data["shuffled_items"]

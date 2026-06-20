@@ -17,6 +17,14 @@ class HasCompletedOneSparkGenerator(Rule[MinaTheHollowerBase], game=MINA_THE_HOL
 
 def HasCompletedBoneGenerator():
     return True_()
+def AnyThreeAstralPlatforms():
+    return True_()
+def HasDoneColtraneGenerator():
+    return True_()
+def CompletedAllGenerators():
+    return True_()
+def InFinale():
+    return True_()
 
 def HasAccessToTorch():
     return True_()

@@ -10,7 +10,8 @@ from ...rules.ability_rules import (
     HasVialsCount, CanJumpOneTile, CanJumpTiles, HasReachingSideArm,
 )
 from ...rules.state_rules import (
-   HasLadder, HasCompletedBoneGenerator, 
+   HasLadder, HasCompletedBoneGenerator, HasAccessToTorch, HasDoneColtraneGenerator,
+   AnyThreeAstralPlatforms, CompletedAllGenerators, InFinale
 )
 
 
@@ -53,6 +54,7 @@ regions: set[str] = {
     'Ossex High Street Residence',
     'Ossex High Street Residence Balcony East',
     'Ossex High Street Residence Balcony West',
+    'Ossex High Street Residence Mirror',
     'Ossex High Street Residence Upper Main',
     'Ossex High Street Residence Upper Puzzle',
     'Ossex High Street SE Garden',
@@ -86,6 +88,7 @@ connections: dict[str, RegionConnection] = {
     'Ossex High Street Balcony_Ossex High Street Main': RegionConnection('Ossex High Street Balcony', 'Ossex High Street Main', Has("Ossex Highstreet Balcony Kear")),
     'Ossex High Street Main_Ossex High Street Balcony': RegionConnection('Ossex High Street Main', 'Ossex High Street Balcony', Has("Ossex Highstreet Balcony Kear")),
     'Ossex High Street Main_Ossex High Street SE Garden': RegionConnection('Ossex High Street Main', 'Ossex High Street SE Garden', Has("Ossex High Street SE Garden Kear")),
+    'Ossex High Street Residence Mirror_Ossex High Street Residence': RegionConnection('Ossex High Street Residence Mirror', 'Ossex High Street Residence', CanClimb()),
     'Ossex High Street SE Garden_Ossex High Street Main': RegionConnection('Ossex High Street SE Garden', 'Ossex High Street Main', Has("Ossex High Street SE Garden Kear")),
     'Ossex High Street SE Garden_Ossex High Street SE Garden Sewer': RegionConnection('Ossex High Street SE Garden', 'Ossex High Street SE Garden Sewer', CanSwim()),
     'Ossex Station Underside Burrow_Ossex Station Underside Main': RegionConnection('Ossex Station Underside Burrow', 'Ossex Station Underside Main', CanClimb()),
@@ -173,6 +176,7 @@ transitions: dict[str, Transition] = {
     'Ossex High Street Residence Balcony West Drop': Transition('Ossex High Street Residence Balcony West', 'Ossex City Center Main', DirectionType.OVERWORLD, TransitionType.DO_NOT_RANDOMIZE_ENTRANCE, CanBurrow()),
     'Ossex High Street Residence Balcony West East Transition': Transition('Ossex High Street Residence Balcony West', 'Ossex High Street Residence Balcony East', DirectionType.EAST, TransitionType.SCREENS),
     'Ossex High Street Residence Exit': Transition('Ossex High Street Residence', 'Ossex High Street Main', DirectionType.SOUTH, TransitionType.DOORS),
+    'Ossex High Street Residence Mirror Mirror': Transition('Ossex High Street Residence Mirror', 'Astral Orrery Starry Mirror Room', DirectionType.OVERWORLD, TransitionType.MIRRORS),
     'Ossex High Street Residence North Transition': Transition('Ossex High Street Residence', 'Ossex High Street Residence Upper Main', DirectionType.NORTH, TransitionType.SCREENS),
     'Ossex High Street Residence Upper Main South Transition': Transition('Ossex High Street Residence Upper Main', 'Ossex High Street Residence', DirectionType.SOUTH, TransitionType.SCREENS),
     'Ossex High Street Residence Upper Puzzle South Drop': Transition('Ossex High Street Residence Upper Puzzle', 'Ossex High Street Residence', DirectionType.OVERWORLD, TransitionType.DO_NOT_RANDOMIZE_ENTRANCE),

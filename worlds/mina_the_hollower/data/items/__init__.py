@@ -25,6 +25,8 @@ all_traps: ChainMap[str, AnyItemData] = ChainMap(
 
 required_test_items: dict[str, AnyItemData] = {
     "SparkUpgrade" : ItemData(70, ItemClassification.progression, 5),
+    "TrainPass" : ItemData(94, ItemClassification.progression),
+    "HUBTicket" : ItemData(95, ItemClassification.progression),
     "BayouTicket" : ItemData(96, ItemClassification.progression),
     "SeptemburgTicket" : ItemData(97, ItemClassification.progression),
     "BoneBeachTicket" : ItemData(98, ItemClassification.progression),
@@ -42,5 +44,12 @@ required_test_items: dict[str, AnyItemData] = {
     "Carry" : ItemData(OFFSET_ABILITY_ITEMS+3, ItemClassification.progression),
     "Climb" : ItemData(OFFSET_ABILITY_ITEMS+4, ItemClassification.progression),
     "FishingRod" : ItemData(34, ItemClassification.progression),
-    "TractionTreads" : ItemData(149, ItemClassification.progression)
+    "TractionTreads" : ItemData(149, ItemClassification.progression),
+    "WallowersGauntlets": ItemData(181, ItemClassification.progression),
+
+    "Green Astral Platforms" : ItemData(500, ItemClassification.progression),
+    "Red Astral Platforms" : ItemData(501, ItemClassification.progression),
+    "Blue Astral Platforms" : ItemData(502, ItemClassification.progression),
+    "Yellow Astral Platforms" : ItemData(503, ItemClassification.progression),
+    "Purple Astral Platforms" : ItemData(504, ItemClassification.progression),
 }

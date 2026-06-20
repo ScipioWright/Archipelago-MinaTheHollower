@@ -10,7 +10,8 @@ from ...rules.ability_rules import (
     HasVialsCount, CanJumpOneTile, CanJumpTiles, HasReachingSideArm,
 )
 from ...rules.state_rules import (
-   HasLadder, HasCompletedBoneGenerator, 
+   HasLadder, HasCompletedBoneGenerator, HasAccessToTorch, HasDoneColtraneGenerator,
+   AnyThreeAstralPlatforms, CompletedAllGenerators, InFinale
 )
 
 
@@ -196,7 +197,7 @@ transitions: dict[str, Transition] = {
     'Bone Beach Worms Back Generator East Transition': Transition('Bone Beach Worms Back Generator', 'Bone Beach Worms Back Rush Corner', DirectionType.EAST, TransitionType.SCREENS),
     'Bone Beach Worms Back Generator West Transition': Transition('Bone Beach Worms Back Generator', 'Sandfalls Bone Junction', DirectionType.WEST, TransitionType.SCREENS),
     'Bone Beach Worms Back Hide Tent Burrow South': Transition('Bone Beach Worms Back Hide Tent', 'Bone Beach Worms Back Camp', DirectionType.SOUTH, TransitionType.BURROW, CanBurrow()),
-    'Bone Beach Worms Back Hide Tent Mirror': Transition('Bone Beach Worms Back Hide Tent', "Astral Orrey Mirror's End", DirectionType.OVERWORLD, TransitionType.MIRRORS),
+    'Bone Beach Worms Back Hide Tent Mirror': Transition('Bone Beach Worms Back Hide Tent', 'Astral Orrery Bone Beach Mirror', DirectionType.OVERWORLD, TransitionType.MIRRORS),
     'Bone Beach Worms Back Mining Ledge Burrow North': Transition('Bone Beach Worms Back Mining Ledge', 'Bone Beach Worms Back Camp', DirectionType.NORTH, TransitionType.BURROW, CanBurrow()),
     'Bone Beach Worms Back Mining Ledge Rope South': Transition('Bone Beach Worms Back Mining Ledge', 'Bone Beach Aquatic', DirectionType.SOUTH, TransitionType.SCREENS, CanClimb()),
     'Bone Beach Worms Back Mining Overlook North Transition': Transition('Bone Beach Worms Back Mining Overlook', 'Bone Beach Worms Back Camp', DirectionType.NORTH, TransitionType.SCREENS),

@@ -1,0 +1,334 @@
+Region,Location,Items required,ID,Vanilla Item,Notes
+Loner's Landing Blighted Docks Fences Bottom,LL Blighted Docks Tall Room Chest,Burrow,29,Bonestone Dust,Surrounded by fences
+Loner's Landing Blighted Docks Side Cave,LL Blighted Docks Side Cave Chest,,28,Bonestone Dust,Platforming sideroom with owl
+Loner's Landing Blighted Docks Bridge,LL Blighted Docks Bridge Chest,"Bounce, Climb",31,Bonestone Dust,Bounce blossom to right of pit rope
+Loner's Landing Blighted Docks Residence,LL Blighted Docks Residence Chest,Burrow,26,Bonestone Flakes,"Breakable door to left of pit rope, room w/ 3 mercs"
+Loner's Landing Blighted Docks Burrow,LL Blighted Docks Burrow Residence Bubble,Burrow,23,Kear,Inside burrow hole at first Kear lock
+Loner's Landing Boardwalk Fire Bounce,LL Boardwalk Fire Bounce Chest,Bounce,27,Kear,Bounce blossom sideroom with fire
+Loner's Landing Boardwalk Sandfalls Ledge,LL Boardwalk Sandfalls Ledge Chest,Bounce,324,Bonestone Flakes,On a ledge from rightmost bounce blossom in Boardwalk 2
+Loner's Landing Boat Side,LL Shipwreck Beach Trigger Antennae,"Fishing Rod, Burrow",32,Trigger Antennae,Fish up south of Bayou Station
+Loner's Landing Belowdecks,LL Belowdecks Unchosen Weapon #1,"Kear x4, Burrow",17,Unchosen Weapon #1,"Unlock Kear block at southeast of Shanty Swamp, proceed to the west, unlock second Kear block, steal ladder, bring down past Bayou Station, burrow under ship and grab weapon behind 2 Kear locks"
+Loner's Landing Belowdecks,LL Belowdecks Unchosen Weapon #2,"Kear x4, Burrow",18,Unchosen Weapon #2,"Unlock Kear block at southeast of Shanty Swamp, proceed to the west, unlock second Kear block, steal ladder, bring down past Bayou Station, burrow under ship and grab weapon behind 2 Kear locks"
+Loner's Landing Belowdecks,LL Belowdecks Chest,CanJumpTiles(distance=2),30,Bonestone Flakes,"Unlock Kear block at southeast of Shanty Swamp, proceed to the west, unlock second Kear block, steal ladder, bring down past Bayou Station, burrow under ship and grab chest"
+Ossex Entry Western Wall Chest,SO Commons Ossex Entry Left Chest,,270,Kear,On ledge accessible from room in Upper Bowery in Ossex
+Ossex Entry Eastern Wall Chest,SO Commons Ossex Entry Right Chest,,266,Bonestone Shard,"On ledge accessible from room to right, use Furl from bottom right of Ossex High Street"
+Southern Outskirts Commons Main,SO Commons Chest,"Burrow, Float",264,Bonestone Flakes,On ledge reachable with bounce blossom after defeating Thorne
+Southern Outskirts Commons Main,SO Commons Crumblefin Head,"Burrow, Float, Fishing Rod",274,Crumblefin Head,"In front of Mining Path entrance with Hulk, fish up Crumblefin and throw it at a wall"
+Southern Outskirts Cave Network Deep Exit,SO Cave Network Chest,,265,Joule Box,"On right ledge in Side Room, use bounce blossom"
+Southern Outskirts Cave Deep Arena,SO Cave Network Side Room Chest,,268,Bonestone Shard,"On left ledge, use bounce blossom"
+Southern Outskirts Poppit,SO Poppit Keri,,272,Keri the Wisp,"After Cave Network, bounce up to leftmost ledge using bounce blossom, then burrow in south wall, purchase for 500 Bones"
+Southern Outskirts Poppit,SO Poppit Kear,,273,Kear,"After Cave Network, bounce up to leftmost ledge using bounce blossom, then burrow in south wall, Purchase for 200 Bones"
+Southern Outskirts Commons Southern Pit Room Main,SO Southern Pit Room Bonestone,5 tiles of air movement,261,Bonestone Shard,"Dash down towards a large pit and land on a small platform, dig up Bonestone in bottom right"
+Southern Outskirts Commons Western Pit Room Main,SO Western Pit Room Chest,,267,Bonestone Flakes,"Loop around from the south of Ossex and to the west, hop over gaps and break chest"
+Southern Outskirts Residence Basement,SO Residence Primed Vial Pouch,,269,Primed Vial Pouch,"Inside Thorne's old hideout, go west from Ossex Entry, make counterclockwise rotation from 3 tile pit"
+Southern Outskirts Mining Passage Secret,SO Mining Passage Chest,,331,Kear,"Under an arch you must burrow under, located to the far left of the final gate switch in the passage"
+Southern Outskirts Moonbath,SO Moonbath Dugin #1,,,,"After clearing 1 Spark Generator, defeat the Dugin"
+Southern Outskirts Moonbath,SO Moonbath Lace Glove,,263,Lace Glove,"After clearing 2 Spark Generators, defeat the Dugin a 2nd time and grab the Lace Glove"
+Southern Outskirts Moonbath,SO Moonbath Dugin #2,,N/A,N/A,"After clearing 2 Spark Generators, defeat the Dugin a 2nd time"
+Southern Outskirts Four Flowers Shortcut,SO Four Flowers Chest,"Burrow, Bounce",271,Bonestone Crystal,"After exiting Mining Passage, take northwest exit, then bounce on 4 flower to hop over debris and get chest"
+Ossex City Center Main,OS City Center Steady Soles,"Kear, Burrow",162,Steady Soles,"Drop down from overhang to the left of Ossex Ossex, go through Attic and into top left stairs"
+Ossex City Center Main,OS City Center Triple Flagellum,Fishing Rod,220,Triple Flagellum,Fish up Flag Fish from either puddles or the river
+Ossex City Center Main,OS City Center 2nd Race Kear,Burrow,243,Kear,Win 2 of Blaise's races to Ossex City Central fountain
+Ossex City Center Main,OS City Center Final Race Bellows Bustle,"Burrow, Carry, Float",322,Bellows Bustle,Win all of Blaise's races to Ossex City Central fountain
+Ossex City Center Main,OS City Center ???????,,,N/A,Defeat ???????
+Ossex Courtyard East,OS Courtyard East Deboning Wand,,161,Deboning Wand,Get loan from Elizabeth and give back 1000 bones
+Ossex Courtyard West Chest,OS Courtyard West Weapon Upgrade,5 Vials,163,Weapon Upgrade,Take path from West Ossex beneath train and open 5 vial block next to Lion Guard
+Ossex Courtyard East Manor Side,OS Courtyard Garden Warding Beastium,,171,Warding Beastium,"Make large leap over gap, then grab the Trinket"
+Ossex Goddred's Grave Arena,OS Evra's Grave Evra,,,N/A,"Descend into Goddred's Grave, awake Evra, then defeat her"
+Ossex Goddred's Grave End,OS Evra's Rest Health Rose,,352,Health Rose,"Descend into Goddred's Grave, awake Evra, then defeat her, grab the Health Rose in the next room"
+Ossex Couple's Quarter,OS Couple's Quarter Chest,Burrow,165,Bonestone Flakes,"Door left of fountain, burrow off right ledge inside"
+Ossex Couple's Quarter,OS Couple's Quarter Thermal Pack,Burrow,147,Thermal Pack,"After rescuing the Fiance from Bone Beach Calcified Cage, return here and grab the Trinket"
+Ossex Guild Back Room,OS Hollower's Guild Back Room Kear Chest,,168,Kear,Enter back room of Hollower's Guild after beating Thorne
+,OS Hollower's Guild Back Room Joule Alembic,,210,Joule Alembic,"Save Rhene from Southern Outskirts Rebel Barracks, free Drillhardt, purchase upgrade for 1000 Bones"
+,OS Hollower's Guild Back Room Isle Map,,211,Isle Map,"Save Rhene from Southern Outskirts Rebel Barracks, free Drillhardt, purchase upgrade for 500 Bones"
+,OS Hollower's Guild Back Room Sidearm Recoverer,,215,Sidearm Recoverer,"Save Rhene from Southern Outskirts Rebel Barracks, free Drillhardt, purchase upgrade for 2000 Bones"
+,OS Hollower's Guild Back Room Training Dummy,,218,Training Dummy,"Save Rhene from Southern Outskirts Rebel Barracks, free Drillhardt, purchase upgrade for 500 Bones"
+,OS Hollower's Guild Back Room Sidearm Duplicator,,214,Sidearm Duplicator,"Save Rhene from Southern Outskirts Rebel Barracks, free Drillhardt, clear 2 Spark Generators, purchase upgrade for 2000 Bones"
+,OS Hollower's Guild Back Room Memory Goggles,,217,Memory Goggles,"Save Rhene from Southern Outskirts Rebel Barracks, free Drillhardt, clear 2 Spark Generators, purchase upgrade for 2000 Bones"
+,OS Hollower's Guild Back Room Phonograph,,216,Phonograph,"Save Rhene from Southern Outskirts Rebel Barracks, free Drillhardt, clear 2 Spark Generators, purchase upgrade for 500 Bones"
+,OS Hollower's Guild Back Room Enhanced Map,,212,Enhanced Map,"Save Rhene from Southern Outskirts Rebel Barracks, free Drillhardt, clear 3(?) Spark Generators, purchase upgrade for 500 Bones"
+,OS Hollower's Guild Back Room All-Seeing Skull,,213,All-Seeing Skull,"Save Rhene from Southern Outskirts Rebel Barracks, free Drillhardt, clear 5 Spark Generators, purchase upgrade for 4000 Bones"
+,OS Hollower's Guild Back Room Smack Muriel,Blastrike Maul x3,146,Bonestone Flakes,"With fully upgraded Blastrike Maul, perform a full combo on Muriel"
+Ossex Kear Institute,OS Kear Institute Kear #1,,199,Kear,Purchase Kear from Kearnes
+,OS Kear Institute Kear #2,,200,Kear,Purchase Kear from Kearnes
+,OS Kear Institute Kear #3,,201,Kear,Purchase Kear from Kearnes
+,OS Kear Institute Kear #4,,202,Kear,Purchase Kear from Kearnes
+,OS Kear Institute Kear #5,,203,Kear,Purchase Kear from Kearnes
+,OS Kear Institute Kear #6,,204,Kear,Purchase Kear from Kearnes
+,OS Kear Institute Kear #7,,205,Kear,Purchase Kear from Kearnes
+,OS Kear Institute Kear #8,,206,Kear,Purchase Kear from Kearnes
+,OS Kear Institute Kear #9,,207,Kear,Purchase Kear from Kearnes
+,OS Kear Institute Kear Completion,All Kears+ All Kear Locks,150,Bonestone Chunk,Sell 10 extra Kears to Freeton
+Ossex Emporium,OS Emporium Health Rose #1,,186,Health Rose,Purchase for 500 Bones
+,OS Emporium Health Rose #2,,187,Health Rose,Purchase for 1000 Bones
+,OS Emporium Health Rose #3,,188,Health Rose,Purchase for 1500 Bones
+,OS Emporium Joule Box #1,,193,Joule Box,Purchase for 500 Bones
+,OS Emporium Joule Box #2,,194,Joule Box,Purchase for 2000 Bones
+,OS Emporium Joule Box #3,,195,Joule Box,Purchase for 4000 Bones
+,OS Emporium Trinket Bag #1,,196,Trinket Bag,Purchase for 1500 Bones
+,OS Emporium Trinket Bag #2,,197,Trinket Bag,Purchase for 3000 Bones
+,OS Emporium Trinket Bag #3,,198,Trinket Bag,Purchase for 4500 Bones
+,OS Emporium Vial Pouch #1,,189,Vial Pouch,Purchase for 1000 Bones
+,OS Emporium Vial Pouch #2,,190,Vial Pouch,Purchase for 2500 Bones
+,OS Emporium Vial Pouch #3,,191,Vial Pouch,Purchase for 3000 Bones
+,OS Emporium Spark Container,,192,Spark Container,Purchase for 1500 Bones
+Ossex Legovich's Arms,OS Legovich's Arms Starting Weapon Upgrade,,174,Starting Weapon Upgrade,"Purchase for 2000 Bones, +500 per other purchased item"
+,OS Legovich's Arms Unchosen Weapon #1,,175,Unchosen Starting Weapon #1,"Purchase for 2000 Bones, +500 per other purchased item"
+,OS Legovich's Arms Unchosen Weapon #2,,176,Unchosen Starting Weapon #2,"Purchase for 2000 Bones, +500 per other purchased item"
+,OS Legovich's Arms Guardian Casket,,178,Guardian Casket,"Purchase for 2000 Bones, +500 per other purchased item"
+,OS Legovich's Arms Battery Buster,,177,Battery Buster,"Purchase for 2000 Bones, +500 per other purchased item"
+,OS Defeat Armond,Burrow,N/A,N/A,"After purchasing 2 weapons, burrow into hole and defeat Armand"
+Ossex Gutterways,OS Gutterways Bonestone,"2 Sparks, Iron Steed, Burrow",172,Bonestone Shard,"Use 2 Sparks to open bottom left house, use Iron Steed to race through and get Bonestone"
+Ossex High Street Main,OS High Street Valor Medallion,"Kear, Burrow, Carry/Throw",154,Valor Medallion,"Use Furl's nose to cross gap between High Streets and Center, grab flower pot on top of Kear shop, throw pot at Furl on left side of bottom right of High Streets"
+Ossex High Street Sewer,OS High Street Sewer Chest,"Kear, Burrow, Carry/Throw",164,Bonestone Flakes,Use Furl's nose in the bottom left of bottom right of High Streets to jump onto floating barrel and burrow into sewers
+Ossex Strategy Center,OS Strategy Center Chest,"Reaching Sidearm, Burrow",167,Bonestone Flakes,"Hit Chest from across table with one of many Sidearms, then burrow under"
+,OS Strategy Center Ophidio Bonestone,"W&V Lunge, Burrow",153,Bonestone Shard,Hit Ophidio from behind with Whisper and Vesper's Lunge upgrade
+Ossex Balcony East,OS Ossex Telescope Kear,Kear,155,Kear,Look in the top right of the telescope view
+Ossex High Street Residence Upper Puzzle,OS Attic Chest,,166,Bonestone Dust,Jump into chimney from Ossex Ossex ledge
+Ossex Atelier,OS Atelier Chest,"3 tiles of air movement, Burrow",169,Bonestone Flakes,Burrow into bottom right and cross the gap in side room
+,OS Atelier Vitality Vest,,208,Vitality Vest,Purchase for 3000 Bones
+,OS Atelier Custom Fit,"Vitality Vest, Safety Shroud",209,Custom Fit,Purchase for 2000 Bones
+Ossex Bowery Main,OS Bowery Double Sidearm Permit,5? Sidearm Levels,219,Double Sidearm Permit,"After Leveling Up Sidearm ? times, purchase for 2000 Bones"
+Ossex Bowery Upper,OS Bowery Upper Chest,"Burrow, Reaching Sidearm/Seismic Belt/Beastium Transformation",173,Bonestone Flakes,"After opening the bridge in Occupied Bridge from Molten Foundry, break chest with a Sidearm/Seismic Belt/Beastium Transformation and burrow"
+Ossex Bowery Tall Residence Upper Main,OS Bowery New House Bonestone,Burrow,159,Bonestone Dust,Speak with Lindy by entering the bridge door in Bowery
+Ossex Bowery Tall Residence Upper Top Entrance,Ossex Bowery Residence Kear,Burrow,156,Kear,Give the homeless Bones and then talk to east lady for a Kear
+Ossex Music Hall,OS Music Hall Chest,Burrow,170,Bonestone Flakes,"Burrow underneath NPC walking into Music Hall to sneak in, grab chest behind bar"
+,OS Music Hall Pneumatic Armlet,"Burrow, Climb, Carry",148,Pneumatic Armlet,"After giving the Shanty Troupe 100 Bones, return to Music Hall and fight Willy to get Pneumatic Armlet"
+,OS Music Hall Willy,"Burrow, Climb, Carry",N/A,N/A,"After giving the Shanty Troupe 100 Bones, return to Music Hall and fight Willy"
+Ossex Station,OS Station Train Ticket,,149,Train Ticket,"Donate 10,000 Bones to fix the Train"
+Ossex Station Underside Main,OS Station Underside Bell of Grace,,158,Bell of Grace,"After getting mugged by Frayd, fix him w/ 1000 Bones"
+Ossex Trinket Bazaar,OS Trinket Bazaar Kear,,160,Kear,"Smack Lady Susan's head until it spins rapidly, then burrow into the cellar and speak with the faceless caged man"
+,OS Trinket Bazaar Plasma Funnel,,179,Plasma Funnel,Purchase for 700 Bones
+,OS Trinket Bazaar Seismic Belt,,180,Seismic Belt,Purchase for 700 Bones
+,OS Trinket Bazaar Brisk Brew,,181,Brisk Brew,Purchase for 700 Bones
+,OS Trinket Bazaar Intrevenous Vial,,182,Intravenous Vial,Purchase for 1250 Bones
+,OS Trinket Bazaar Shock Flint,,183,Shock Flint,Purchase for 1250 Bones
+,OS Trinket Bazaar Uranium Bracelet,15 Trinkets,25,Uranium Bracelet,"Acquire 15 Trinkets, then purchase for 2000 Bones"
+,OS Trinket Bazaar Bubble Ring,15 Trinkets,184,Bubble Ring,"Acquire 15 Trinkets, then purchase for 1500 Bones"
+,OS Trinket Bazaar Counter Vial, ? Trinkets,185,Counter Vial,"Acquire 20 trinkets, then purchase for 2000 Bones"
+,OS Trinket Bazaar Lightning Grip,"Save """"""4"""""" Students",334,Lightning Grip,Given by teacher in Kindlewood schoolhouse only if you save ALL 4 students during Carving Man chase sequence. Item will appear in Ossex Trinket Bazaar instead for 2000 Bones after defeating Carving man if you miss any students.
+Ossex Train Private Cabin Left,OS Train Private Cabin Chest,"Burrow, 1 Kear",360,Bonestone Shard,"Burrow underneath the closed door with windows, Destroy the adjacent candle and burrow under the passage"
+Ossex Train Private Cabin Left,OS Train Private Cabin Safety Shroud,"Burrow, 2 Kear",357,Safety Shroud,"Burrow underneath the closed door with windows, Destroy the adjacent candle and burrow under the passage"
+Ossex City Center Main,OS Forgotten Cave Disturbing Dance,Burrow,351,Disturbing Dance,Learn to dance from Grinnsley after cleaning out his 3 shops
+Western Wilds Secret Passageway East,WW Secret Passage Chest,3 tiles of air movement,251,Kear,Jump over a 3 tile pit and open chest
+Western Wilds Secret Passageway East,WW Secret Passage Joule Box,"Kear, 5 tiles of air movement",248,Joule Box,"Jump over a 3 tile pit, then a 5 tile pit and open Kear box"
+Western Wilds Brutes,WW Occupied Bridge Brute Chest,,253,Bonestone Shard,"After clearing path from Molten Foundry, go across bridge and break chest next to 2 Hulk Brutes"
+Western Wilds End,WW Occupied Bridge Far Chest,Burrow,250,Bonestone Flakes,"Westmost section, burrow under north wall to get chest"
+Western Wilds Brutes,WW Occupied Bridge Dead Leaf,Kill the other leaf,245,Dead Leaf,"After killing the Leaf in Septemburg, return to the same place as the Far Chest and remove Leaf from the grave"
+Western Wilds Western Pond,WW Occupied Bridge Cuddlepus Shell,Fishing Rod,259,Cuddlepus Shell,Fish up Cuddlepus from the lava
+Western Wilds Foundry Path,WW Occupied Bridge Underneath Chest,Burrow,252,Bonestone Flakes,"Destroy 2 adjacent crystals w/ lava, then enter 1 tile gap under bridge"
+Western Wilds Molten Foundry Dark Poppit,WW Molten Foundry Poppit Helio,,256,Helio the Wisp,"In Molten Foundry back room, guide lava path left to break crystals and free Poppit, then purchase for 500 Bones"
+Western Wilds Molten Foundry Dark Poppit,WW Molten Foundry Poppit Kear,,257,Kear,"In Molten Foundry back room, guide lava path left to break crystals and free Poppit, then purchase for 200 Bones"
+Western Wilds Molten Foundry Dark,WW Molten Foundry Dark Chest,Burrow,255,Bonestone Flakes,Use lava to light up the darkness on the right side to platform safely to the chest
+Western Wilds Molten Dungeon End,WW Molten Foundry Flame Guard,,249,Flame Guard,"Unlock Vial and Kear locks, then work through set of rooms until you reach it"
+Western Wilds Western Pond,WW Western Pond Glomper Stalk,"Fishing Rod, Burrow",258,Glomper Stalk,Fish up Glomper and kill it
+Western Wilds Balcony,WW Balcony Chest,"Kear, Burrow",254,Bonestone Flakes,"Walk under the 2 tile path at the bridge and enter big stairs, platform across and get chest"
+,WW Balcony Dummy Cache,"Kear, Burrow, Carry, Climb",242,Dummy Cache,It's that one. The snowball one.
+Eastern hearth Grassland,EH Grassland Trinket Bag,,221,Trinket Bag,"After activating the first Spark Generator, go to Ossex's Eastern Exit and defeat Maxi to get a Trinket Bag"
+,EH Grassland Maxi,,1018,N/A,"After activating the first Spark Generator, go to Ossex's Eastern Exit and defeat Maxi"
+Eastern Hearth Grassland Bridge Right,EH Grassland Dork Eyes,Fishing Rod,241,Dork Eyes,Fish up Pink Eyed Dork at bridge just east of Ossex
+Eastern Hearth I Screen,EH Grassland Ossex Patio Chest,Burrow,231,Bonestone Flakes,Burrow down from eastern Ossex exit
+Eastern hearth Bush Room,EH Grassland Bush Room Bonestone,Kear,236,Bonestone Shard,Open Kear Block and grab Bonestone
+Eastern Hearth Grassland Riverbed Bottom,EH Grassland Riverbed Chest,,233,Bonestone Dust,Burrow jump north from large moving platform room w/ 2 turrets
+Eastern Hearth Choppe Shoppe,EH Choppe Shoppe Chain Capacitor,,226,Chain Capacitor,"Open the Choppe Shoppe w/ a Kear, then destroy the car in 30s or less"
+Eastern Hearth Hidden Grotto,EH Hidden Grotto Chest,"Kear, Burrow",228,Bonestone Flakes,Unlock Kear block in Eastern hearth Grassland and break the wall to enter the cave. Jump on the switch to access the chest.
+Eastern Hearth Grassland Waterfall Second Level,EH Grassland Waterfall Chest,Burrow,234,Bonestone Flakes,Head to southeast of the screen to lower rope and grab Bonestone
+Eastern Hearth Grassland Waterfall Second Level,EH Grassland Waterfall Windfall Charm,"Volt Axe OR (Spring Heeled Boots, Kear, Burrow)",223,Windfall Charm,"Using either the Volt Axe or Spring Heeled Boots, hit the kite out of the sky"
+Eastern hearth East Corner,EH Grassland Vertical Spinner Room Chest,(Beat  Queensbury Spark Generator),238,Spark Container,"After activating Spark Generator, proceed through stairs until you return to Knight's Stand, take statue head from the north and bring it all the way to MM Statue Room, gates unlock and chest is accessible"
+Eastern hearth Under Bridge West,EH Under the Bridge Chest,,230,Kear,"Loop around clockwise to swim under the bridge, defeat the Bone Mimic, then burrow west to get the Kear"
+Eastern Hearth Buckler's Bluff Cliff,EH Buckler's Bluff Joule Box,,229,Joule Box,"Using good air movement, make yout way up to the top of the cliff face and break the chest for the Joule Box"
+Eastern Hearth Grassland Poppit Cave,EH Grassland Poppit Cave Chest,Burrow,235,Bonestone Dust,"Burrow in the south of the room with several Spinners, chest is right there"
+Eastern Hearth Poppit,EH Grassland Poppit Cave Willow,Burrow,239,Willow the Wisp,"Burrow in the south of the room with several Spinners, room to the right has Poppit, purchase for 400 Bones"
+Eastern Hearth Poppit,EH Grassland Poppit Cave Kear,,240,Kear,"Burrow in the south of the room with several Spinners, room to the right has Poppit, purchase for 200 Bones"
+Eastern hearth Frozen Pass,EH Frozen Pass Chest,"Burrow, Climb",232,Bonestone Shard,"Get to this room from Coltrane Peak's side, break the snowballs and fall throught the cliff"
+,EH Frozen Pass IceBlock,Burrow ,237,Smelling Salts,Push the iceblock against a wall to reveal the trinket
+Backwaters Upper Swamp Waterfall,BW Upper Shanty Swamp Plasma Jug,,290,Plasma Jug,"Recieve jug from Buffo, kill 50 enemies with it equipped, then return it and defeated enemy frog"
+,BW Upper Shanty Swamp Glutton's Jug,Plasma Jug,289,Glutton's Jug,"Empty version of the Plasma Jug, receieved from Buffo. "
+Backwaters Upper Swamp Secret Room,BW Upper Swamp Side Room Chest,Swim,296,Bonestone Flakes,"Break bottom left wall in main room, carefully dive into the deep water to reach the chest"
+Backwaters Upper Lantern Cave,BW Lantern Cave Bonestone,,287,Bonestone Shard,"Unlock Kear block at southeast of Shanty Swamp, proceed to the west, unlock second Kear block, steal ladder, bring back to Shanty Swamp Spark Door, proceed through Dark Room and grab Bonestone at top of room"
+,BW Lantern Cave Vial Pouch,,295,Vial Pouch,"Unlock Kear block at southeast of Shanty Swamp, proceed to the west, unlock second Kear block, steal ladder, bring back to Shanty Swamp Spark Door, proceed through Dark Room and grab chest"
+Backwaters Pinky Shop,BW Pinky's Parlor Spark Catcher,,297,Spark Catcher,"Unlock Kear block at southeast of Shanty Swamp, purchase for 500 Bones"
+Backwaters Pinky Shop,BW Pinky's Parlor Kear,,298,Kear,"Unlock Kear block at southeast of Shanty Swamp, purchase for 300 Bones"
+Backwaters Pinky Shop Back,BW Pinky's Parlor Joule Box,HasLadder(),286,Joule Box,"Unlock Kear block at southeast of Shanty Swamp, proceed to the west, unlock second Kear block, steal ladder, then grab Joule Box"
+Backwaters Lower Swamp Fishing,BW Lower Shanty Swamp Bonestone Block,"Kear, Burrow, Swim",293,Bonestone Flakes,Open Kear block next to Fishing Hole
+Backwaters Lower Swamp Station Entrance,BW Lower Shanty Swamp Evasion Powder,HasLadder(),294,Evasion Powder,"Unlock Kear block at southeast of Shanty Swamp, proceed to the west, unlock second Kear block, steal ladder, bring to Lower Shanty Swamp, bring to southeast of room and climb"
+Backwaters Lower Swamp Station Entrance,BW Lower Shanty Swamp Bonestone,HasLadder(),288,Bonestone Shard,"Unlock Kear block at southeast of Shanty Swamp, proceed to the west, unlock second Kear block, steal ladder, bring to Lower Shanty Swamp, bring to south moving platforms and climb"
+Backwaters Lower Swamp Shanty Band,BW Lower Shanty Swamp Tumbling Tutu,"Burrow, Climb, Carry, Swim",291,Tumbling Tutu,"From Guard Room in Nox's Bayou, go west and carry bucket all the way back to the Shanty Band"
+Backwaters Lucky's Lair,BW Lucky's Lair Kear,Burrow,292,Kear,"Burrow into Lucky's Lair and dig him up, talk to him to get Kear"
+Backwaters Fishing Hole,BW Fishing Hole Fishing Rod,,300,Fishing Rod,"Talk to Irwin and watch him get eaten by Thalessian, pick up his rod"
+,BW Fishing Hole Fleeper Head,Fishing Rod,299,Fleeper Head,Fish up in the Fishing Hole
+,BW Fishing Hole Thalessian Pearl,"Fishing Raft OR (Fishing Rod + Tunneler's Codex, Swim)",302,Thalessian Pearl,"Using Fishing Rod and the Raft/Hollower's Codex, in the room east of the Fishing Hole grapple up to ledge enemy, then defeat Thalessian and return to Fishing Hole"
+,BW Fishing Hole Gilded Rod,"Fishing Raft OR Fishing Rod + Tunneler's Codex, Swim)",301,Gilded Rod,Reward for catching all Fish
+Kindlewood Overgrowth Bonfire Main,KW Overgrowth Bonfire Chest,,340,Bonestone Shard,Chest to the up and right of bonfire surrounded by enemies
+Kindlewood Overgrowth Residence Basement,KW Residence Basement Chest,,441,Kear,"Enter room by throwing torch near top left corner of Residence. In basement, throw torch to break leaves across from moving platform to reach chest."
+Kindlewood Overgrowth Madd House,KW Madd House,,,N/A,Defeat Madd House
+,KW Madd House Draining Beastium,,348,Draining Beastium,2000 bones. Defeat Madd House boss to access shop
+,KW Madd House Oozing Organ,,347,Oozing Organ,2000 bones. Defeat Madd House boss to access shop
+,KW Madd House Voltaic Guard,,349,Voltaic Guard,2000 bones. Defeat Madd House boss to access shop
+,KW Madd House Kear,,350,Kear,1000 bones. Defeat Madd House boss to access shop
+Kindlewood Behind Madd House,KW Behind Madd House Chest,,339,Bonestone Crystal,"Smuggle a torch from a previous room, throw it at the leave pile in the top right corner above the Madd House and burrow under to reach chest."
+Kindlewood Farm Crossing Pumpkin Patch,KW Train Station Gourdan,Oozing Organ,335,Bonestone Shard,"Burrow under Gourdan while Oozing Organ is equiped, then talk to them."
+,KW Train Station Ledge Chest,Burrow,346,Bonestone Flakes,Drop down to chest from burrow tunnel above
+Kindlewood Farm Crossing Shack,KW Farm Crossing Shack Chest,"Burrow, Reaching Sidearm",342,Kear,"Shack top left of train station room. Break chest with reaching sidearm, than burrow around back of building."
+Kindlewood Wallowers Path,KW Wallower's Room Wallower's Gauntlets,"Kear, Burrow",344,Wallower's Gauntlets,"Burrow through tunnels to reach Kear block, trinket located directly under the Kear block."
+,KW Wallower's Room Chest,"(Wallower's Gloves, Burrow) OR 5+ Tiles of Air Movement",345,Bonestone Flakes,"Located in the bottom left side of the room past many large gaps. Very difficult to cross without Wallower's Gauntlets, 5+ tiles of air movement may be an understatement since there is a tough corner to get around near the end. May need Pit Preserver or Keri's Wisp to make the corner without Gauntlets. "
+Kindlewood Rail Tunnel,KW Rail Tunnel Vial Pouch,"Burrow, Carry",343,Vial Pouch,Reach rail tunnel throw breakable hidden pipe top right of tomato farm. Go into East Rail Tunnel and navigate through dark room to get to chest.
+Mourner's Mile Knight's Rest Chest,MM Knight's Rest Chest,,311,Bonestone Flakes,Jump across large pits and moving platforms to grab chest
+Mourner's Mile Statue Room Rope,MM Statue Room Bonestone,,315,Bonestone Flakes,Break grave next to rope from eastern room
+Mourner's Mile Dark Shallow Tomb Dark,MM Shallow Tomb Kear,,305,Kear,Break grave in a long line at the top of the screen and go into hole to grab Kear 
+Mourner's Mile Shallow Tomb,MM Ring Tomb Spike Spurs,,316,Spike Spurs,Break correct grave at top of screen and go into hole to grab Trinket
+Mourner's Mile Spike Vault Upper,MM Spike Vault Vial Pouch,,312,Vial Pouch,Break second grave on the top row in the graveyard w/ the Lady and burrow to grab the Vial Pouch
+Mourner's Mile Spike Vault Hidden Room,MM Spike Vault Hidden Room Kear,,310,Kear,"Burrow into bottom left grave in the graveyard w/ the Lady, then break the west wall"
+Mourner's Mile Tower Tunnel Dark,MM Tower Tunnel Chest #1,Burrow,313,Bonestone Dust,"Burrow into passage in top right of room with Knight enemy, cross small gaps in dark room"
+,MM Tower Tunnel Chest #2,Burrow,314,Bonestone Dust,"Burrow into passage in top right of room with Knight enemy, cross many gaps and passages in dark room"
+Mourner's Mile Knight's Guard Hill,MM Knight's Stand Bonestone,,303,Bonestone Flakes,"After activating Spark Generator, proceed through stairs until you return to the room, then burrow up and dig up Bonestone on lower ledge"
+Mourner's Mile Mina's Grave,MM Mina's Grave Chest,3 Sparks,309,Bonestone Flakes,"Make your way through a nightmare after laying in a grave, then proceed to wake up and claim reward"
+,MM Mina's Grave Starving Beastium,3 Sparks,308,Starving Beastium,"Make your way through a nightmare after laying in a grave, then proceed to wake up and claim reward"
+Mourner's Mile Spike Hell Sandfall,MM Spike Hell Chest,,355,Bonestone Dust,"Either with excellent air movement or Spike Spurs, get across spike layers to access chest"
+Sandfalls Mining Outlook,SF Hobo Holdout Puffer Beak,Fishing Rod,82,Puffer Beak,"Right after exiting Mining Passage, fish up Bouncy Puffy from puddles and kill it"
+Sandfalls Sifted Sands,SF Sifted Sands Snake Bomb Chest,"Burrow, Carry",326,Bonestone Flakes,"South West, Throw a bomb at red carts twice after going through the spike room"
+,SF Sifted Sands Kear,CompleteSandfallsGenerator,319,Kear,"After activating the Spark Generator, return to cabin and kill Mite"
+Sandfalls Pachinko ,SF Guiding Grains Niter Belt,,330,Niter Belt,"In the bomb pachinko room, destroy the middle minecart with the bomb and walk to the top of the board through the newly created opening"
+,SF Guiding Grains Bonestone Left,,329,Bonestone Shard,"In the bomb pachinko room, destroy the left minecart with the bomb"
+,SF Guiding Grains Bonestone Right,,328,Bonestone Shard,"In the bomb pachinko room, destroy the right minecart with the bomb"
+Sandfalls Sifted Sands Hidden Cave,SF Hidden Cave Vial Pouch,"Burrow, Kear",323,Vial Pouch,"Burrow along southern moving platforms into tunell, open Kear block for Vial Pouch"
+Sandfalls Ring Dive Parlor,SF Ring Dive Parlor Tunneler's Codex,Burrow,317,Tunneler's Codex,Earn 5000 points or more in the Ring Master's mini game.
+Sandfalls Shifty Seclusion,SF Shifty Seclusion Chest,,327,Joule Box,Destroy the minecart into the Skull Mimic's cave with the nearby bomb. The chest in question is behind the Mimic.
+Sandfalls Payload Passage Chest,SF Payload Passage Chest,"Burrow, Carry",332,Bonestone Crystal,"South West, Throw a bomb at a hidden passage entrance and burrow into the tunnel"
+Sandfalls Miners Den,SF Miner's Den Major Miner,3 Vials && Burrow && (Spike Spurs || Carry/Throw),,N/A,"After destroying the dynamite carts blocking the mine, enter and defeat Major Miner"
+Bone Beach Worms Back Generator,SF Shoreline Generator Activated,Burrow,,N/A,Activate the Spark Generator after defeating Mined Mind
+Sandfalls Bone Junction,SF Bone Junction Chest,"Burrow, Carry",356,Bonestone Shard,"Carry Train Station bomb quickly to Bone Junction and blow up lower dynamite cart, then burrow through tunnel to reach chest"
+Sandfalls Sandy Station,SF Train Vita's Shop,Burrow,333,Volatile Beastium,"Vita only appears by taking the train from Sandfalls to Backwaters, Purchase for 750 bones "
+Sandfalls Sandwater Junction,BB Sandwater Junction Angler's Raft,2 tiles of air movement Or Swim,325,Angler's Raft,"From Payload Passage, climb down the ropes, then break open the chest"
+Queensbury Crypt Old Graveyard Main,QC Old Graveyard Bonestone,,51,Bonestone Dust,Break a grave on a ledge east of the entrance to the room
+Queensbury Crypt Old Graveyard Sodsby,QC Old Graveyard Kear,Burrow,52,Kear,"Dig up all the dirt piles in the room, then talk to Mr. Sodsby"
+Queensbury Crypt Bonnet Tomb Inner,QC Bonnet Tomb Desperation Bonnet,"Burrow, Kear",57,Desperation Bonnet,"Walk behind fence in the big Graveyard, then open Kear block and burrow beneath the tomb"
+Queensbury Crypt Broken Bridge,QC Broken Bridge Bonestone,,54,Bonestone Flakes,"To the right of dungeon entry, go across platforms"
+Queensbury Crypt Pipe Room,QC Pipe Room Bonestone,,53,Bonestone Flakes,
+Queensbury Crypt Castle Entry,QC Castle Entry Weapon Chest,,56,W&V,"In the first room of the castle, head to the upper floor of the southwest corner, then hit the wall behind the pot"
+Queensbury Crypt Smelly Secret,QC Smelly Secret Kear,,64,Kear,"Break wall at southeast of big spike roller room, walk with moving platforms against arrow shooters and break chest"
+Queensbury Crypt Hidden Tunnel,QC Hidden Tunnel Bonestone,Burrow,61,Bonestone Flakes,"At top of room with many coffins, burrow into tunnel"
+Queensbury Crypt Statue Head Hall Entrance, QC Statue Head Hall Chest,"Burrow, Carry",63,Bonestone Flakes,"Jump over spikes and spike roller, jump attack chest to land safely"
+Queensbury Crypt Mirror Room West,QC Mirror Room Chest,"Burrow, Carry",65,Bonestone Flakes,"Burrow into northeast passage, destroy chest"
+,QC Mirror Room Stolenoid,"Burrow, Carry",66,Stolenoid,"Burrow into northwest passage, purchase for 600 Bones"
+,QC Mirror Room Kear,"Burrow, Carry",67,Kear,"Burrow into northwest passage, purchase for 300 Bones"
+Queensbury Crypt Putrid Place,QC Putrid Place Bonestone,"Burrow, Carry",62,Bonestone Dust,"Make a clockwise loop from central statue room, break grave and continue along ledge path, jump to grab Bonestone"
+,QC Putrid Place Tombstone,"Burrow, Carry, Fishing Rod",68,Tombstone,Fish up Ghost Fish and kill it
+Queensbury Crypt Rancid Room,QC Rancid Room Fly Bait,"Burrow, Carry, 2 Vials",59,Fly Bait,"Find Midden in the 2 previous smelly rooms, then defeat them in a boss fight"
+,QC Rancid Room Midden,"Burrow, Carry, 2 Vials",,N/A,"Find Midden in the 2 previous smelly rooms, then defeat them in a boss fight"
+Queensbury Crypt Ancestral Chamber,QC Ancestral Chamber Health Rose,"Burrow, Carry",58,Health Rose,"Break wall in prior room, take head and bring it to room to start boss, defeat boss"
+,QC Ancestral Chamber The Duchess,"Burrow, Carry",1018,N/A,"Break wall in prior room, take head and bring it to room to start boss, defeat boss"
+Queensbury Crypt Royal Tomb,QC Royal Tomb Proto Spark,"Burrow, Carry, Climb, 2 Vials",60,Proto Spark,"On a side path, climb and jump across ropes avoiding spike roller, spikes, and arrows with The Duke, then after defeating The Duchess, seal him within her casket"
+Queensbury Crypt Solemn Generator,QC Solemn Generator Activated,"Burrow, Carry",,N/A,Activate Spark Generator after defeating The Duchess
+Nox's Bayou Boat Station,NB Boat Takeoff Shrimpter Tail,Fishing Rod,50,Shrimpter Tail,Fish up Shrimpter and kill it
+Nox's Bayou Guard Room,NB Guard Room Twill Weave,,47,Twill Weave,"Swim through the deep water to reach rope, climb up and grab Trinket"
+Nox's Bayou Lily Full Pump Room,NB First Flooder Chest,,39,Bonestone Shard,"Burrow into the flooder to fill the room with water, then break chest"
+Nox's Bayou Shallow Pool,NB Shallow Pool Chest,,38,Bonestone Flakes,"Burrow into passage east of 2 boats, jump over pipe and break open chest"
+Nox's Bayou Big Lagoon Dark,NB Lagoon Burrow Chest,,42,Kear,"Before flooding the Big Lagoon, break wood in northwest corner and burrow into dark room, get Kear at east end"
+Nox's Bayou Big Lagoon East Side Room,NB Submerged Side Room Vascular Syrup,,40,Vascular Syrup,"After flooding the Big Lagoon, break wood in southeast corner and burrow into room to grab Trinket"
+Nox's Bayou Swamp Shack,NB Swamp Shack Pit Preserver,,48,Pit Preserver,"After flooding the Big Lagoon, swim up to shack at north of screen, purchase for 1000 Bones"
+,NB Swamp Shack Kear,,49,Kear,"After flooding the Big Lagoon, swim up to shack at north of screen, purchase for 300 Bones"
+,NB Swamp Shack Blastrike Maul,"Has(""Nox's Bayou Swamp Shack Kear""",45,Blastrike Maul,"After flooding the Big Lagoon, swim up to shack at north of screen, open Kear block to claim Blastrike Maul"
+Nox's Bayou Moonlit Path,NB Moonlit Path Chest,,43,Bonestone Flakes,"Burrow into passage at southwest of Big Lagoon, then go south to get chest"
+Nox's Bayou Moonlit Arena,NB Moonlit Mosh Mock Moon,,N/A,N/A,"After heading north on Moonlit Path, kill Mock Moon"
+Nox's Bayou Moonlit Mirror,NB Moonlit Hideaway Iron Lung,,37,Iron Lung,"After beating Mock Moon, open Trinket chest in north room w/ mirror"
+Nox's Bayou Thick Plant Pond Cave,NB Plant Pond Chest,,35,Bonestone Shard,"In shallow water room with 1 plant, hop off ledges and burrow into eastern passage"
+Nox's Bayou Twin Thicket,NB Twin Thicket Chest,,36,Bonestone Flakes,"Can't miss it, northeast corner of the room as soon as you enter"
+Nox's Bayou Canopy Bridge Cave,NB Hidden Cave Chest,,44,Kear,"At bottom of tall room with moving platforms, take hidden stairs at southwest corner and break cave wall, grab chest"
+Nox's Bayou Tainted Lair Grate Bridge,NB Grate Lake Chest,,41,Bonestone Shard,"After filling the northern room with water twice, enter and press button at east end of the room to release the chest"
+Nox's Bayou Tainted Lair Arena,NB Tainted Depths Health Rose,Swim,34,Health Rose,"After proceeding through long horizontal river, defeat Nox's Beast"
+,NB Tainted Depths Nox's Beast,Swim,N/A,N/A,"After proceeding through long horizontal river, defeat Nox's Beast"
+Nox's Bayou Swampy Generator,NB Swampy Generator Activated,,N/A,N/A,"After defeating Nox's Beast, activate the generator"
+Nox's Bayou Tainted Tunnel,NB Gutter Tunnel Chest,Burrow,46,Bonestone Flakes,Reach through shortcut from Septemburg
+Septemburg Withered Farms Hills Maze,SB Launch Pad Secret Room #1 Chest,CanBounce(),91,Bonestone Shard,"In the previous room, find launch pad under a stump to access this room. "
+Septemburg Withered Farms Secret Springs,SB Launch Pad Secret Room #2 Kear,CanBounce(),89,Kear,Find launch pad hidden under stump in top left of previous room to access this room. Let crow down from scarecrow at end of room and defeat him to receieve Kear.
+Septemburg Withered Farms Kid Room 1,SB Kid Room Chest,Burrow,92,Bonestone Crystal,"Burrow in from the South. After talking to Kid, the Carving Man will burst out from the wall concealing this chest. "
+Septemburg Hidden Mandrake Room,SB Hidden Mandrake Room Chest,CanJumpTiles(distance=2),93,Bonestone Shard,Go to East Cave to enter. 
+Septemburg Tractor Chase,SB Hidden Crop Thresher Room Chest,"CanBurrow(), CanBounce()",90,Kear,Entrance wall is busted open by a Crop Thresher in the previous room.
+Septemburg Rotten Barn Kid Room,SB Rotten Barn Chest,Burrow,94,Bonestone Shard,Chest in the same room Squealer is found in.
+Septemburg Crow Town Tunnel Top,SB Below Crow Town Bridge Chest,"Has(""Septemburg Crow Town Tunnel Kear"")",98,Bonestone Chunk,Locked chest near Tunnel to bayou
+Septemburg Crow Town Tunnel Top,SB Below Crow Town Gazeworm Eye,Fishing Rod,104,Gazeworm Eye,"Fish up Gazeworm. Note: Gazeworm can ALSO be caught in Kindlewood, in the pools by the Train Station / Tomato Farm."
+Septemburg Crow Town,SB Crow Town Shop Repulsing Root,,102,Repulsing Root,Let Scarecrow down from post to access shop
+Septemburg Crow Town,SB Crow Town Shop Kear,,103,Kear,Let Scarecrow down from post to access shop
+Septemburg Farm House Roof,SB Crow Town Farmhouse Roof Chest,"Burrow, Carry/Throw",99,Guardian Casket,
+Septemburg Tangled Woods Hidden Grove,SB Tangled Woods Hidden Grove Chest,Burrow,97,Kear,Accessible by breaking a stump at the bottom of the first Tangled Woods room
+Septemburg Tangled Woods Kid Room,SB Galloway Room Chest,"Burrow, Float",100,Bonestone Shard,
+Septemburg Stormwatch Wind,SB Stormwatch Way Chest,Burrow,101,Bonestone Shard,
+Septemburg Carving Shack Arena,SB Carving Shack Health Rose,,95,Health Rose,Defeat The Carving Man
+,SB The Carving Man,,,N/A,Defeat The Carving Man
+Septemburg Windy Generator,SB Windy Generator Activated,"Float, Burrow",,N/A,"After defeating The Carving Man, activate the generator"
+,SB Dark Deluxy ,"Burrow, Pipes",,N/A,"After activating Windy Generator, guide Deluxy through the Wastewater canals, then defeat Dark Deluxy."
+,SB Dark Deluxy Spark Container,"Burrow, Pipes",353,Spark Container,
+Septemburg Wastewater Canal Well Entrance,SB Wastewater Canal Spincer,Fishing Rod,108,Spincer Pincers,Fish up a Spincer in the Wastewater Canal
+Septemburg Wastewater Canal Slime Room,SB Wastewater Canal Slime Room Chest,Burrow,106,Bonestone Crystal,
+Septemburg Wastewater Canal Boxes,SB Wastewater Canal Box Room Chest,Burrow,105,Bonestone Crystal,
+Septemburg Wastewater Canal Well Entrance,SB Wastewater Canal Well Entrance Chest,,107,Bonestone Dust,
+Sandfalls Sandwater Junction,BB Sandwater Junction Goremaw Fang,"Burrow, Carry, Climb, Fishing Rod, 5 tiles of air movement",88,Goremaw Fang,"From Payload Passage, climb down the rope, then fish and kill the Goremaw"
+Bone Beach Bone Rush Mine,BB Bone Rush Trail Furgus Tunnel Chest,,354,Bonestone Crystal,"After beating Major Miner, exit the cave southward, then break a wall behind Furgus and Burrow behind the Generator, smashing the chest"
+Bone Beach Bone Rush Drop,BB Gold Grasp Bonestone,,71,Bonestone Flakes,Jump across the gaps and grab the gold handles until you reach the northeast corner and burrow
+Bone Beach Bone Rush Conveyor Top,BB Large Conveyor Bonestone,CanBounce(),70,Bonestone Shard,"After crossing the large conveyor, head to the southern room and break a block to the west, then climb up the rope, kill the miner, and bounce on the rocks along the conveyor to cross the gap"
+Bone Beach Worms Back Split,BB Split Room Chest,2 tiles of air movement ,78,Bonestone Flakes,Look for a gap that's 2 tiles wide in the southeast corner of a screen with Conveyor belts
+Bone Beach Aquatic Conveyor,BB Aquatic Conveyor Chest,Burrow,73,Bonestone Shard,"In a room with many gold handles, go to the southwest corner and enter side room, cross conveyor, kill wall spitter, grab chest"
+Bone Beach Brac's Tent,BB Brac's Tent Polyp Lamp,,80,Polyp Lamp,"Walk into tent, purchase for 1250 Bones"
+,BB Brac's Tent Kear,,81,Kear,"Walk into tent, purchase for 750 Bones"
+Bone Beach Secret Shoals,BB Secret Shoals Joule Syringe,CanSwim(),74,Joule Syringe,"From Mining Camp, burrow south through deep water, platform carefully to an island far south, then burrow the Joule Syringe from the ground"
+Bone Beach Calcified Caves,BB Calcified Caverns Kear,,79,Kear,"From second ledge after first rope from bottom of Mining Camp, drop down and enter cave, hop down ledge to reach the chest next to 2 eyes"
+Bone Beach Calcified Cage,BB Calcified Cage Bonestone,,76,Bonestone Shard,"Unlock door from westmost ledge after first rope, defeat three miners, break wall in the next room to free the Fiance and break another wall for Bonestone"
+Bone Beach Submerged Handles,BB Submerged Handles Chest,Swim,77,Bonestone Shard,"Swim through a path on the east side of the beached beast, then in the adjacent room, swim to uncover silver handles in the water and eventually float over a ledge for the chest"
+Bone Beach Pulsing Tract Moving Top,BB Pulsing Tract Bonestone,"Burrow, Float",86,Bonestone Flakes,"At top of room with green skull enemy, break eastern wall and carefully hop between moving platforms and gold handles, grab Bonestone"
+Bone Beach Worms Back Chest,BB Worm's Back Battery Buster,CanBounce(),75,Battery Buster,"To the east of the Mirror hut, hop off a ledge and bounce in a straight line across purple stones to reach Battery Buster"
+Bone Beach Worms Back Right,BB Worm's Spine Bonestone,Burrow,72,Bonestone Shard,"On long light wooden stretch after a burrow tunnel, dig up Bonestone"
+Bone Beach Stomach Mine Lower,BB Stomach Mine Kear,"Burrow, Float",84,Kear,"In massive handles room, drop down pit in the southeast corner, then use purple stones to bounce to Kear"
+Bone Beach Gut Depths Hidden,BB Moving Stairs Bonestone,"Burrow, Float",85,Bonestone Shard,"After a sublab in Gut Depths, ride a staircase to a eastern screen and use burrowing and silver handles to dig up Bonestone"
+Bone Beach Gut Depths Dark,BB Gut Passage Chest,Burrow,87,Bonestone Shard,"Enter passage behind candle at 3x3 moving platforms at bottom of Gut Depths, carefully proceed through dark room, break teeth at bottom, carefully get past crushers, open chest"
+Bone Beach Brain Alcove,BB Brain Alcove Health Rose,Burrow,83,Health Rose,"At end of the dungeon, defeat Mined Mind, and take Health Rose"
+,BB Brain Alcove Mined Mind,Burrow,N/A,N/A,"At end of the dungeon, defeat Mined Mind"
+Coltrane Peak Thorne Arena,CTP Fateful Cliff Thorne CTP Boss,Climb,N/A,N/A,"The first time you take the train to CTP, climb the ladder and defeat Thorne"
+Coltrane Peak Station Tracks,CTP Frigid Station Missed Train Chest,,113,Bonestone Chunk,"Fix the train, get a ticket to anywhere, let the train go without you, go left and ride the rail"
+Coltrane Peak Frozen Pass,CTP Frozen Pass Rope Chest,Climb,112,Bonestone Shard,Fall in the 3rd rightmost large pit and climb the rope
+Coltrane Peak Gorge Ice Gauntlet,CTP Dead Man's Gorge Passage Trinket,,110,Burning Beastium,"In the room next to the room with an upside down train, Burrow in the passage at the end, then get to the end "
+Coltrane Peak Train Tracks Secret,CTP Dead Man's Gorge Rail Kear,Burrow,111,Kear,Burrow in the ice to get below the rails and get to the passage located where the rails end
+Coltrane Peak Frostbite Woods,CTP Frostbite Woods Blinking Glass,,114,Blinking Glass,Talk to Mirren and defeat her to get Blinking Glass
+Coltrane Peak Mirren Room,CTP Frostbite Woods Mirren,,N/A,N/A,Talk to Mirren and defeat her
+Coltrane Peak Rail Yard,CTP Rail Yard Purple Structure Chest,,118,Bonestone Crystal,Ride the rails up and left and get to the chest
+Coltrane Peak Rail Yard,CTP Rail Yard Cliff Chest,,117,Bonestone Crystal,"Ride the rails up and right (Where the passenger spirit is), then fall off the cliff"
+Coltrane Peak Rail Yard Chest,CTP Rail Yard Casket Chest,,119,Guardian Casket,"Ride the rails up and right (Where the passenger spirit is), Burrow below the rails, follow the path to the passage and follow the rooms until the end"
+Coltrane Peak Frozen River,CTP Rail Yard Kear Room Fish,"Burrow, Fishing rod ",122,Fishicle Core,"Ride the rails to the upper leftmost corner of the room, use a kear and fish up Fishicle in the pond, then kill it"
+Coltrane Peak Frozen River,CTP Rail Yard Kear Room Rupert Shop Trinket,Burrow,120,Watchful Eye,"Ride the rails to the upper leftmost corner of the room, use a kear, talk to ruppert and save him by burrowing him off the ice, then buy his trinket"
+Coltrane Peak Frozen River,CTP Rail Yard Kear Room Rupert Shop Kear,Burrow,121,Kear,"Ride the rails to the upper leftmost corner of the room, use a kear, talk to ruppert and save him by burrowing him off the ice, then buy his kear"
+Coltrane Peak Frozen Horror Arena,CTP Icebound Cavern Frozen Horror Boss,,N/A,N/A,Defeat Frozen Horror
+Coltrane Peak Spiral Summit Secret,CTP Spiral Summit Kear,"Burrow, Climb",116,Kear,"In the first room with icepanels and moving wooden platforms, Break the wall in the upper leftmost corner"
+Coltrane Peak Agnes Express Rear,CTP Agnes Express Bone Mimic,,123,Bonestone Chunk,"Entering Agnes Express, Break the left wall and kill the mimic"
+Coltrane Peak Agnes Express Arena,CTP Maelstrom Locomotress Health Rose,,124,Health Rose,Defeat Locomotress Agnes and pick up Health Rose
+,CTP Maelstrom Locomotress Agnes Boss,,N/A,N/A,Defeat Locomotress Agnes
+Coltrane Peak Frozen Generator,CTP Frozen Generator Activated,,N/A,N/A,Activate the Spark Generator after defeating Locomotress Agnes
+Astral Orrery Mirror's End,AO Mirror's End Beach Room Chest,"Red Tile Switch, Burrow",281,Bonestone Crystal,"Hit the Red Tile Switch by travelling to Mirror's End through the Bone Beach Mirror, then burrow under the Bone Beach mirror room from the West."
+,AO Mirror's End Reckless Beastium,"3 Tiles of Air Movement, Carry",276,Reckless Beastium,"At the East side of Mirror's End, retrieve Dr. Naught's real brain behind 3 hidden walls to the north of him, and then throw it at him. "
+,AO Mirror's End West Ledge Trinket Bag,"Has(""Astral Orrey Mirror Room Left Side Kear"") & ((Yellow & Burrow) | (red, green, yellow))",279,Trinket Bag,"On ledge behind kear block in far West of Mirror's Edge. Requires Yellow, Green, Blue, or Red Tile switches, as well as some amount between 1-5 tiles of air movement depending on how many switches are hit."
+,AO Mirror's End Trunkstar Core,Fishing Rod,282,Trunkstar Core,Fish up Trunkstar from puddle in middle of Mirror's Edge.
+Astral Orrery Mirror's End Blue Chest,AO Mirror's End Moving Platform Room Chest,,280,Bonestone Flakes,"On the ledge overlooking the moving platform room, accessible from the right of Queensbury mirror room in the screen below."
+Astral Orrery Stellarium,AO Stellarium East Chest,"Has(""Astral Orrery Stellarium Kear"")",129,Battery Buster,East side of Stellarium. Can only be accessed after clearing Gravity Zone or Cog Chamber. Hop down from one of those two mirrors and open the Kear gate.
+,AO Tubert Vial Salvo,,137,Vial Salvo,West side of Stellarium. Can only be accessed after clearing Mutant Lab. Hop down from that mirror and talk to Tubert to purchase from him.
+,AO Tubert Vial Kear,Mirror,138,Kear,West side of Stellarium. Can only be accessed after clearing Mutant Lab. Hop down from that mirror and talk to Tubert to purchase from him.
+Astral Orrery Gravity Zone,AO Gravity Zone Long Hallway Chest,2 tiles of air movement,133,Bonestone Shard,"After hitting the void portal switch, use void portals to jump over ledge on right side of screen and find chest behind breakable wall."
+Astral Orrery Gravity Zone,AO Gravity Zone Secret Room #1 Kear,,134,Kear,"After hitting the Void Portal Switch, use void portals to jump east over the screen edge to access the secret room with this Kear."
+Astral Orrery Gravity Zone,AO Gravity Zone Secret Room #2 Chest,Burrow,126,Bonestone Shard,"In the room with the Green Tile Switch, use void portals to jump south over the screen edge to access the secret room with this chest."
+Astral Orrery Cog Chamber,AO Cog Chamber Secret Room #1 Chest,"Burrow, Carry",130,Bonestone Crystal,
+Astral Orrery Cog Chamber,AO Cog Chamber Secret Room #1 Kear,"Burrow, Carry",135,Kear,
+Astral Orrery Mutant Lab,AO Mutant Lab Secret Room #1 Chest,Burrow,131,Bonestone Shard,
+Astral Orrery Mutant Lab,AO Mutant Lab Secret Room #2 Bridge Weaver,Burrow,132,Bridge Weaver,
+Astral Orrery Hall of Scholars,AO Hall of Scholars Below Boss Chamber Bonestone,,126,Bonestone Shard,Drop down from the top right of the Hall of Scholars boss room above.
+Astral Orrery Hall Of Scholars,AO Defeat Lumenarks,Burrow,N/A,N/A,Defeat Lumenarks
+Astral Orrery Hall of Scholars End,AO Hall of Scholars Exit Chest,Burrow,136,Bonestone Shard,"Directly to the right of the exit mirror, in a chest behind a breakable wall."
+Astral Orrery Sealed Archive Congealed Chamber,AO Sealed Archive Health Rose,,125,Health Rose,Defeat The Congealed
+,AO Sealed Archive The Congealed,,N/A,N/A,Defeat The Congealed
+Astral Orrery Starry Generator,AO Starry Generator Activated,,N/A,N/A,Activate the Spark Generator after defeating The Congealed
+Radiant Manor Foyer Library,RM Foyer Library Chest,2 tiles of air movement,275,Bonestone Dust,Break bookshelf and hop across to chest
+Radiant Manor Mimic Chamber,RM Mimic Chamber Dodging Pendulum,Burrow,140,Dodging Pendulum,Kill the stupid Trinket Mimic
+Radiant Manor Rafters,RM Rafters Chest,Burrow,143,Bonestone Chunk,"At northeast corner, break wall to grab chest"
+Radiant Manor Servant's Quarters,RM Servant's Quarters Spring Heels,Burrow,145,Spring Heels,Purchase for 2000 Bones
+Radiant Manor Servant's Arena,RM Furgus' Chamber,,N/A,N/A,Defeat Furgus
+Radiant Manor Ballroom Balcony East,RM Ballroom Chest,,144,Bonestone Chunk,"After killing Hulk Guard, activate 2nd switch and destroy bushes to the east, hop down ledge and grab chest"
+Radiant Manor Balcony East Chamber,RM Tile Chamber Chest,2 tiles of air movement,142,Bonestone Chunk,Quickly platform why arrow shooter turns tiles on and off to claim chest
+Radiant Manor Meowstro's Chamber,RM Meowstro's Chamber Bonestone,"Burrow, Swim, Carry, Float, Climb, Kear",139,Bonestone Chunk,"Save the 8 Meowstro Kittens throughout all of Radiant Manor, then tune them to have them perform their song"
+Radiant Manor Study,RM Study Lionel,,N/A,N/A,Defeat Lionel

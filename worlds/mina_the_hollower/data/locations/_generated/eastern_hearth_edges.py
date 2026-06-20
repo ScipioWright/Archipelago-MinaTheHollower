@@ -10,7 +10,8 @@ from ...rules.ability_rules import (
     HasVialsCount, CanJumpOneTile, CanJumpTiles, HasReachingSideArm,
 )
 from ...rules.state_rules import (
-   HasLadder, HasCompletedBoneGenerator, 
+   HasLadder, HasCompletedBoneGenerator, HasAccessToTorch, HasDoneColtraneGenerator,
+   AnyThreeAstralPlatforms, CompletedAllGenerators, InFinale
 )
 
 

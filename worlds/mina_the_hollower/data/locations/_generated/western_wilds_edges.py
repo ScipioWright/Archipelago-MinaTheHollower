@@ -10,7 +10,8 @@ from ...rules.ability_rules import (
     HasVialsCount, CanJumpOneTile, CanJumpTiles, HasReachingSideArm,
 )
 from ...rules.state_rules import (
-   HasLadder, HasCompletedBoneGenerator, 
+   HasLadder, HasCompletedBoneGenerator, HasAccessToTorch, HasDoneColtraneGenerator,
+   AnyThreeAstralPlatforms, CompletedAllGenerators, InFinale
 )
 
 
@@ -74,7 +75,7 @@ transitions: dict[str, Transition] = {
     'Ossex Western Wall South Burrow': Transition('Ossex Western Wall', 'Ossex South Western Wall', DirectionType.SOUTH, TransitionType.BURROW, CanBurrow()),
     'Western Wilds Balcony Path North Transition': Transition('Western Wilds Balcony Path', 'Western Wilds Balcony', DirectionType.NORTH, TransitionType.SCREENS),
     'Western Wilds Balcony South Transition': Transition('Western Wilds Balcony', 'Western Wilds Balcony Path', DirectionType.SOUTH, TransitionType.SCREENS),
-    'Western Wilds Brutes East Area Transition': Transition('Western Wilds Brutes', 'Kindlewood Overgrowth entry region from WW', DirectionType.EAST, TransitionType.AREA_SCREENS),
+    'Western Wilds Brutes East Area Transition': Transition('Western Wilds Brutes', 'Kindlewood Overgrowth Entry Main', DirectionType.WEST, TransitionType.AREA_SCREENS),
     'Western Wilds End South Transition': Transition('Western Wilds End', 'Western Wilds Western Pond', DirectionType.SOUTH, TransitionType.SCREENS),
     'Western Wilds Foundry Path North Door': Transition('Western Wilds Foundry Path Door', 'Western Wilds Molten Foundry Main', DirectionType.NORTH, TransitionType.DOORS),
     'Western Wilds Main South Transition': Transition('Western Wilds Main', 'Western Wilds Overgrown Path', DirectionType.SOUTH, TransitionType.SCREENS),

@@ -10,7 +10,8 @@ from ...rules.ability_rules import (
     HasVialsCount, CanJumpOneTile, CanJumpTiles, HasReachingSideArm,
 )
 from ...rules.state_rules import (
-   HasLadder, HasCompletedBoneGenerator, 
+   HasLadder, HasCompletedBoneGenerator, HasAccessToTorch, HasDoneColtraneGenerator,
+   AnyThreeAstralPlatforms, CompletedAllGenerators, InFinale
 )
 
 
@@ -144,7 +145,7 @@ transitions: dict[str, Transition] = {
     'Queensbury Crypt Final Stairwell Left Stairs': Transition('Queensbury Crypt Final Stairwell', 'Queensbury Crypt Summoners Gate', DirectionType.NORTH, TransitionType.STAIRS),
     'Queensbury Crypt Final Stairwell Right Stairs': Transition('Queensbury Crypt Final Stairwell', 'Queensbury Crypt Ancestral Chamber Entrance', DirectionType.NORTH, TransitionType.STAIRS),
     'Queensbury Crypt Hidden Tunnel West Burrow': Transition('Queensbury Crypt Hidden Tunnel', 'Queensbury Crypt Castle Broken Hall Main', DirectionType.WEST, TransitionType.BURROW),
-    'Queensbury Crypt Mirror Room East Mirror': Transition('Queensbury Crypt Mirror Room East', "Astral Orrey Mirror's End", DirectionType.OVERWORLD, TransitionType.MIRRORS),
+    'Queensbury Crypt Mirror Room East Mirror': Transition('Queensbury Crypt Mirror Room East', 'Astral Orrery Queensbury Mirror', DirectionType.OVERWORLD, TransitionType.MIRRORS),
     'Queensbury Crypt Mirror Room East South Burrow': Transition('Queensbury Crypt Mirror Room East', 'Queensbury Crypt Statue Head Hall', DirectionType.SOUTH, TransitionType.BURROW),
     'Queensbury Crypt Mirror Room West South Burrow': Transition('Queensbury Crypt Mirror Room West', 'Queensbury Crypt Statue Head Hall', DirectionType.SOUTH, TransitionType.BURROW),
     'Queensbury Crypt Old Button North Transition': Transition('Queensbury Crypt Old Button', 'Queensbury Crypt Old Graveyard Main', DirectionType.NORTH, TransitionType.SCREENS),

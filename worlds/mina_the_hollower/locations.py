@@ -49,3 +49,5 @@ def create_entrances(world, regions):
         entering_region = world.get_region(data.entering_region)
         entrance = world.create_entrance(exiting_region, entering_region, rule=data.rule, name=name,
                                          force_creation=True)
+
+

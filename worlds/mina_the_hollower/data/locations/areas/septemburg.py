@@ -4,92 +4,38 @@ from ... import RegionConnection, Transition, LocationData
 from ...rules.ability_rules import CanBurrow, CanJumpOneTile, CanBounce, CanJumpTiles, CanClimb, CanCarry
 
 collectable_locations: dict[str, LocationData] = {
-    # Check ID - Imported and guessed
-    "SB Launch Pad Secret Room #1 Chest": LocationData(91, "Septemburg Withered Farm Secret Room #1",
-                                                       CanBounce()),
-
-    # Check ID - Imported and guessed
-    "SB Launch Pad Secret Room #2 Kear": LocationData(97, "Septemburg Withered Farm Secret Room #2",
-                                                      CanBounce()),
-
-    # Check ID - Imported and guessed
-    "SB Kid Room Chest": LocationData(92, "Septemburg Kid Room",
-                                      CanBurrow()),
-
-    # Check ID - Imported and guessed
-    "SB Hidden Mandrake Room Chest": LocationData(93, "Septemburg Hidden Mandrake Room",
-                                                  CanBurrow()),
-
-    # Check ID - Imported and guessed
-    "SB Hidden Crop Thresher Room Chest": LocationData(90, "Septemburg Hidden Crop Thresher Room",
-                                                       CanBurrow()),
-
-    # Check ID - Imported and guessed
-    "SB Rotten Barn Chest": LocationData(94, "Septemburg Rotten Barn",
-                                         CanBurrow()),
-
-    # Check ID - Imported and guessed
-    "SB Below Crow Town Bridge Chest": LocationData(98, "Septemburg Below Crow Town Bridge",
-                                                    CanBurrow()),
-
-    "SB Below Crow Town Gazeworm Eye": LocationData(104, "Septemburg Below Crow Town",
-                                                    Has("Fishing Rod")),
-
+    "SB Launch Pad Secret Room #1 Chest": LocationData(91, "Septemburg Withered Farms Hills Maze"),
+    # needs canbounce(),
+    "SB Launch Pad Secret Room #2 Kear": LocationData(89, "Septemburg Withered Farms Secret Springs"),
+    # needs canbounce(),
+    "SB Kid Room Chest": LocationData(92, "Septemburg Withered Farms Kid Room 1"),  # needs burrow,
+    "SB Hidden Mandrake Room Chest": LocationData(93, "Septemburg Hidden Mandrake Room"),
+    # needs canjumptiles(distance=2),
+    "SB Hidden Crop Thresher Room Chest": LocationData(90, "Septemburg Tractor Chase"),
+    # needs canburrow(), canbounce(),
+    "SB Rotten Barn Chest": LocationData(94, "Septemburg Rotten Barn Kid Room"),  # needs burrow,
+    "SB Below Crow Town Bridge Chest": LocationData(98, "Septemburg Crow Town Tunnel Top"),
+    # needs has("septemburg crow town tunnel kear"),
+    "SB Below Crow Town Gazeworm Eye": LocationData(104, "Septemburg Crow Town Tunnel Top"),  # needs fishing rod,
     "SB Crow Town Shop Repulsing Root": LocationData(102, "Septemburg Crow Town"),
-
-    # Check ID - Imported and guessed
     "SB Crow Town Shop Kear": LocationData(103, "Septemburg Crow Town"),
+    "SB Crow Town Farmhouse Roof Chest": LocationData(99, "Septemburg Farm House Roof"),  # needs burrow, carry/throw,
+    "SB Tangled Woods Hidden Grove Chest": LocationData(97, "Septemburg Tangled Woods Hidden Grove"),  # needs burrow,
+    "SB Galloway Room Chest": LocationData(100, "Septemburg Tangled Woods Kid Room"),  # needs burrow, float,
+    "SB Stormwatch Way Chest": LocationData(101, "Septemburg Stormwatch Wind"),  # needs burrow,
+    "SB Carving Shack Health Rose": LocationData(95, "Septemburg Carving Shack Arena"),
 
-    # Check ID - Imported and guessed
-    "SB Crow Town Farmhouse Roof Chest": LocationData(99, "Septemburg Crow Town",
-                                                      CanBurrow() & CanCarry()),
-
-    # Check ID - Imported and guessed
-    "SB Tangled Woods Hidden Grove Chest": LocationData(100, "Septemburg Tangled Woods Hidden Grove",
-                                                        CanBurrow()),
-
-    # Check ID - Imported and guessed
-    "SB Galloway Room Chest": LocationData(101, "Septemburg Galloway Room",
-                                           CanBurrow() & CanBounce()),
-
-    # Check ID - Imported and guessed
-    "SB Stormwatch Way Chest": LocationData(96, "Septemburg Stormwatch Way Chest",
-                                            CanBurrow()),
-
-    # Check ID - Imported and guessed
-    "SB Carving Shack Health Rose": LocationData(95, "Septemburg Carving Shack"),
-
-    # No ID available (N/A vanilla item)
-    "SB The Carving Man": LocationData(0, "Septemburg Carving Shack"),
-
-    # No ID available (N/A vanilla item)
-    "SB Windy Generator Activated": LocationData(0, "Septemburg Windy Generator",
-                                                 CanBounce() & CanBurrow()),
-
-    # Check ID - Imported and guessed
-    "SB Dark Deluxy Spark Container": LocationData(353, "Septemburg Windy Generator",
-                                                   CanBurrow() & Has("Pipes")),
-
-    # Check ID - Imported and guessed
-    "SB Wastewater Canal Spincer": LocationData(108, "Septemburg Wastewater Canal",
-                                                Has("Fishing Rod")),
-
-    # Check ID - Imported and guessed
-    "SB Wastewater Canal Slime Room Chest": LocationData(106, "Septemburg Wastewater Canal Slime Room",
-                                                         CanBurrow()),
-
-    # Check ID - Imported and guessed
-    "SB Wastewater Canal Pipe Room Chest": LocationData(105, "Septemburg Wastewater Canal Pipe Room",
-                                                        CanBurrow()),
-
-    # Check ID - Imported and guessed
-    "SB Wastewater Canal Well Entrance Chest": LocationData(107, "Septemburg Wastewater Canal Well Entrance",
-                                                            CanBurrow()),
+    "SB Dark Deluxy Spark Container": LocationData(353, "Septemburg Windy Generator"),  # needs burrow, pipes,
+    "SB Wastewater Canal Spincer": LocationData(108, "Septemburg Wastewater Canal Well Entrance"),  # needs fishing rod,
+    "SB Wastewater Canal Slime Room Chest": LocationData(106, "Septemburg Wastewater Canal Slime Room"),
+    # needs burrow,
+    "SB Wastewater Canal Box Room Chest": LocationData(105, "Septemburg Wastewater Canal Boxes"),  # needs burrow,
+    "SB Wastewater Canal Well Entrance Chest": LocationData(107, "Septemburg Wastewater Canal Well Entrance"),
 }
 
 
 boss_locations: dict[str, LocationData] = {
-    # No ID available (N/A vanilla item)
-    "SB Dark Deluxy": LocationData(0, "Septemburg Windy Generator",
-                                   CanBurrow() & Has("Pipes")),
+    "SB The Carving Man": LocationData(None, "Septemburg Carving Shack Arena"),
+    "SB Windy Generator Activated": LocationData(None, "Septemburg Windy Generator"),  # needs float, burrow,
+    "SB Dark Deluxy": LocationData(None, "Septemburg Windy Generator"),  # needs burrow, pipes,
 }

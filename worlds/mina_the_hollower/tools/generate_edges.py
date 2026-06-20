@@ -29,7 +29,8 @@ IMPORTS = (
     "    HasVialsCount, CanJumpOneTile, CanJumpTiles, HasReachingSideArm,\n"
     ")\n"
     "from ...rules.state_rules import (\n"
-    "   HasLadder, HasCompletedBoneGenerator, HasAccessToTorch, \n"
+    "   HasLadder, HasCompletedBoneGenerator, HasAccessToTorch, HasDoneColtraneGenerator,\n"
+    "   AnyThreeAstralPlatforms, CompletedAllGenerators, InFinale\n"
     ")\n"
 )
 
