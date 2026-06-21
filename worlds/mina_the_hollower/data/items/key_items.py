@@ -1,5 +1,6 @@
 from BaseClasses import ItemClassification
 from .. import ItemData
+from ...constants import OFFSET_PROGRESSIVE_ITEMS
 
 weapons: dict[str, ItemData] = {
     "WhipLevel2" : ItemData(3, ItemClassification.useful),
@@ -34,8 +35,8 @@ side_arms: dict[str, ItemData] = {
     "HauntedUrn" : ItemData(32, ItemClassification.progression),
     "BarrierParasol" : ItemData(33, ItemClassification.progression),
     "FishingRod" : ItemData(34, ItemClassification.progression),
-    # "FishingUpgradePickup": ItemData(102, ItemClassification.progression),
-    # "FishingGoldPickup": ItemData(103, ItemClassification.progression),
+    "FishingUpgradePickup": ItemData(102, ItemClassification.progression),
+    "FishingGoldPickup": ItemData(103, ItemClassification.progression),
 }
 
 
@@ -71,26 +72,26 @@ underlab_upgrades: dict[str, ItemData] = {
 
 
 base_items: dict[str, ItemData] = {
-    "HealingVialFirst" : ItemData(18, ItemClassification.progression),
-    "Health Rose" : ItemData(69, ItemClassification.progression, 8),
-    "Trinket Bag" : ItemData(72, ItemClassification.progression, 1),
-    "Joule Box" : ItemData(68, ItemClassification.progression, 2),
-    "Vial Pouch" : ItemData(71, ItemClassification.progression, 3),
+
+    "Health Rose" : ItemData(OFFSET_PROGRESSIVE_ITEMS + 69, ItemClassification.progression, 8),
+    "Trinket Bag" : ItemData(OFFSET_PROGRESSIVE_ITEMS + 72, ItemClassification.progression, 1),
+    "Joule Box" : ItemData(OFFSET_PROGRESSIVE_ITEMS + 68, ItemClassification.progression, 2),
+    "Vial Pouch" : ItemData(OFFSET_PROGRESSIVE_ITEMS + 71, ItemClassification.progression, 3),
     "Whip" : ItemData(2, ItemClassification.useful),
-    "Spark Container" : ItemData(70, ItemClassification.progression, 1)
+    "Spark Container" : ItemData(OFFSET_PROGRESSIVE_ITEMS + 70, ItemClassification.progression, 1)
 }
 
 key_items: dict[str, ItemData] = {
-
+    "HealingVialFirst" : ItemData(18, ItemClassification.progression),
     # "Lock" : ItemData(64, ItemClassification.progression),
     # "EarlyBuy" : ItemData(65, ItemClassification.progression),
     # "Note" : ItemData(66, ItemClassification.progression),
     # "Trinket" : ItemData(67, ItemClassification.progression),
-    "Joule Box" : ItemData(68, ItemClassification.progression, 8), #magic_upgrade
-    "Health Rose" : ItemData(69, ItemClassification.progression, 10), #health_upgrade
-    "Spark Container" : ItemData(70, ItemClassification.progression, 3), #spark_upgrade
-    "Vial Pouch" : ItemData(71, ItemClassification.progression, 7), #vial_upgrade
-    "Trinket Bag" : ItemData(72, ItemClassification.progression, 5), #trinket_upgrade
+    "Joule Box" : ItemData(OFFSET_PROGRESSIVE_ITEMS + 68, ItemClassification.progression, 8), #magic_upgrade
+    "Health Rose" : ItemData(OFFSET_PROGRESSIVE_ITEMS + 69, ItemClassification.progression, 10), #health_upgrade
+    "Spark Container" : ItemData(OFFSET_PROGRESSIVE_ITEMS + 70, ItemClassification.progression, 3), #spark_upgrade
+    "Vial Pouch" : ItemData(OFFSET_PROGRESSIVE_ITEMS + 71, ItemClassification.progression, 7), #vial_upgrade
+    "Trinket Bag" : ItemData(OFFSET_PROGRESSIVE_ITEMS + 72, ItemClassification.progression, 5), #trinket_upgrade
     # "Spark" : ItemData(73, ItemClassification.progression),
 
     "Upgrade_FishingRod" : ItemData(87, ItemClassification.progression),

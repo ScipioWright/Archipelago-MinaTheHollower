@@ -3,7 +3,7 @@ from .data import AnyItemData
 from .data.items import all_key_items, all_filler_items,kears
 from .constants import MINA_THE_HOLLOWER
 from .data.items.key_items import base_items
-from .data.items.abilities import abilities
+from .data.items.abilities import abilities, bone_ups, universal_bone_ups
 
 
 class MinaTheHollowerItem(Item):
@@ -26,6 +26,13 @@ def create_items(world):
             create_item(world, item, data)
     elif world.options.kear_rando.value == 2:
         for item, data in kears.area_kears.items():
+            create_item(world, item, data)
+
+    if world.options.bone_up_cap.value == 0:
+        for item, data in bone_ups.items():
+            create_item(world, item, data)
+    else:
+        for item, data in universal_bone_ups.items():
             create_item(world, item, data)
 
     total_location_count = len(world.multiworld.get_unfilled_locations(world.player))

@@ -12,6 +12,15 @@ class Goal(Choice):
     option_radientManorGenerator = 0
     default = 0
 
+class BoneUpCap(Choice):
+    """
+    How do you want your Bone Up Cap Items
+    """
+    display_name = "Goal"
+    option_perUpgrade = 0
+    option_allUpgrade = 1
+    default = 0
+
 class NumberOfGenerators(Range):
     """
     The number of generators required to go to radiant manor
@@ -88,6 +97,7 @@ class ShuffledSidearms(Toggle):
 mina_the_hollower_option_groups= [
     OptionGroup("AP Options", [
         Goal,
+        BoneUpCap,
         OssexStart,
         KearRandomization,
         ExcludedAreas,
@@ -103,6 +113,7 @@ class MinaTheHollowerOptions(PerGameCommonOptions):
     ossex_start: OssexStart
     kear_rando: KearRandomization
     excluded_areas : ExcludedAreas
+    bone_up_cap: BoneUpCap
     # entrance_rando: RandomizeEntrances
     ability_rando: AbilityRando
     death_link: DeathLink

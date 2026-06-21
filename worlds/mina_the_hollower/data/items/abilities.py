@@ -17,3 +17,14 @@ abilities: dict[str, ItemData] = {
     "Climb" : ItemData(OFFSET_ABILITY_ITEMS+4, ItemClassification.progression),
 }
 
+universal_bone_ups: dict[str, ItemData] = {
+    "Universal Bone Up Cap" : ItemData(OFFSET_ABILITY_ITEMS+13, ItemClassification.progression, 9),
+}
+bone_ups: dict[str, ItemData] = {
+    "Attack Bone Up Cap" : ItemData(OFFSET_ABILITY_ITEMS+10, ItemClassification.progression,9),
+    "Defense Bone Up Cap" : ItemData(OFFSET_ABILITY_ITEMS+11, ItemClassification.progression,9),
+    "Sidearm Bone Up Cap" : ItemData(OFFSET_ABILITY_ITEMS+12, ItemClassification.progression,9),
+}
+
+
+

@@ -63,7 +63,7 @@ class MinaTheHollowerWorld(MinaTheHollowerBase):
             "locations/ossex.json",
         },
         "map_page_index": tracker.map_page_index,
-        "map_page_setting_key": "mina_the_hollower_map_{team}_{player}",
+        "map_page_setting_key": "MTH_level_{team}_{player}",
     }
 
     @staticmethod
