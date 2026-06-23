@@ -5,6 +5,7 @@
 
 from rule_builder.rules import Has, True_, CanReachLocation
 from ... import RegionConnection, Transition, DirectionType, TransitionType
+from ...items import BoneUps
 from ...rules.ability_rules import (
     CanBurrow, CanCarry, CanClimb, CanSwim, CanBounce, PowerLevelThreshold,
     HasVialsCount, CanJumpTiles, HasReachingSideArm, HasFishingRod, 

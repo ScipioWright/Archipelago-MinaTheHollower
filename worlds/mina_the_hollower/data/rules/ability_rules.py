@@ -6,7 +6,7 @@ from NetUtils import JSONMessagePart
 from rule_builder.options import OptionFilter
 from rule_builder.rules import Rule, Has, True_
 from ..items import Abilities, PlayerUpgrades, additive_movement_items, base_movement_items, all_movement_items, \
-    all_power_items, upgrade_powers, trinket_powers, Trinkets, Sidearms
+    all_power_items, upgrade_powers, trinket_powers, Trinkets, Sidearms, PermanentUpgrades
 
 from ...constants import MINA_THE_HOLLOWER
 from ...options import AbilityRando
@@ -65,7 +65,7 @@ class HasVialsCount(Rule[MinaTheHollowerBase], game=MINA_THE_HOLLOWER):
     @override
     def _instantiate(self, world: MinaTheHollowerBase) -> Rule.Resolved:
         # caching_enabled only needs to be passed in when your world inherits from CachedRuleBuilderWorld
-        return (Has(PlayerUpgrades.HEALING_VIAL_POUCH.value) & Has(PlayerUpgrades.HEALING_VIAL.value, count=self.count)).resolve(world)
+        return (Has(PermanentUpgrades.HEALING_VIAL_POUCH.value) & Has(PlayerUpgrades.HEALING_VIAL.value, count=self.count)).resolve(world)
 
 def HasBeastiumTransform():
     return Has(PlayerUpgrades.TRINKET_BAG.value, count=5) & (Has(Trinkets.RECKLESS_BEASTIUM.value) &

@@ -1,9 +1,11 @@
+import dataclasses
+
 
 def range_incl(a: int, b: int) -> range:
     return range(a, b+1)
 
 #Images for a single map Id
-mapping_single: dict[int, int] = {
+loners_landing: dict[int, int] = {
     0: 1,
     17: 1,
     18: 1,
@@ -24,21 +26,70 @@ mapping_single: dict[int, int] = {
     22: 9,
     28: 9,
     21: 9,
+    15: 10,
 }
 
-#Images for multiple map id
-mapping_range: dict[range, int] = {
-    range_incl(356, 364): 0,  # BADGE GATES, overworld
+southern_outskirts: dict[int, int] = {
+    15: 0,
+    6: 1,
+    4: 1,
+    0: 1,
+    7: 2,
+    23: 2,
+    22: 2,
+    10: 3,
+    11: 3,
+    12: 3,
+    14: 4,
+    13: 5,
+    18: 6,
+    16: 7,
+    19: 7,
 }
 
-def should_change(map_id: int) -> bool:
-    print("checking change")
-    if map_id in mapping_single:
-        return True
-    return False
+cave_network: dict[int, int] = {
+    9: 0,
+    17: 0,
+}
+
+mining_passage: dict[int, int] = {
+    8: 0,
+    7: 0,
+    6: 0,
+    9: 0,
+    15: 0,
+}
+
+eastern_hearth: dict[int, int] = {
+}
+
+@dataclasses.dataclass
+class MapData():
+    lookup: dict[int, int]
+    start_index: int
+
+area_id_to_map: dict[int, MapData] = {
+    184: MapData(loners_landing, 0),
+    59: MapData(southern_outskirts, 11),
+    61: MapData(cave_network, 19),
+    54: MapData(mining_passage, 20),
+
+}
+
 
 def map_page_index(data: int) -> int:
-    print(data)
-    if data in mapping_single:
-        return mapping_single[data]
-    return 0
+    if data is None or data == "":
+        return 0
+
+    data = int(data)
+    area = (data >> 16) & 0xFFFF
+    screen = data & 0xFFFF
+
+    if area not in area_id_to_map:
+        return 0
+
+    map_data = area_id_to_map[area]
+
+    if screen not in map_data.lookup:
+        return 0
+    return map_data.start_index + map_data.lookup[screen]

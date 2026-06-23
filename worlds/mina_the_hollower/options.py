@@ -45,7 +45,6 @@ class RandomizeStartingItems(Toggle):
 class AbilityRando(Toggle):
     """
     Randomize abilities. You will always start in Ossex
-    NOT IMPLEMENTED. WILL BE SET TO FALSE.
     """
     display_name = "Abilty Rando"
 

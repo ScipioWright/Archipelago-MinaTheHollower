@@ -15,7 +15,7 @@ collectable_locations: dict[str, LocationData] = {
     "SO Poppit Kear" : LocationData(273, "Southern Outskirts Poppit"),
     "SO Southern Pit Room Bonestone" : LocationData(261, "Southern Outskirts Commons Southern Pit Room Main", CanJumpTiles(distance=5)),
     "SO Western Pit Room Chest" : LocationData(267, "Southern Outskirts Commons Western Pit Room Main"),
-    "SO Residence Primed Vial Pouch" : LocationData(269, "Southern Outskirts Residence Basement"),
+    "SO Residence Trinket" : LocationData(269, "Southern Outskirts Residence Basement"),
     "SO Mining Passage Chest" : LocationData(331, "Southern Outskirts Mining Passage Secret"),
     "SO Moonbath Lace Glove" : LocationData(263, "Southern Outskirts Moonbath"),
     "SO Four Flowers Chest" : LocationData(271, "Southern Outskirts Four Flowers Shortcut", CanBurrow() & CanBounce()),

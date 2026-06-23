@@ -25,7 +25,7 @@ def create_items(world):
             for i in range(item.amount):
                 starting_items.append(Item(item.type.value, item.type.classification, item.type.item_id, world.player))
     for item_type in Abilities:
-        if world.options.random_starting_items.value:
+        if world.options.ability_rando.value:
             create_single_item(world, item_type)
         else:
             starting_items.append(Item(item_type.value, item_type.classification, item_type.item_id, world.player))
@@ -77,11 +77,6 @@ def create_items(world):
 
 
 def create_events(world):
-    loc = world.get_location("LL Captain's Gift")
-    loc.place_locked_item(MinaTheHollowerItem(PlayerUpgrades.HEALING_VIAL_POUCH.value, ItemClassification.progression, PlayerUpgrades.HEALING_VIAL_POUCH.item_id,
-    world.player))
-
-    # for logic reasons, start with the sidearms
 
     region_gen = {
         "Astral Orrery" : "Starry",

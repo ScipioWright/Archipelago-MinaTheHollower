@@ -1,0 +1,173 @@
+[
+    {
+        "name": "Chest",
+        "sections": [
+            {"name": "SO Commons Ossex Entry Left Chest"}
+        ],
+        "map_locations": [
+            {
+                "map": "Southern Outskirts East",
+                "x": 79,
+                "y": 48
+            }
+        ]
+    },
+    {
+        "name": "Chest",
+        "sections": [
+            {"name": "SO Commons Ossex Entry Right Chest"}
+        ],
+        "map_locations": [
+            {
+                "map": "Southern Outskirts East",
+                "x": 623,
+                "y": 48
+            }
+        ]
+    },
+    {
+        "name": "Chest",
+        "sections": [
+            {"name": "SO Four Flowers Chest"}
+        ],
+        "map_locations": [
+            {
+                "map": "Southern Outskirts East",
+                "x": 1488,
+                "y": 433
+            }
+        ]
+    },
+    {
+        "name": "Chest",
+        "sections": [
+            {"name": "SO Commons Chest"}
+        ],
+        "map_locations": [
+            {
+                "map": "Southern Outskirts",
+                "x": 1265,
+                "y": 45
+            }
+        ]
+    },
+    {
+        "name": "Fish",
+        "sections": [
+            {"name": "SO Commons Crumblefin Head"}
+        ],
+        "map_locations": [
+            {
+                "map": "Southern Outskirts",
+                "x": 1809,
+                "y": 786
+            }
+        ]
+    },
+    {
+        "name": "Chest",
+        "sections": [
+            {"name": "SO Cave Network Chest"}
+        ],
+        "map_locations": [
+            {
+                "map": "Cave Network",
+                "x": 526,
+                "y": 333
+            }
+        ]
+    },
+    {
+        "name": "Chest",
+        "sections": [
+            {"name": "SO Cave Network Side Room Chest"}
+        ],
+        "map_locations": [
+            {
+                "map": "Cave Network",
+                "x": 15,
+                "y": 173
+            }
+        ]
+    },
+    {
+        "name": "Poppit",
+        "sections": [
+            {"name": "SO Poppit Keri"},
+            {"name": "SO Poppit Kear"}
+        ],
+        "map_locations": [
+            {
+                "map": "Southern Outskirts Poppit",
+                "x": 496,
+                "y": 337
+            }
+        ]
+    },
+    {
+        "name": "Chest",
+        "sections": [
+            {"name": "SO Southern Pit Room Bonestone"}
+        ],
+        "map_locations": [
+            {
+                "map": "Southern Outskirts West",
+                "x": 465,
+                "y": 688
+            }
+        ]
+    },
+    {
+        "name": "Chest",
+        "sections": [
+            {"name": "SO Western Pit Room Chest"}
+        ],
+        "map_locations": [
+            {
+                "map": "Southern Outskirts West",
+                "x": 258,
+                "y": 47
+            }
+        ]
+    },
+    {
+        "name": "Trinket",
+        "sections": [
+            {"name": "SO Residence Trinket"}
+        ],
+        "map_locations": [
+            {
+                "map": "Southern Outskirts Residence",
+                "x": 182,
+                "y": 23
+            }
+        ]
+    },
+    {
+        "name": "Chest",
+        "sections": [
+            {"name": "SO Mining Passage Chest"}
+        ],
+        "map_locations": [
+            {
+                "map": "Mining Passage",
+                "x": 785,
+                "y": 145
+            }
+        ]
+    },
+    {
+        "name": "Trinket",
+        "sections": [
+            {"name": "SO Moonbath Lace Glove"}
+        ],
+        "map_locations": [
+            {
+                "map": "Southern Outskirts East",
+                "x": 1706,
+                "y": 138
+            }
+        ]
+    }
+
+]

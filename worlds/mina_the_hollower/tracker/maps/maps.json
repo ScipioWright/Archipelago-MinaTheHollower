@@ -9,6 +9,20 @@
   {"name": "Blighted Docks Kear Room", "img": "area_images/loners_landing/13.png", "location_size": 32, "location_border_thickness": 2},
   {"name": "Boardwalk", "img": "area_images/loners_landing/14-7-10.png", "location_size": 32, "location_border_thickness": 2},
   {"name": "Sandwater Junction", "img": "area_images/loners_landing/23-22-28-21.png", "location_size": 32, "location_border_thickness": 2},
+  {"name": "Boardwalk Cave", "img": "area_images/loners_landing/15.png", "location_size": 32, "location_border_thickness": 2},
+
+  {"name": "Southern Outskirts", "img": "area_images/southern_outskirts/15.png", "location_size": 32, "location_border_thickness": 2},
+  {"name": "Southern Outskirts West", "img": "area_images/southern_outskirts/6-4-0.png", "location_size": 32, "location_border_thickness": 2},
+  {"name": "Southern Outskirts East", "img": "area_images/southern_outskirts/7-23-22.png", "location_size": 32, "location_border_thickness": 2},
+  {"name": "Rebel Barracks", "img": "area_images/southern_outskirts/10-11-12.png", "location_size": 32, "location_border_thickness": 2},
+  {"name": "Rebel Barracks Prison", "img": "area_images/southern_outskirts/14.png", "location_size": 32, "location_border_thickness": 2},
+  {"name": "Rebel Barracks Top", "img": "area_images/southern_outskirts/13.png", "location_size": 32, "location_border_thickness": 2},
+  {"name": "Southern Outskirts Poppit", "img": "area_images/southern_outskirts/18----.png", "location_size": 32, "location_border_thickness": 2},
+  {"name": "Southern Outskirts Residence", "img": "area_images/southern_outskirts/16-19.png", "location_size": 32, "location_border_thickness": 2},
+
+  {"name": "Cave Network", "img": "area_images/southern_outskirts/9-17.png", "location_size": 32, "location_border_thickness": 2},
+  {"name": "Mining Passage", "img": "area_images/southern_outskirts/8-7-6-9-15.png", "location_size": 32, "location_border_thickness": 2},
+
   {"name": "Ossex", "img": "area_images/ossex/ossex_main.png", "location_size": 32, "location_border_thickness": 2},
   {"name": "Eastern Hearth", "img": "area_images/eastern_hearth/eastern_hearth.png", "location_size": 32, "location_border_thickness": 2}
 ]

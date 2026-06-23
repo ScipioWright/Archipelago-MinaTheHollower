@@ -24,6 +24,7 @@ class Sidearms(ItemTypeEnum):
 
 
 class PermanentUpgrades(ItemTypeEnum):
+    HEALING_VIAL_POUCH = ("Healing Vial Pouch", 18, ItemClassification.progression)
     CANDLE_VISION = ("Candle Vision",74, ItemClassification.progression)
     WORLD_MAP = ("World Map",75, ItemClassification.progression)
     ENHANCED_MAP = ("EnhancedMap",76, ItemClassification.progression)
@@ -95,7 +96,6 @@ class PermanentUpgrades(ItemTypeEnum):
     # "FishBoss" : ItemData(119, ItemClassification.progression),
 
 class PlayerUpgrades(ItemTypeEnum):
-    HEALING_VIAL_POUCH = ("Healing Vial Pouch",18, ItemClassification.progression)
     JOULE_BOX = ("Joule Box",68, ItemClassification.progression) #magic_upgrade
     HEALTH_ROSE = ("Health Rose",69, ItemClassification.progression) #health_upgrade
     SPARK_CONTAINER = ("Spark Container",70, ItemClassification.progression) #spark_upgrade
@@ -131,7 +131,7 @@ class Trinkets(ItemTypeEnum):
     PIT_PRESERVER = ("Pit Preserver", 159, ItemClassification.progression)
     IRON_LUNG = ("Iron Lung", 160, ItemClassification.progression)
     TUMBLING_TUTU = ("Tumbling Tutu", 161, ItemClassification.progression)
-    EMPTY_JUG = ("Plasma Jug", 162, ItemClassification.progression)
+    EMPTY_JUG = ("Empty Plasma Jug", 162, ItemClassification.progression)
     URANIUM_BRACELET = ("Uranium Bracelet", 163, ItemClassification.progression)
     BUBBLE_RING = ("Bubble Ring", 164, ItemClassification.progression)
     SHOCK_FLINT = ("Shock Flint", 165, ItemClassification.progression)
