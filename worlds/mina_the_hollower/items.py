@@ -25,7 +25,11 @@ def create_items(world):
             for i in range(item.amount):
                 starting_items.append(Item(item.type.value, item.type.classification, item.type.item_id, world.player))
     for item_type in Abilities:
-        if world.options.ability_rando.value:
+        # Spring is folded into Bounce for now
+        # TODO: Add Spring as a seperate ability and account for it in logic
+        if item_type is Abilities.SPRING:
+            continue
+        if item_type.value in world.options.ability_rando.value:
             create_single_item(world, item_type)
         else:
             starting_items.append(Item(item_type.value, item_type.classification, item_type.item_id, world.player))
@@ -150,4 +154,3 @@ def create_events(world):
         MinaTheHollowerItem("Victory", ItemClassification.progression, None,
                             world.player))
     purple_region.locations.append(goal_event)
-

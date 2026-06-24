@@ -25,7 +25,7 @@ class CanBurrow(Rule[MinaTheHollowerBase], game=MINA_THE_HOLLOWER):
     @override
     def _instantiate(self, world: MinaTheHollowerBase) -> Rule.Resolved:
         # caching_enabled only needs to be passed in when your world inherits from CachedRuleBuilderWorld
-        return Has(Abilities.BURROW.value, options=[OptionFilter(AbilityRando, AbilityRando.option_true) ], filtered_resolution=True).resolve(world)
+        return Has(Abilities.BURROW.value, options=[OptionFilter(AbilityRando, Abilities.BURROW.value, operator="contains")], filtered_resolution=True).resolve(world)
 
 @dataclasses.dataclass(kw_only=True)
 class CanCarry(Rule[MinaTheHollowerBase], game=MINA_THE_HOLLOWER):
@@ -33,7 +33,7 @@ class CanCarry(Rule[MinaTheHollowerBase], game=MINA_THE_HOLLOWER):
     @override
     def _instantiate(self, world: MinaTheHollowerBase) -> Rule.Resolved:
         # caching_enabled only needs to be passed in when your world inherits from CachedRuleBuilderWorld
-        return Has(Abilities.CARRY.value, options=[OptionFilter(AbilityRando, AbilityRando.option_true) ], filtered_resolution=True).resolve(world)
+        return Has(Abilities.CARRY.value, options=[OptionFilter(AbilityRando, Abilities.CARRY.value, operator="contains")], filtered_resolution=True).resolve(world)
 
 @dataclasses.dataclass(kw_only=True)
 class CanClimb(Rule[MinaTheHollowerBase], game=MINA_THE_HOLLOWER):
@@ -41,7 +41,7 @@ class CanClimb(Rule[MinaTheHollowerBase], game=MINA_THE_HOLLOWER):
     @override
     def _instantiate(self, world: MinaTheHollowerBase) -> Rule.Resolved:
         # caching_enabled only needs to be passed in when your world inherits from CachedRuleBuilderWorld
-        return Has(Abilities.CLIMB.value, options=[OptionFilter(AbilityRando, AbilityRando.option_true) ], filtered_resolution=True).resolve(world)
+        return Has(Abilities.CLIMB.value, options=[OptionFilter(AbilityRando, Abilities.CLIMB.value, operator="contains")], filtered_resolution=True).resolve(world)
 
 @dataclasses.dataclass(kw_only=True)
 class CanSwim(Rule[MinaTheHollowerBase], game=MINA_THE_HOLLOWER):
@@ -49,7 +49,7 @@ class CanSwim(Rule[MinaTheHollowerBase], game=MINA_THE_HOLLOWER):
     @override
     def _instantiate(self, world: MinaTheHollowerBase) -> Rule.Resolved:
         # caching_enabled only needs to be passed in when your world inherits from CachedRuleBuilderWorld
-        return Has(Abilities.SWIM.value, options=[OptionFilter(AbilityRando, AbilityRando.option_true)], filtered_resolution=True).resolve(world)
+        return Has(Abilities.SWIM.value, options=[OptionFilter(AbilityRando, Abilities.SWIM.value, operator="contains")], filtered_resolution=True).resolve(world)
 
 @dataclasses.dataclass(kw_only=True)
 class CanBounce(Rule[MinaTheHollowerBase], game=MINA_THE_HOLLOWER):
@@ -57,7 +57,7 @@ class CanBounce(Rule[MinaTheHollowerBase], game=MINA_THE_HOLLOWER):
     @override
     def _instantiate(self, world: MinaTheHollowerBase) -> Rule.Resolved:
         # caching_enabled only needs to be passed in when your world inherits from CachedRuleBuilderWorld
-        return Has(Abilities.BOUNCE.value, options=[OptionFilter(AbilityRando, AbilityRando.option_true) ], filtered_resolution=True).resolve(world)
+        return Has(Abilities.BOUNCE.value, options=[OptionFilter(AbilityRando, Abilities.BOUNCE.value, operator="contains")], filtered_resolution=True).resolve(world)
 
 @dataclasses.dataclass(kw_only=True)
 class HasVialsCount(Rule[MinaTheHollowerBase], game=MINA_THE_HOLLOWER):

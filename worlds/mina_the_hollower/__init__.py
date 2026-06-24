@@ -17,7 +17,7 @@ from .data import get_target_groups
 from .data.items import all_filler_items, all_items
 from .data.locations import all_locations
 from .items import MinaTheHollowerItem
-from .options import mina_the_hollower_option_groups
+from .options import ABILITY_RANDO_SLOT_KEYS, mina_the_hollower_option_groups
 from .world_base import MinaTheHollowerBase
 
 
@@ -89,6 +89,9 @@ class MinaTheHollowerWorld(MinaTheHollowerBase):
         # self.options.ability_rando.value = False
         self.options.random_starting_items.value = False
         self.handle_ut_yamless(None)
+        # Ability rando requires starting in Ossex
+        if self.options.ability_rando.value:
+            self.options.ossex_start.value = self.options.ossex_start.option_true
 
     def create_regions(self):
         self.regions = locations.get_regions(self)
@@ -132,6 +135,7 @@ class MinaTheHollowerWorld(MinaTheHollowerBase):
 
     def fill_slot_data(self) -> id:
         # print("Filling Slot Data")
+        ability_rando = self.options.ability_rando.value
         return {
             "sem_ver": self.manifest["mod_version"],
             "goal": self.options.goal.value,
@@ -139,6 +143,12 @@ class MinaTheHollowerWorld(MinaTheHollowerBase):
             "kear_rando": self.options.kear_rando.value,
             # "entrance_rando" : self.options.entrance_rando.value,
             "death_link": self.options.death_link.value,
+            # The client disables each ability while its "*_rando" key is nonzero.
+            **{
+                slot_key: int(option_key in ability_rando)
+                for option_key, slot_keys in ABILITY_RANDO_SLOT_KEYS.items()
+                for slot_key in slot_keys
+            },
         }
 
     def extend_hint_information(self, hint_data: Dict[int, Dict[int, str]]):
@@ -163,10 +173,14 @@ class MinaTheHollowerWorld(MinaTheHollowerBase):
         self.options.death_link.value = slot_data["death_link"]
         self.options.kear_rando.value = slot_data["kear_rando"]
         self.options.ossex_start.value = slot_data["ossex_start"]
+        self.options.ability_rando.value = {
+            option_key
+            for option_key, slot_keys in ABILITY_RANDO_SLOT_KEYS.items()
+            if any(slot_data.get(slot_key) for slot_key in slot_keys)
+        }
         # self.options.entrance_rando.value = slot_data["entrance_rando"]
         # self.options.shuffled_sidearms.value = slot_data["shuffled_sidearms"]
         # self.options.shuffle_enemy_level.value = slot_data["shuffle_enemy_level"]
         # self.options.shuffled_items.value = slot_data["shuffled_items"]
 
         return slot_data
-
