@@ -9,44 +9,46 @@ loners_landing: dict[int, int] = {
     0: 1,
     17: 1,
     18: 1,
-    11: 2,
-    19: 3,
-    3: 4,
-    2: 4,
-    8: 4,
-    16: 4,
-    6: 5,
-    4: 5,
-    9: 6,
-    13: 7,
-    14: 8,
-    7: 8,
-    10: 8,
-    23: 9,
-    22: 9,
-    28: 9,
-    21: 9,
-    15: 10,
+    11: 1,
+    19: 2,
+    3: 3,
+    2: 3,
+    8: 3,
+    16: 3,
+    6: 4,
+    4: 4,
+    9: 4,
+    13: 4,
+    14: 5,
+    15: 5,
+    7: 5,
+    10: 5,
+    23: 6,
+    22: 6,
+    28: 6,
+    21: 6,
 }
 
 southern_outskirts: dict[int, int] = {
     15: 0,
-    6: 1,
-    4: 1,
-    0: 1,
-    7: 2,
-    23: 2,
-    22: 2,
-    10: 3,
-    11: 3,
-    12: 3,
-    14: 4,
-    13: 5,
-    18: 6,
-    16: 7,
-    19: 7,
+    6: 0,
+    4: 0,
+    0: 0,
+    7: 0,
+    23:0,
+    22: 0,
+    10: 1,
+    11: 1,
+    12: 1,
+    14: 1,
+    13: 1,
+    16: 2,
+    19: 3,
 }
 
+so_poppit: dict[int, int] = {
+    18:0
+}
 cave_network: dict[int, int] = {
     9: 0,
     17: 0,
@@ -61,6 +63,29 @@ mining_passage: dict[int, int] = {
 }
 
 eastern_hearth: dict[int, int] = {
+    0: 0,
+    1: 0,
+    3: 0,
+    5: 0,
+    6: 0,
+    8: 0,
+    15: 0,
+    16: 0,
+    17: 0,
+    4: 1,
+    7: 1,
+    11: 2,
+}
+cave_eastern_hearth: dict[int, int] = {
+    19: 0,
+    20: 0
+}
+under_eastern_hearth: dict[int, int] = {
+    23:0,
+    18:0,
+    26:0,
+    24:0,
+    21:0
 }
 
 @dataclasses.dataclass
@@ -70,9 +95,12 @@ class MapData():
 
 area_id_to_map: dict[int, MapData] = {
     184: MapData(loners_landing, 0),
-    59: MapData(southern_outskirts, 11),
-    61: MapData(cave_network, 19),
-    54: MapData(mining_passage, 20),
+    59: MapData(southern_outskirts, 7),
+    61: MapData(cave_network, 11),
+    92: MapData(mining_passage, 12),
+    54: MapData(eastern_hearth, 13),
+    53: MapData(under_eastern_hearth, 16),
+    52: MapData(cave_eastern_hearth, 16),
 
 }
 

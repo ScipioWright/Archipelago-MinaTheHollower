@@ -6,9 +6,9 @@
         ],
         "map_locations": [
             {
-                "map": "ShipWreck Lower Decks",
+                "map": "ShipWreck",
                 "x": 80,
-                "y": 527
+                "y": 627
             }
         ]
     },
@@ -19,9 +19,9 @@
         ],
         "map_locations": [
             {
-                "map": "ShipWreck Lower Decks",
+                "map": "ShipWreck",
                 "x": 142,
-                "y": 527
+                "y": 627
             }
         ]
     },
@@ -32,9 +32,9 @@
         ],
         "map_locations": [
             {
-                "map": "ShipWreck Lower Decks",
+                "map": "ShipWreck",
                 "x": 206,
-                "y": 146
+                "y": 252
             }
         ]
     },
@@ -46,7 +46,7 @@
         "map_locations": [
             {
                 "map": "ShipWreck",
-                "x": 625,
+                "x": 1035,
                 "y": 430
             }
         ]
@@ -59,7 +59,7 @@
         "map_locations": [
             {
                 "map": "ShipWreck",
-                "x": 200,
+                "x": 616,
                 "y": 320
             }
         ]
@@ -99,7 +99,7 @@
             {
                 "map": "Blighted Docks Bridge",
                 "x": 978,
-                "y": 144
+                "y": 404
             }
         ]
     },
@@ -110,7 +110,7 @@
         ],
         "map_locations": [
             {
-                "map": "Blighted Docks Knights Room",
+                "map": "Blighted Docks Bridge",
                 "x": 83,
                 "y": 129
             }
@@ -123,9 +123,9 @@
         ],
         "map_locations": [
             {
-                "map": "Blighted Docks Kear Room",
-                "x": 382,
-                "y": 70
+                "map": "Blighted Docks Bridge",
+                "x": 1426,
+                "y": 390
             }
         ]
     },

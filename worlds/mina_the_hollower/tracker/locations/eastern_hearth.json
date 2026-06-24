@@ -1,30 +1,185 @@
 [
     {
-        "name": "Eastern Hearth",
+        "name": "Beat Maxi",
         "sections": [
-            {"name": "EH Grassland Trinket Bag"},
-            {"name": "EH Grassland Waterfall Windfall Charm"},
-            {"name": "EH Choppe Shoppe Chain Capacitor"},
-            {"name": "EH Grassland Waterfall Chest"},
-            {"name": "EH Buckler's Bluff Joule Box"},
-            {"name": "EH Under the Bridge Chest"},
-            {"name": "EH Grassland Riverbed Chest"},
-            {"name": "EH Grassland Bush Room Bonestone"},
-            {"name": "EH Grassland Horizontal Spinner Room Chest"},
-            {"name": "EH Grotto Chest"},
-            {"name": "EH Grassland Poppit Cave Chest"},
-            {"name": "EH Frozen Pass Chest"},
-            {"name": "EH Frozen Pass IceBlock"},
-            {"name": "EH Grassland Vertical Spinner Room Chest"},
+            {"name": "EH Grassland Trinket Bag"}
+        ],
+        "map_locations": [
+            {
+                "map": "Eastern Hearth",
+                "x": 243,
+                "y": 383
+            }
+        ]
+    },
+    {
+        "name": "Bushroom Kear Chest",
+        "sections": [
+            {"name": "EH Grassland Ossex Patio Chest"}
+        ],
+        "map_locations": [
+            {
+                "map": "Eastern Hearth",
+                "x": 82,
+                "y": 589
+            }
+        ]
+    },
+    {
+        "name": "Locked Chest",
+        "sections": [
+            {"name": "EH Grassland Bush Room Bonestone"}
+        ],
+        "map_locations": [
+            {
+                "map": "Eastern Hearth",
+                "x": 129,
+                "y": 1166
+            }
+        ]
+    },
+    {
+        "name": "Poppit Shop",
+        "sections": [
             {"name": "EH Grassland Poppit Cave Willow"},
-            {"name": "EH Grassland Poppit Cave Kear"},
+            {"name": "EH Grassland Poppit Cave Kear"}
+        ],
+        "map_locations": [
+            {
+                "map": "Eastern Hearth",
+                "x": 1364,
+                "y": 1105
+            }
+        ]
+    },
+    {
+        "name": "Chest",
+        "sections": [
+            {"name": "EH Grassland Poppit Cave Chest"}
+        ],
+        "map_locations": [
+            {
+                "map": "Eastern Hearth",
+                "x": 882,
+                "y": 1169
+            }
+        ]
+    },
+    {
+        "name": "Chest",
+        "sections": [
+            {"name": "EH Grassland Riverbed Chest"}
+        ],
+        "map_locations": [
+            {
+                "map": "Eastern Hearth",
+                "x": 946,
+                "y": 654
+            }
+        ]
+    },
+    {
+        "name": "Chest",
+        "sections": [
+            {"name": "EH Grassland Vertical Spinner Room Chest"}
+        ],
+        "map_locations": [
+            {
+                "map": "Eastern Hearth",
+                "x": 1457,
+                "y": 301
+            }
+        ]
+    },
+    {
+        "name": "Chest",
+        "sections": [
+            {"name": "EH Grassland Waterfall Chest"}
+        ],
+        "map_locations": [
+            {
+                "map": "Eastern Hearth Waterfall",
+                "x": 978,
+                "y": 1265
+            }
+        ]
+    },
+    {
+        "name": "Kite Trinket",
+        "sections": [
+            {"name": "EH Grassland Waterfall Windfall Charm"}
+        ],
+        "map_locations": [
+            {
+                "map": "Eastern Hearth Waterfall",
+                "x": 881,
+                "y": 1198
+            }
+        ]
+    },
+    {
+        "name": "TEMP Frozen Pass",
+        "sections": [
+            {"name": "EH Frozen Pass Chest"},
+            {"name": "EH Frozen Pass IceBlock"}
+        ],
+        "map_locations": [
+            {
+                "map": "Eastern Hearth Waterfall",
+                "x": 770,
+                "y": 60
+            }
+        ]
+    },
+    {
+        "name": "Chest",
+        "sections": [
+            {"name": "EH Buckler's Bluff Joule Box"}
+        ],
+        "map_locations": [
+            {
+                "map": "Eastern Hearth Buckler's Bluff",
+                "x": 259,
+                "y": 55
+            }
+        ]
+    },
+    {
+        "name": "Trinket",
+        "sections": [
+            {"name": "EH Choppe Shoppe Chain Capacitor"}
+        ],
+        "map_locations": [
+            {
+                "map": "Eastern Hearth Interiors",
+                "x": 125,
+                "y": 780
+            }
+        ]
+    },
+    {
+        "name": "Chest",
+        "sections": [
+            {"name": "EH Under the Bridge Chest"}
+        ],
+        "map_locations": [
+            {
+                "map": "Eastern Hearth Interiors",
+                "x": 113,
+                "y": 1058
+            }
+        ]
+    },
+    {
+        "name": "Fish",
+        "sections": [
             {"name": "EH Grassland Dork Eyes"}
         ],
         "map_locations": [
             {
                 "map": "Eastern Hearth",
-                "x": 440,
-                "y": 2300
+                "x": 780,
+                "y": 530
             }
         ]
     }

@@ -66,6 +66,8 @@ class MinaTheHollowerWorld(MinaTheHollowerBase):
             "locations/eastern_hearth.json",
             "locations/ossex.json",
             "locations/loners_landing.json",
+            "locations/southern_outskirts.json",
+            "locations/eastern_hearth.json",
         },
         "map_page_index": tracker.map_page_index,
         "map_page_setting_key": "MTH_level_{team}_{player}",

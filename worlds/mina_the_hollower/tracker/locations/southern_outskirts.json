@@ -6,9 +6,9 @@
         ],
         "map_locations": [
             {
-                "map": "Southern Outskirts East",
-                "x": 79,
-                "y": 48
+                "map": "Southern Outskirts",
+                "x": 1264,
+                "y": 54
             }
         ]
     },
@@ -19,9 +19,9 @@
         ],
         "map_locations": [
             {
-                "map": "Southern Outskirts East",
-                "x": 623,
-                "y": 48
+                "map": "Southern Outskirts",
+                "x": 1809,
+                "y": 54
             }
         ]
     },
@@ -32,8 +32,8 @@
         ],
         "map_locations": [
             {
-                "map": "Southern Outskirts East",
-                "x": 1488,
+                "map": "Southern Outskirts",
+                "x": 2671,
                 "y": 433
             }
         ]
@@ -46,8 +46,8 @@
         "map_locations": [
             {
                 "map": "Southern Outskirts",
-                "x": 1265,
-                "y": 45
+                "x": 1777,
+                "y": 301
             }
         ]
     },
@@ -59,8 +59,8 @@
         "map_locations": [
             {
                 "map": "Southern Outskirts",
-                "x": 1809,
-                "y": 786
+                "x": 2322,
+                "y": 1042
             }
         ]
     },
@@ -111,7 +111,7 @@
         ],
         "map_locations": [
             {
-                "map": "Southern Outskirts West",
+                "map": "Southern Outskirts",
                 "x": 465,
                 "y": 688
             }
@@ -124,7 +124,7 @@
         ],
         "map_locations": [
             {
-                "map": "Southern Outskirts West",
+                "map": "Southern Outskirts",
                 "x": 258,
                 "y": 47
             }
@@ -163,8 +163,8 @@
         ],
         "map_locations": [
             {
-                "map": "Southern Outskirts East",
-                "x": 1706,
+                "map": "Southern Outskirts",
+                "x": 2883,
                 "y": 138
             }
         ]
