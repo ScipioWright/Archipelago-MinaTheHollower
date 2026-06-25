@@ -23,6 +23,12 @@ def create_single_item(world, item_type: ItemTypeEnum):
 def create_items(world):
     is_ut = getattr(world.multiworld, "generation_is_fake", False)
     all_items: list[ItemData] = []
+    trinket_types = set(Trinkets)
+    bone_cap_types = {*BoneUps, GenericBoneUp.ALL_BONE_UP_CAP}
+    bone_cap_cap = 6 if world.options.bone_up_cap.value == 0 else 2
+    trinkets_selected = 0
+    bags_selected = 0
+    bone_caps_selected = 0
 
     for item in upgrade_items:
         for _ in range(item.amount):
@@ -65,38 +71,43 @@ def create_items(world):
                 if item_data.amount <= 0:
                     all_items.remove(item_data)
         else:
-            added_trinket_pouch = False
             for i in range(BASE_ITEM_TOTAL):
                 if i < (BASE_ITEM_TOTAL * 2) // 3:
-                    valid_items = [
+                    candidates = [
                         item
                         for item in all_items
                         if item.type in valid_power_types
                     ]
-
-                    item_data = world.random.choice(valid_items)
-                    if not added_trinket_pouch and item_data.type in Trinkets:
-                        trinket_pouch = next(
-                            (x for x in all_items if x.type.value == PlayerUpgrades.TRINKET_BAG.value),
-                            None
-                        )
-                        starting_items.append(
-                            MinaTheHollowerItem(
-                                trinket_pouch.type.value,
-                                trinket_pouch.type.classification,
-                                trinket_pouch.type.item_id,
-                                world.player,
-                            )
-                        )
-
-
-                        trinket_pouch.amount -= 1
-                        if trinket_pouch.amount <= 0:
-                            all_items.remove(trinket_pouch)
-                        added_trinket_pouch = True
-
+                    if bags_selected < 2:
+                        candidates += [
+                            item
+                            for item in all_items
+                            if item.type == PlayerUpgrades.TRINKET_BAG
+                        ]
                 else:
-                    item_data = world.random.choice(all_items)
+                    candidates = list(all_items)
+
+                if (trinkets_selected > bags_selected):
+                    filtered = [
+                        item
+                        for item in candidates
+                        if item.type not in trinket_types
+                    ]
+                    if filtered:
+                        candidates = filtered
+
+                if (bone_caps_selected >= bone_cap_cap):
+                    filtered = [
+                        item
+                        for item in candidates
+                        if item.type not in bone_cap_types
+                    ]
+                    if filtered:
+                        candidates = filtered
+
+                item_data = world.random.choice(candidates)
+
+                print(f"starting item {item_data.type.value}")
                 starting_items.append(
                     MinaTheHollowerItem(
                         item_data.type.value,
@@ -105,6 +116,13 @@ def create_items(world):
                         world.player,
                     )
                 )
+
+                if item_data.type == PlayerUpgrades.TRINKET_BAG:
+                    bags_selected += 1
+                elif item_data.type in trinket_types:
+                    trinkets_selected += 1
+                elif item_data.type in bone_cap_types:
+                    bone_caps_selected += 1
 
                 item_data.amount -= 1
 
