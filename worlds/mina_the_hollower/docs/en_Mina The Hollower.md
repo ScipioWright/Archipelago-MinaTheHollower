@@ -65,7 +65,7 @@ The goal is to defeat Giga Lionel and repair the final generator
 - **All upgrade**: A single progressive cap applies to attack, defense, and sidearm upgrades.
 
 ### Randomize Starting Items
-- Takes your 15 starting items and shuffles them. This increases difficulty and can create some very cursed starts.
+- Takes your 15 starting items and shuffles them. This increases difficulty and can cause some funny starts.
 
 ### Ability Rando
 - Allows you to select which abilities become items from the list below. Burrow is disabled by default because it significantly limits your starting options.
