@@ -12,7 +12,7 @@ The randomizer is currently believed to be completable. Below is an ever-changin
 Use [Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases?q=Tracker) to keep track of what you can access. There is also an in-progress map tracker built into UT that is actively being worked on.
 - Ability randomization is implemented. Please test all abilities and report any bugs.
 - Randomizing Burrow can make starts significantly more difficult. Be careful when enabling it, and please share any ideas for improving the experience.
-- Randomizing starting items is not for the faint of heart. Good luck if you turn it on!
+- Randomizing starting items can cause funny starts. Feedback and suggestions Welcome.
 - Kear randomization is implemented. Please report any locks that are not removed correctly or any progression issues you encounter.
 - Goaling is implemented but still needs validation.
 - Location logic still has many bugs. Please report anything that UT says is inaccessible that you can reach, or anything UT says is accessible that you cannot reach.
