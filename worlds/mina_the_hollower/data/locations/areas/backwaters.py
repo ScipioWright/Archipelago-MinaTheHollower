@@ -1,9 +1,10 @@
 from BaseClasses import LocationProgressType
 from rule_builder.options import OptionFilter
 from rule_builder.rules import Has, True_
+from worlds.hk.Options import count
 from ... import RegionConnection, Transition, LocationData
-from ...items import Trinkets, SingleKears, Sidearms
-from ...rules.ability_rules import CanBurrow, CanJumpOneTile, CanJumpTiles, CanBounce, CanSwim, CanCarry, CanClimb, \
+from ...items import Trinkets, SingleKears, Sidearms, FishingUpgrades
+from ...rules.ability_rules import CanBurrow, CanJumpTiles, CanBounce, CanSwim, CanCarry, CanClimb, \
     HasFishingRod
 from ...rules.state_rules import HasLadder, HasKear
 
@@ -23,8 +24,8 @@ collectable_locations: dict[str, LocationData] = {
     "BW Lucky's Lair Kear": LocationData(292, "Backwaters Lucky's Lair", CanBurrow()),
     "BW Fishing Hole Fishing Rod": LocationData(300, "Backwaters Fishing Hole"),
     "BW Fishing Hole Fleeper Head": LocationData(299, "Backwaters Fishing Hole", HasFishingRod()),
-    "BW Fishing Hole Thalessian Pearl": LocationData(302, "Backwaters Fishing Hole", HasFishingRod() & CanSwim() & (Has(Trinkets.TUNNELING_CODEX.value) | Has(Sidearms.ANGLERS_RAFT.value))),
-    "BW Fishing Hole Gilded Rod": LocationData(301, "Backwaters Fishing Hole", HasFishingRod() & CanSwim() & (Has(Trinkets.TUNNELING_CODEX.value) | Has(Sidearms.ANGLERS_RAFT.value))),
+    "BW Fishing Hole Thalessian Pearl": LocationData(302, "Backwaters Fishing Hole", HasFishingRod() & CanSwim() & (Has(Trinkets.TUNNELING_CODEX.value) | Has(FishingUpgrades.FISHING_ROD.value, count=2))),
+    "BW Fishing Hole Gilded Rod": LocationData(301, "Backwaters Fishing Hole", HasFishingRod() & CanSwim() & (Has(Trinkets.TUNNELING_CODEX.value) | Has(FishingUpgrades.FISHING_ROD.value, count=2))),
 }
 
 boss_locations: dict[str, LocationData] = {

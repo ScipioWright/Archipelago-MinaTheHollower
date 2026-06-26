@@ -25,7 +25,7 @@ class Sidearms(ItemTypeEnum):
     GNAWING_GHOSTS = ("Gnawing Ghosts",32, ItemClassification.progression)
 
     FISHING_ROD = ("Fishing Rod",34, ItemClassification.progression) #103 is gold
-    ANGLERS_RAFT = ("Angler's Raft", 102, ItemClassification.progression)
+    # ANGLERS_RAFT = ("Angler's Raft", 102, ItemClassification.progression)
     # "FishingGoldPickup": ItemData(103, ItemClassification.progression),
 
 

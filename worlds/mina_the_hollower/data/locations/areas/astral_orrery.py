@@ -2,7 +2,7 @@ from BaseClasses import LocationProgressType
 from rule_builder.rules import Has, CanReachLocation
 from ... import RegionConnection, Transition, LocationData
 from ...items import AstralPlatforms, SingleKears
-from ...rules.ability_rules import CanBurrow, CanJumpOneTile, CanBounce, CanJumpTiles, CanClimb, CanCarry, HasFishingRod
+from ...rules.ability_rules import CanBurrow, CanBounce, CanJumpTiles, CanClimb, CanCarry, HasFishingRod
 from ...rules.state_rules import HasKear
 
 collectable_locations: dict[str, LocationData] = {

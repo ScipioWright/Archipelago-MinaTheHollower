@@ -3,7 +3,7 @@ from rule_builder.options import OptionFilter
 from rule_builder.rules import Has, True_
 from ... import RegionConnection, Transition, LocationData
 from ...items import SingleKears, Trinkets
-from ...rules.ability_rules import CanBurrow, CanJumpOneTile, CanJumpTiles, CanBounce, CanCarry, HasFishingRod, CanClimb
+from ...rules.ability_rules import CanBurrow, CanJumpTiles, CanBounce, CanCarry, HasFishingRod, CanClimb
 from ...rules.state_rules import HasKear
 
 collectable_locations: dict[str, LocationData] = {

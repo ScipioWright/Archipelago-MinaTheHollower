@@ -107,7 +107,6 @@ def create_items(world):
 
                 item_data = world.random.choice(candidates)
 
-                print(f"starting item {item_data.type.value}")
                 starting_items.append(
                     MinaTheHollowerItem(
                         item_data.type.value,
@@ -161,8 +160,8 @@ def create_items(world):
 
 
     total_location_count = len(world.multiworld.get_unfilled_locations(world.player))
-    print(f"total locs at start {total_location_count}")
-    print(f"total Itempool at start {len(world.itempool)}")
+    # print(f"total locs at start {total_location_count}")
+    # print(f"total Itempool at start {len(world.itempool)}")
     remaining = total_location_count - len(world.itempool)
 
     filler: list[ItemFiller] = world.random.choices(
@@ -202,9 +201,6 @@ def create_events(world):
     for itemShortcut in sidearm_rules:
         create_event(world, starting_region, itemShortcut.type.value, itemShortcut.access_rule)
         # starting_items.append(Item(item_type.value, item_type.classification, item_type.item_id, world.player))
-
-    create_event(world, world.get_region("Backwaters Fishing Hole"), Sidearms.FISHING_ROD.value)
-    create_event(world, world.get_region("Sandfalls Sandwater Junction"), Sidearms.ANGLERS_RAFT.value, CanJumpTiles(distance=2))
 
     for area, name in region_gen.items():
 

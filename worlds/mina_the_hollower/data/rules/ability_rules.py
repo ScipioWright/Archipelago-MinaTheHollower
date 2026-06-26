@@ -6,17 +6,13 @@ from NetUtils import JSONMessagePart
 from rule_builder.options import OptionFilter
 from rule_builder.rules import Rule, Has, True_
 from ..items import Abilities, PlayerUpgrades, additive_movement_items, base_movement_items, all_movement_items, \
-    all_power_items, upgrade_powers, trinket_powers, Trinkets, Sidearms, PermanentUpgrades
+    all_power_items, upgrade_powers, trinket_powers, Trinkets, Sidearms, PermanentUpgrades, FishingUpgrades
 
 from ...constants import MINA_THE_HOLLOWER
 from ...options import AbilityRando
 from ...world_base import MinaTheHollowerBase
 
 def HasReachingSideArm():
-    return True_()
-
-
-def CanJumpOneTile():
     return True_()
 
 @dataclasses.dataclass(kw_only=True)
@@ -87,7 +83,7 @@ def HasBeastiumTransform():
 
 
 def HasFishingRod():
-    return Has(Sidearms.FISHING_ROD.value)
+    return Has(FishingUpgrades.FISHING_ROD.value)
 
 @dataclasses.dataclass(kw_only=True)
 class CanJumpTiles(Rule[MinaTheHollowerBase], game=MINA_THE_HOLLOWER):

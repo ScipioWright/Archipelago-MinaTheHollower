@@ -31,14 +31,36 @@ class HasKear(Rule[MinaTheHollowerBase], game=MINA_THE_HOLLOWER):
 @dataclasses.dataclass(kw_only=True)
 class HasSparks(Rule[MinaTheHollowerBase], game=MINA_THE_HOLLOWER):
     count: int
-
     @override
     def _instantiate(self, world: MinaTheHollowerBase) -> Rule.Resolved:
-        if Has(Trinkets.SPARK_CATCHER.value):
-            self.count =- 1
-        if self.count < 0:
-            return True_().resolve(world)
-        return Has(PlayerUpgrades.SPARK_CONTAINER.value, count=self.count).resolve(world)
+        # caching_enabled only needs to be passed in when your world inherits from CachedRuleBuilderWorld
+        return self.Resolved(count=self.count, player=world.player, caching_enabled=False)
+
+    class Resolved(Rule.Resolved):
+        count:int
+        @override
+        def _evaluate(self, state: CollectionState) -> bool:
+            sparks = 1 if state.has(Trinkets.SPARK_CATCHER.value, self.player) else 0
+            sparks += state.count(PlayerUpgrades.SPARK_CONTAINER.value, self.player)
+            return sparks >= self.count
+
+        @override
+        def item_dependencies(self) -> dict[str, set[int]]:
+            return {
+                Trinkets.SPARK_CATCHER.value: {id(self)},
+                PlayerUpgrades.SPARK_CONTAINER.value: {id(self)},
+            }
+
+        @override
+        def explain_json(self, state: CollectionState | None = None) -> list[JSONMessagePart]:
+            # this method can be overridden to display custom explanations
+            return [
+                {"type": "color", "color": "green" if state and self(state) else "salmon", "text": str(self)},
+            ]
+        @override
+        def __str__(self) -> str:
+            return f"Has Spark Count"
+
 
 @dataclasses.dataclass(kw_only=True)
 class HasAllKears(Rule[MinaTheHollowerBase], game=MINA_THE_HOLLOWER):

@@ -3,7 +3,7 @@ from .abilities import Abilities
 from .blockers import AstralPlatforms
 from .game_items import Sidearms, PermanentUpgrades, PlayerUpgrades, Trinkets, BoneFiller, JunkFiller
 from .kears import Kear, AreaKears, SingleKears
-from .progressives import Weapons, BoneUps, GenericBoneUp
+from .progressives import Weapons, BoneUps, GenericBoneUp, FishingUpgrades
 from .. import ItemData, ItemTypeEnum, ItemFiller, ItemMovement, ItemPower
 
 all_items: list[ItemTypeEnum] = [
@@ -50,7 +50,7 @@ all_filler_items: list[ItemFiller] = [
     # ItemFiller(JunkFiller.HEALING_VIAL_PACK_PICKUP, 2),
     ItemFiller(JunkFiller.RED_FLOWER, 10),
     # ItemFiller(JunkFiller.YELLOW_FLOWER, 4),
-    ItemFiller(JunkFiller.MAGIC_LARGE, 4),
+    # ItemFiller(JunkFiller.MAGIC_LARGE, 4),
     # ItemFiller(JunkFiller.MAGIC_MEDIUM, 8),
     # ItemFiller(JunkFiller.MAGIC_SMALL, 16),
 ]
@@ -78,6 +78,7 @@ upgrade_items: list[ItemData] = [
     ItemData(Weapons.GUARDIAN_CASKET, 3),
     ItemData(Weapons.BLASTSTRIKE_MAUL, 3),
     ItemData(Weapons.WHISPER_AND_VESPER, 3),
+    ItemData(FishingUpgrades.FISHING_ROD, 3)
 
 ]
 

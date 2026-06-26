@@ -17,3 +17,7 @@ class BoneUps(ItemTypeEnum):
 
 class GenericBoneUp(ItemTypeEnum):
     ALL_BONE_UP_CAP = ("Progressive Bone Up Cap", ITEMS_OFFSET_PROGRESSIVES+8, ItemClassification.progression)
+
+class FishingUpgrades(ItemTypeEnum):
+    FISHING_ROD = ("Progressive Fishing Rod", ITEMS_OFFSET_PROGRESSIVES+9, ItemClassification.progression)
+    #fishing rod->raft=>gold rod

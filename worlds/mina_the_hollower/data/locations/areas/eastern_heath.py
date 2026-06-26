@@ -3,7 +3,7 @@ from rule_builder.options import OptionFilter
 from rule_builder.rules import Has, True_, CanReachLocation
 from ... import RegionConnection, Transition, LocationData, TransitionType, DirectionType
 from ...items import Trinkets, SingleKears
-from ...rules.ability_rules import CanBurrow, CanJumpOneTile, CanJumpTiles, CanBounce, HasReachingSideArm, CanClimb, \
+from ...rules.ability_rules import CanBurrow, CanJumpTiles, CanBounce, HasReachingSideArm, CanClimb, \
     CanSwim, HasFishingRod
 from ...rules.state_rules import HasRepairedSolemnGenerator, HasKear, HasRepairedOneGenerator
 

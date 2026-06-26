@@ -21,7 +21,6 @@ def create_region(world, name: str, hint: str = ""):
     world.multiworld.regions.append(region)
 
     for loc_name, (location, data) in valid_locations.items():
-        print(location.name)
         world.set_rule(location, data.rule)
 
 def create_regions(world, regions: set[str]):
