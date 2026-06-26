@@ -178,18 +178,13 @@ def HasRepairedOneGenerator():
     return HasRepairedSolemnGenerator() | HasRepairedSwampyGenerator() | HasRepairedWindyGenerator() | HasRepairedShorelineGenerator() | HasRepairedFrozenGenerator() | HasRepairedStarryGenerator()
 
 
-
-#depricated
-def InFinale():
-    return HasRepairedAllGenerators()
-
 #figure out when screen rando exists
 def HasAccessToTorch():
     return CanCarry()
 
 #figure out when screen rando exists
 def HasLadder():
-    return Has(SingleKears.PINKY_KEAR.value) & Has(SingleKears.PINKY_BACK_KEAR.value) & (CanSwim() | CanJumpTiles(distance=3)) & CanCarry()
+    return HasKear(kear=SingleKears.PINKY_KEAR.value) & HasKear(kear=SingleKears.PINKY_BACK_KEAR.value) & (CanBurrow() | CanJumpTiles(distance=3)) & CanCarry()
 
 sidearm_rules: list[ShortCutItem] = [
     ShortCutItem(Sidearms.HOLLOWERS_ROCKS, True_()),

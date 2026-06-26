@@ -6,7 +6,8 @@ from ...items import Weapons, PlayerUpgrades, Sidearms, PermanentUpgrades, BoneU
 from ...items.abilities import ABILITY_NAMES
 from ...rules.ability_rules import CanBurrow, CanJumpTiles, CanBounce, HasVialsCount, CanClimb, \
     HasReachingSideArm, HasFishingRod, CanCarry, HasBeastiumTransform
-from ...rules.state_rules import HasAllKears, HasTrinketCount, HasRepairedWindyGenerator, HasKear, HasRepairedOneGenerator
+from ...rules.state_rules import HasAllKears, HasTrinketCount, HasRepairedWindyGenerator, HasKear, \
+    HasRepairedOneGenerator, HasRepairedShorelineGenerator
 
 collectable_locations: dict[str, LocationData] = {
     "OS City Center Steady Soles" : LocationData(162, "Ossex High Street Residence Balcony West"),
@@ -18,7 +19,7 @@ collectable_locations: dict[str, LocationData] = {
         "OS Courtyard Garden Warding Beastium" : LocationData(171, "Ossex Courtyard East Manor Side"),
         "OS Evra's Rest Health Rose" : LocationData(352, "Ossex Goddred's Grave End"),
     "OS Couple's Quarter Chest" : LocationData(165, "Ossex Couple's Quarter", CanBurrow()),
-    "OS Couple's Quarter Thermal Pack" : LocationData(147, "Ossex Couple's Quarter", CanBurrow()),
+    "OS Couple's Quarter Thermal Pack" : LocationData(147, "Ossex Couple's Quarter", CanBurrow() & HasRepairedShorelineGenerator()),
     "OS Hollower's Guild Back Room Kear Chest" : LocationData(168, "Ossex Guild Back Room"),
     "OS Hollower's Guild Back Room Joule Alembic" : LocationData(210, "Ossex Guild Back Room", HasKear(kear=SingleKears.SOUTHERN_OUTSKIRTS_ROOFTOP_KEAR.value)),
     "OS Hollower's Guild Back Room Isle Map" : LocationData(211, "Ossex Guild Back Room", HasKear(kear=SingleKears.SOUTHERN_OUTSKIRTS_ROOFTOP_KEAR.value)),
