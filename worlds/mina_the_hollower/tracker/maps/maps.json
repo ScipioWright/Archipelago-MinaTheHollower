@@ -22,5 +22,9 @@
 
   {"name": "Ossex Courtyard", "img": "area_images/ossex/a153_10-11-12-20_a144_10-15.png", "location_size": 32, "location_border_thickness": 2},
   {"name": "Ossex", "img": "area_images/ossex/4-5-6.png", "location_size": 32, "location_border_thickness": 2},
-  {"name": "Ossex Goddred's Tomb", "img": "area_images/ossex/0-1-2-3.png", "location_size": 32, "location_border_thickness": 2}
+  {"name": "Ossex Goddred's Tomb", "img": "area_images/ossex/0-1-2-3.png", "location_size": 32, "location_border_thickness": 2},
+  {"name": "Ossex High Street Interiors", "img": "area_images/ossex/OS_hs_interiors.png", "location_size": 16, "location_border_thickness": 2},
+  {"name": "Ossex Main Interiors", "img": "area_images/ossex/OS_main_interiors.png", "location_size": 16, "location_border_thickness": 2},
+  {"name": "Ossex Bowery Interiors", "img": "area_images/ossex/OS_b_interiors.png", "location_size": 16, "location_border_thickness": 2},
+  {"name": "Train", "img": "area_images/ossex/train.png", "location_size": 32, "location_border_thickness": 2}
 ]

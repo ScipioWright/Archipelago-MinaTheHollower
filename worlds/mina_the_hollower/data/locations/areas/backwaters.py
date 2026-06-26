@@ -20,7 +20,7 @@ collectable_locations: dict[str, LocationData] = {
     "BW Lower Shanty Swamp Evasion Powder": LocationData(294, "Backwaters Lower Swamp Station Entrance", HasLadder()),
     "BW Lower Shanty Swamp Bonestone": LocationData(288, "Backwaters Lower Swamp Station Entrance", HasLadder()),
     "BW Lower Shanty Swamp Tumbling Tutu": LocationData(291, "Backwaters Lower Swamp Shanty Band", CanCarry() & CanBurrow() & CanSwim() & CanClimb()),
-    "BW Lucky's Lair Kear": LocationData(292, "Backwaters Lucky's Lair", CanBurrow()),
+    "BW Lucky's Lair Kear": LocationData(292, "Backwaters Lucky's Lair", CanBurrow() & CanCarry()),
     "BW Fishing Hole Fishing Rod": LocationData(300, "Backwaters Fishing Hole"),
     "BW Fishing Hole Fleeper Head": LocationData(299, "Backwaters Fishing Hole", HasFishingRod()),
     "BW Fishing Hole Thalessian Pearl": LocationData(302, "Backwaters Fishing Hole", HasFishingRod() & CanSwim() & (Has(Trinkets.TUNNELING_CODEX.value) | Has(FishingUpgrades.FISHING_ROD.value, count=2))),

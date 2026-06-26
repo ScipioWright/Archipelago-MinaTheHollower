@@ -20,7 +20,8 @@ all_items: list[ItemTypeEnum] = [
     *SingleKears,
     *Weapons,
     *BoneUps,
-    *GenericBoneUp
+    *GenericBoneUp,
+    *FishingUpgrades
 ]
 
 item_name_to_type = {

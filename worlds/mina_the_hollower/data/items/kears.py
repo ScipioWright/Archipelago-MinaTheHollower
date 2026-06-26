@@ -25,7 +25,7 @@ class AreaKears(ItemTypeEnum):
     WESTERN_WILDS_KEARS = ("Western Wilds Kears", ITEMS_OFFSET_KEARS + 516, ItemClassification.progression)
 
 class SingleKears(ItemTypeEnum):
-    OSSEX_HIGHSTREET_BALCONY_KEAR = ("Ossex Highstreet Balcony Kear", ITEMS_OFFSET_KEARS + 151, ItemClassification.progression)
+    OSSEX_HIGHSTREET_BALCONY_KEAR = ("Ossex High Street Balcony Kear", ITEMS_OFFSET_KEARS + 151, ItemClassification.progression)
     OSSEX_HIGH_STREET_SE_GARDEN_KEAR = ("Ossex High Street SE Garden Kear", ITEMS_OFFSET_KEARS + 152, ItemClassification.progression)
     SOUTHERN_OUTSKIRTS_ROOFTOP_KEAR = ("Southern Outskirts Rooftop Kear", ITEMS_OFFSET_KEARS + 260, ItemClassification.progression)
     SOUTHERN_OUTSKIRTS_CAVE_NETWORK_KEAR = ( "Southern Outskirts Cave Network Kear", ITEMS_OFFSET_KEARS + 262, ItemClassification.progression)
@@ -47,24 +47,24 @@ class SingleKears(ItemTypeEnum):
     OSSEX_EAST_GARDEN_KEAR = ("Ossex East Garden Kear", ITEMS_OFFSET_KEARS + 157, ItemClassification.progression)
     PINKY_KEAR = ("Pinky Kear", ITEMS_OFFSET_KEARS + 284, ItemClassification.progression)
     PINKY_BACK_KEAR = ("Pinky Back Kear", ITEMS_OFFSET_KEARS + 283, ItemClassification.progression)
-    LONERS_LANDING_BELOWDECKS_RIGHT_WEAPON_KEAR = ("Loner's Landing Belowdecks Right Weapon Kear", ITEMS_OFFSET_KEARS + 20, ItemClassification.progression)
-    LONERS_LANDING_BELOWDECKS_LEFT_WEAPON_KEAR = ("Loner's Landing Belowdecks Left Weapon Kear", ITEMS_OFFSET_KEARS + 21, ItemClassification.progression)
-    LONERS_LANDING_BELOWDECKS_BACK_KEAR = ("Loner's Landing Belowdecks Back Kear", ITEMS_OFFSET_KEARS + 22, ItemClassification.progression)
+    LONERS_LANDING_BELOWDECKS_RIGHT_WEAPON_KEAR = ("Loner's Landing Below Decks Right Weapon Kear", ITEMS_OFFSET_KEARS + 20, ItemClassification.progression)
+    LONERS_LANDING_BELOWDECKS_LEFT_WEAPON_KEAR = ("Loner's Landing Below Decks Left Weapon Kear", ITEMS_OFFSET_KEARS + 21, ItemClassification.progression)
+    LONERS_LANDING_BELOWDECKS_BACK_KEAR = ("Loner's Landing Shipwreck Back Kear", ITEMS_OFFSET_KEARS + 22, ItemClassification.progression)
     NOXS_BAYOU_SWAMP_SHACK_KEAR = ("Nox's Bayou Swamp Shack Kear", ITEMS_OFFSET_KEARS + 33, ItemClassification.progression) #find leading spac
     SANDFALL_CAVE_KEAR = ("Sandfall Cave Kear", ITEMS_OFFSET_KEARS + 320, ItemClassification.progression)
     SANDFALLS_PAYLOAD_PASSAGE_BOTTOM_KEAR = ("Sandfalls Payload Passage Bottom Kear", ITEMS_OFFSET_KEARS + 318, ItemClassification.progression) #lower case kea
     BONE_BEACH_MINING_CAMP_CAVE_KEAR = ("Bone Beach Mining Camp Cave Kear", ITEMS_OFFSET_KEARS + 69, ItemClassification.progression)
-    KINDLEWOOD_WALLOWERS_PATH_TRINKET_KEAR = ("Kindlewood Wallowers Path Trinket Kear", ITEMS_OFFSET_KEARS + 344, ItemClassification.progression)
-    SEPTEMBURG_CROW_TOWN_TUNNEL_KEAR = ("Septemburg Crow Town Tunnel Kear", ITEMS_OFFSET_KEARS + 98, ItemClassification.progression)
+    KINDLEWOOD_WALLOWERS_PATH_TRINKET_KEAR = ("Kindlewood Wallowers Path Trinket Kear", ITEMS_OFFSET_KEARS + 336, ItemClassification.progression)
+    SEPTEMBURG_CROW_TOWN_TUNNEL_KEAR = ("Septemburg Crow Town Tunnel Kear", ITEMS_OFFSET_KEARS + 96, ItemClassification.progression)
     KINDLEWOOD_TOMATO_PATCH_KEAR = ("Kindlewood Tomato Patch Kear", ITEMS_OFFSET_KEARS + 338, ItemClassification.progression)
     KINDLEWOOD_TRAIN_TUNNEL_KEAR = ( "Kindlewood Train Tunnel Kear", ITEMS_OFFSET_KEARS + 337, ItemClassification.progression)
     COLTRANE_RAIL_YARD_KEAR = ("Coltrane Rail Yard Kear", ITEMS_OFFSET_KEARS + 115, ItemClassification.progression)
     ASTRAL_ORRERY_STELLARIUM_KEAR = ("Astral Orrery Stellarium Kear", ITEMS_OFFSET_KEARS + 127, ItemClassification.progression)
-    BACKWATERS_FISHING_KEAR = ("Backwaters Fishing Kear", ITEMS_OFFSET_KEARS + 293, ItemClassification.progression)
+    BACKWATERS_FISHING_KEAR = ("Backwaters Fishing Kear", ITEMS_OFFSET_KEARS + 248, ItemClassification.progression)
     LONERS_LANDING_BOARDWALK_KEAR = ("Loner's Landing Boarkwalk Kear", ITEMS_OFFSET_KEARS + 19, ItemClassification.progression)
-    WESTERN_WILDS_SECRET_PASSAGE_KEAR = ("Western Wilds Secret Passage Kear", ITEMS_OFFSET_KEARS + 248, ItemClassification.progression)
-    SANDFALLS_HIDDEN_CAVE_KEAR = ("Sandfalls Hidden Cave Kear", ITEMS_OFFSET_KEARS + 323, ItemClassification.progression)
-    RADIANT_MANOR_MEOWSTRO_ROOM_KEAR = ("Radiant Manor meowstro Room Kear", ITEMS_OFFSET_KEARS + 141, ItemClassification.progression)
+    WESTERN_WILDS_SECRET_PASSAGE_KEAR = ("Western Wilds Secret Passage Kear", ITEMS_OFFSET_KEARS + 244, ItemClassification.progression)
+    SANDFALLS_HIDDEN_CAVE_KEAR = ("Sandfalls Hidden Cave Kear", ITEMS_OFFSET_KEARS + 321, ItemClassification.progression)
+    RADIANT_MANOR_MEOWSTRO_ROOM_KEAR = ("Radiant Manor Meowstro Room Kear", ITEMS_OFFSET_KEARS + 141, ItemClassification.progression)
 
 
 kear_area_lookup = {

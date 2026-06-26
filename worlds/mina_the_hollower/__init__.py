@@ -63,7 +63,7 @@ class MinaTheHollowerWorld(MinaTheHollowerBase):
         "map_page_folder": "tracker",
         "map_page_maps": "maps/maps.json",
         "map_page_locations": {
-            "locations/eastern_hearth.json",
+            "locations/eastern_heath.json",
             "locations/ossex.json",
             "locations/loners_landing.json",
             "locations/southern_outskirts.json",

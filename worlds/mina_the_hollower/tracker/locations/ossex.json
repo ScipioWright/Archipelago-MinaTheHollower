@@ -52,7 +52,7 @@
         ]
     },
     {
-        "name": "On East House Balcony",
+        "name": "Trinket",
         "sections": [
             {"name": "OS City Center Steady Soles"}
         ],
@@ -60,7 +60,7 @@
             {
                 "map": "Ossex",
                 "x": 1490,
-                "y": 782
+                "y": 275
             }
         ]
     },
@@ -76,9 +76,9 @@
         ],
         "map_locations": [
             {
-                "map": "Ossex",
-                "x": 722,
-                "y": 1200
+                "map": "Ossex Main Interiors",
+                "x": 79,
+                "y": 399
             }
         ]
     },
@@ -101,9 +101,9 @@
         ],
         "map_locations": [
             {
-                "map": "Ossex",
-                "x": 1200,
-                "y": 1200
+                "map": "Ossex Main Interiors",
+                "x": 364,
+                "y": 52
             }
         ]
     },
@@ -122,66 +122,413 @@
         ],
         "map_locations": [
             {
-                "map": "Ossex",
-                "x": 1395,
-                "y": 1200
+                "map": "Ossex Main Interiors",
+                "x": 588,
+                "y": 59
             }
         ]
     },
     {
-        "name": "Ossex",
+        "name": "Kear Collection",
         "sections": [
-            {"name": "OS Couple's Quarter Chest"},
-            {"name": "OS Couple's Quarter Thermal Pack"},
-            {"name": "Trinket_PocketTrebuchet"},
-            {"name": "Ticket_Pass"},
-            {"name": "OS Kear Institute Kear Completion"},
-            {"name": "OS Music Hall Chest"},
-            {"name": "Trinket_PlasmaSaver"},
-            {"name": "OS Ossex Telescope Kear"},
+            {"name": "OS Kear Institute Kear Completion"}
+        ],
+        "map_locations": [
+            {
+                "map": "Ossex Main Interiors",
+                "x": 537,
+                "y": 53
+            }
+        ]
+    },
+    {
+        "name": "Chest",
+        "sections": [
+            {"name": "OS Couple's Quarter Chest"}
+        ],
+        "map_locations": [
+            {
+                "map": "Ossex Main Interiors",
+                "x": 233,
+                "y": 87
+            }
+        ]
+    },
+    {
+        "name": "Trinket",
+        "sections": [
+            {"name": "OS Couple's Quarter Thermal Pack"}
+        ],
+        "map_locations": [
+            {
+                "map": "Ossex Main Interiors",
+                "x": 102,
+                "y": 41
+            }
+        ]
+    },
+    {
+        "name": "Trinket",
+        "sections": [
+            {"name": "OS Music Hall Pneumatic Armlet"}
+        ],
+        "map_locations": [
+            {
+                "map": "Ossex Bowery Interiors",
+                "x": 190,
+                "y": 532
+            }
+        ]
+    },
+    {
+        "name": "Donation",
+        "sections": [
+            {"name": "OS Station Train Ticket Donation"}
+        ],
+        "map_locations": [
+            {
+                "map": "Ossex Bowery Interiors",
+                "x": 447,
+                "y": 140
+            }
+        ]
+    },
+    {
+        "name": "Generosity",
+        "sections": [
+            {"name": "Ossex Bowery Residence Kear"}
+        ],
+        "map_locations": [
+            {
+                "map": "Ossex Bowery Interiors",
+                "x": 215,
+                "y": 417
+            }
+        ]
+    },
+    {
+        "name": "Chest",
+        "sections": [
+            {"name": "OS Music Hall Chest"}
+        ],
+        "map_locations": [
+            {
+                "map": "Ossex Bowery Interiors",
+                "x": 116,
+                "y": 693
+            }
+        ]
+    },
+    {
+        "name": "Gift",
+        "sections": [
+            {"name": "OS Bowery New House Bonestone"}
+        ],
+        "map_locations": [
+            {
+                "map": "Ossex Bowery Interiors",
+                "x": 435,
+                "y": 575
+            }
+        ]
+    },
+    {
+        "name": "Gift",
+        "sections": [
+            {"name": "OS Bowery New House Bonestone"}
+        ],
+        "map_locations": [
+            {
+                "map": "Ossex Bowery Interiors",
+                "x": 435,
+                "y": 575
+            }
+        ]
+    },
+    {
+        "name": "Trinket Shops",
+        "sections": [
             {"name": "OS Trinket Bazaar Kear"},
-            {"name": "Trinket_BoneSaver"},
-            {"name": "OS Bowery Upper Chest"},
-            {"name": "OS City Center 2nd Race Kear"},
-            {"name": "Whip_Level_2"},
-            {"name": "OS Gutterways Bonestone"},
-            {"name": "OS High Street Sewer Chest"},
-            {"name": "OS Strategy Center Chest"},
-            {"name": "OS Strategy Center Ophidio Bonestone"},
-            {"name": "OS Hollower's Guild Back Room Kear Chest"},
-            {"name": "OS Attic Chest"},
-            {"name": "OS Atelier Chest"},
-            {"name": "OS High Street Valor Medallion"},
-            {"name": "OS Bowery Residence Bonestone"},
-
-            {"name": "Trinket_PlasmaFunnel"},
-            {"name": "Trinket_BurrowPulse"},
-            {"name": "Trinket_BriskBrew"},
-            {"name": "Trinket_AutoVial"},
-            {"name": "Trinket_ShockFlint"},
-            {"name": "Trinket_Shield"},
-            {"name": "Trinket_VialParry"},
-
-
-            {"name": "ArmorUpgrade_Health"},
-            {"name": "ArmorUpgrade_Custom"},
-            {"name": "Upgrade_JouleAlembic"},
-            {"name": "Upgrade_WorldMap"},
-            {"name": "Upgrade_EnhancedMap"},
-            {"name": "Upgrade_RadarMap"},
-            {"name": "Upgrade_SidearmKeeper"},
-            {"name": "Upgrade_SidearmSaver"},
-            {"name": "Upgrade_Phonograph"},
-            {"name": "Upgrade_CandleVision"},
-            {"name": "Upgrade_TrainingDummy"},
-            {"name": "Upgrade_TwoSidearmsHUD"},
-            {"name": "OS City Center Triple Flagellum"}
+            {"name": "OS Trinket Bazaar Plasma Funnel"},
+            {"name": "OS Trinket Bazaar Seismic Belt"},
+            {"name": "OS Trinket Bazaar Brisk Brew"},
+            {"name": "OS Trinket Bazaar Intrevenous Vial"},
+            {"name": "OS Trinket Bazaar Shock Flint"},
+            {"name": "OS Trinket Bazaar Uranium Bracelet"},
+            {"name": "OS Trinket Bazaar Bubble Ring"},
+            {"name": "OS Trinket Bazaar Counter Vial"},
+            {"name": "OS Trinket Bazaar Lightning Grip"}
+        ],
+        "map_locations": [
+            {
+                "map": "Ossex Main Interiors",
+                "x": 78,
+                "y": 228
+            }
+        ]
+    },
+    {
+        "name": "Telescope",
+        "sections": [
+            {"name": "OS Ossex Telescope Kear"}
+        ],
+        "map_locations": [
+            {
+                "map": "Ossex Courtyard",
+                "x": 1810,
+                "y": 398
+            }
+        ]
+    },
+    {
+        "name": "Chest",
+        "sections": [
+            {"name": "OS Bowery Upper Chest"}
         ],
         "map_locations": [
             {
                 "map": "Ossex",
-                "x": 394,
-                "y": 154
+                "x": 82,
+                "y": 272
+            }
+        ]
+    },
+    {
+        "name": "Race Rewards",
+        "sections": [
+            {"name": "OS City Center 2nd Race Kear"},
+            {"name": "OS City Center Final Race Bellows Bustle"}
+        ],
+        "map_locations": [
+            {
+                "map": "Ossex",
+                "x": 1153,
+                "y": 373
+            }
+        ]
+    },
+    {
+        "name": "Chest",
+        "sections": [
+            {"name": "OS High Street Sewer Chest"}
+
+        ],
+        "map_locations": [
+            {
+                "map": "Ossex High Street Interiors",
+                "x": 336,
+                "y": 363
+            }
+        ]
+    },
+    {
+        "name": "Vest",
+        "sections": [
+            {"name": "OS Atelier Vitality Vest"}
+        ],
+        "map_locations": [
+            {
+                "map": "Ossex High Street Interiors",
+                "x": 378,
+                "y": 176
+            }
+        ]
+    },
+    {
+        "name": "Shop",
+        "sections": [
+            {"name": "OS Atelier Custom Fit"}
+        ],
+        "map_locations": [
+            {
+                "map": "Ossex High Street Interiors",
+                "x": 334,
+                "y": 232
+            }
+        ]
+    },
+    {
+        "name": "Chest",
+        "sections": [
+            {"name": "OS Atelier Chest"}
+        ],
+        "map_locations": [
+            {
+                "map": "Ossex High Street Interiors",
+                "x": 491,
+                "y": 189
+            }
+        ]
+    },
+    {
+        "name": "Chest",
+        "sections": [
+            {"name": "OS Attic Chest"}
+        ],
+        "map_locations": [
+            {
+                "map": "Ossex High Street Interiors",
+                "x": 29,
+                "y": 89
+            }
+        ]
+    },
+    {
+        "name": "Backstab",
+        "sections": [
+            {"name": "OS Strategy Center Ophidio Bonestone"}
+        ],
+        "map_locations": [
+            {
+                "map": "Ossex High Street Interiors",
+                "x": 411,
+                "y": 90
+            }
+        ]
+    },
+    {
+        "name": "Chest",
+        "sections": [
+            {"name": "OS Strategy Center Chest"}
+        ],
+        "map_locations": [
+            {
+                "map": "Ossex High Street Interiors",
+                "x": 435,
+                "y": 52
+            }
+        ]
+    },
+    {
+        "name": "Sidearm Permit",
+        "sections": [
+            {"name": "OS Bowery Double Sidearm Permit"}
+
+        ],
+        "map_locations": [
+            {
+                "map": "Ossex",
+                "x": 114,
+                "y": 747
+            }
+        ]
+    },
+    {
+        "name": "Fish",
+        "sections": [
+            {"name": "OS City Center Triple Flagellum"}
+
+        ],
+        "map_locations": [
+            {
+                "map": "Ossex",
+                "x": 303,
+                "y": 379
+            }
+        ]
+    },
+    {
+        "name": "Nose",
+        "sections": [
+            {"name": "OS High Street Valor Medallion"}
+
+        ],
+        "map_locations": [
+            {
+                "map": "Ossex",
+                "x": 1900,
+                "y": 935
+            }
+        ]
+    },
+    {
+        "name": "Chest",
+        "sections": [
+            {"name": "OS Gutterways Bonestone"}
+
+        ],
+        "map_locations": [
+            {
+                "map": "Ossex High Street Interiors",
+                "x": 333,
+                "y": 362
+            }
+        ]
+    },
+    {
+        "name": "Donate",
+        "sections": [
+            {"name": "OS Station Underside Bell of Grace"}
+
+        ],
+        "map_locations": [
+            {
+                "map": "Ossex Bowery Interiors",
+                "x": 400,
+                "y": 345
+            }
+        ]
+    },
+    {
+        "name": "Muriel",
+        "sections": [
+            {"name": "OS Hollower's Guild Back Room Smack Muriel"},
+            {"name": "OS Hollower's Guild Back Room Kear Chest"}
+        ],
+        "map_locations": [
+            {
+                "map": "Ossex Main Interiors",
+                "x": 616,
+                "y": 226
+            }
+        ]
+    },
+    {
+        "name": "Hollower's Shop",
+        "sections": [
+
+            {"name": "OS Hollower's Guild Back Room Joule Alembic"},
+            {"name": "OS Hollower's Guild Back Room Isle Map"},
+            {"name": "OS Hollower's Guild Back Room Sidearm Recoverer"},
+            {"name": "OS Hollower's Guild Back Room Training Dummy"},
+            {"name": "OS Hollower's Guild Back Room Sidearm Duplicator"},
+            {"name": "OS Hollower's Guild Back Room Memory Goggles"},
+            {"name": "OS Hollower's Guild Back Room Phonograph"},
+            {"name": "OS Hollower's Guild Back Room Enhanced Map"},
+            {"name": "OS Hollower's Guild Back Room All-Seeing Skull"}
+
+        ],
+        "map_locations": [
+            {
+                "map": "Ossex Main Interiors",
+                "x": 518,
+                "y": 244
+            }
+        ]
+    },
+    {
+        "name": "Chest",
+        "sections": [
+            {"name": "OS Train Private Cabin Chest"}
+        ],
+        "map_locations": [
+            {
+                "map": "Train",
+                "x": 845,
+                "y": 348
+            }
+        ]
+    },
+    {
+        "name": "Shroud",
+        "sections": [
+            {"name": "OS Train Private Cabin Safety Shroud"}
+        ],
+        "map_locations": [
+            {
+                "map": "Train",
+                "x": 895,
+                "y": 285
             }
         ]
     }
