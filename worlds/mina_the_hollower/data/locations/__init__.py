@@ -1,10 +1,10 @@
 from collections import ChainMap
 
-from ._generated import eastern_hearth_edges, mourners_mile_edges, ossex_edges, queensbury_crypt_edges, \
+from ._generated import eastern_heath_edges, mourners_mile_edges, ossex_edges, queensbury_crypt_edges, \
     southern_outskirts_edges, western_wilds_edges, ossex_train_edges, sandfalls_edges, loners_landing_edges, \
     backwaters_edges, bayou_edges, septemburg_edges, bone_beach_edges, kindlewood_edges, coltrane_peak_edges, \
     radiant_manor_edges, astral_orrery_edges
-from .areas import astral_orrery, bayou, bone_beach, coltrane_peak, eastern_hearth, kindlewood, loners_landing, mourners_mile, ossex, queensbury_crypt, radiant_manor, sandfalls, septemburg, southern_outskirts, backwaters, western_wilds
+from .areas import astral_orrery, bayou, bone_beach, coltrane_peak, eastern_heath, kindlewood, loners_landing, mourners_mile, ossex, queensbury_crypt, radiant_manor, sandfalls, septemburg, southern_outskirts, backwaters, western_wilds
 from .. import LocationData, RegionConnection, Transition
 
 all_collectables: ChainMap[str, LocationData] = ChainMap(
@@ -12,7 +12,7 @@ all_collectables: ChainMap[str, LocationData] = ChainMap(
     bayou.collectable_locations,
     bone_beach.collectable_locations,
     coltrane_peak.collectable_locations,
-    eastern_hearth.collectable_locations,
+    eastern_heath.collectable_locations,
     kindlewood.collectable_locations,
     loners_landing.collectable_locations,
     mourners_mile.collectable_locations,
@@ -31,7 +31,7 @@ all_bosses: ChainMap[str, LocationData] = ChainMap(
     # bayou.boss_locations,
     # bone_beach.boss_locations,
     # coltrane_peak.boss_locations,
-    eastern_hearth.boss_locations
+    eastern_heath.boss_locations
     # kindlewood.boss_locations,
     # loners_landing.boss_locations,
     # mourners_mile.boss_locations,
@@ -55,7 +55,7 @@ all_regions: set[str] = set.union(
     bayou_edges.regions,
     bone_beach_edges.regions,
     coltrane_peak_edges.regions,
-    eastern_hearth_edges.regions,
+    eastern_heath_edges.regions,
     kindlewood_edges.regions,
     loners_landing_edges.regions,
     mourners_mile_edges.regions,
@@ -75,7 +75,7 @@ all_internal_region_connections: ChainMap[str, RegionConnection] = ChainMap(
     bayou_edges.connections,
     bone_beach_edges.connections,
     coltrane_peak_edges.connections,
-    eastern_hearth_edges.connections,
+    eastern_heath_edges.connections,
     kindlewood_edges.connections,
     loners_landing_edges.connections,
     mourners_mile_edges.connections,
@@ -95,7 +95,7 @@ all_region_transitions: ChainMap[str, Transition] = ChainMap(
     bayou_edges.transitions,
     bone_beach_edges.transitions,
     coltrane_peak_edges.transitions,
-    eastern_hearth_edges.transitions,
+    eastern_heath_edges.transitions,
     kindlewood_edges.transitions,
     loners_landing_edges.transitions,
     mourners_mile_edges.transitions,

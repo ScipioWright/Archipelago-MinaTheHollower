@@ -11,7 +11,7 @@ from ...rules.ability_rules import (
 )
 from ...rules.state_rules import (
    HasLadder, HasRepairedShorelineGenerator, HasAccessToTorch, StartedInOssex, 
-   AnyThreeAstralPlatforms, HasRepairedAllGenerators, InFinale, HasKear, 
+   AnyThreeAstralPlatforms, HasRepairedAllGenerators, HasKear, HasSparks,
    HasRepairedSolemnGenerator, HasRepairedSwampyGenerator, HasRepairedWindyGenerator,
    HasRepairedShorelineGenerator, HasRepairedFrozenGenerator, HasRepairedStarryGenerator,
    HasRepairedOneGenerator,
@@ -123,7 +123,7 @@ transitions: dict[str, Transition] = {
     'Backwaters Thalessian Way Lower West Transition': Transition('Backwaters Thalessian Way Lower', 'Backwaters Fishing Hole', DirectionType.WEST, TransitionType.SCREENS, True_()),
     'Backwaters Thalessian Way Upper East Transition': Transition('Backwaters Thalessian Way Upper', 'Backwaters Thalessian Lillies', DirectionType.EAST, TransitionType.SCREENS, True_()),
     'Backwaters Upper Lantern Cave_Backwaters Upper Lantern Pad': Transition('Backwaters Upper Lantern Cave', 'Backwaters Upper Lantern Pad', DirectionType.SOUTH, TransitionType.DOORS, True_()),
-    'Backwaters Upper Lantern Pad_Backwaters Upper Lantern Cave': Transition('Backwaters Upper Lantern Pad', 'Backwaters Upper Lantern Cave', DirectionType.NORTH, TransitionType.DOORS, Has(PlayerUpgrades.SPARK_CONTAINER.value, count=2) & HasLadder()),
+    'Backwaters Upper Lantern Pad_Backwaters Upper Lantern Cave': Transition('Backwaters Upper Lantern Pad', 'Backwaters Upper Lantern Cave', DirectionType.NORTH, TransitionType.DOORS, HasSparks(count=2) & HasLadder()),
     'Backwaters Upper Swamp Back East Transition': Transition('Backwaters Upper Swamp Back', 'Backwaters Upper Swamp Secret Room', DirectionType.EAST, TransitionType.SCREENS, True_()),
     'Backwaters Upper Swamp Entrance North Area Transition': Transition('Backwaters Upper Swamp Entrance', 'Western Wilds Western Pond', DirectionType.NORTH, TransitionType.AREA_SCREENS, True_()),
     'Backwaters Upper Swamp Lily East Locked Transition': Transition('Backwaters Upper Swamp Lily', 'Backwaters Pinky Outside', DirectionType.EAST, TransitionType.SCREENS, HasKear(kear=SingleKears.PINKY_KEAR.value)),

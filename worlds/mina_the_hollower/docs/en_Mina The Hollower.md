@@ -36,8 +36,10 @@ Find more detailed setup instructions for the mod in the [Mod Readme](https://gi
 2. copy the file into the games install folder in steam apps next to the application
 3. If on linux, set a steam launch option ```LD_PRELOAD=libmthap.so %command%```
 4. After launch if the login window is not there Press **F2** to toggle it
-5. Connect To your AP SLot
+5. Connect To your AP Slot
 6. Load into a NEW save OR a save already playing on the connected slot.
+
+**NEVER CREATE A SAVE AND THEN CONNECT**
 
 **NEVER LOAD INTO A SAVE AND THEN CONNECT**
 

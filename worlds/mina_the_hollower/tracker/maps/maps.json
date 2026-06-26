@@ -15,10 +15,10 @@
   {"name": "Cave Network", "img": "area_images/southern_outskirts/9-17.png", "location_size": 32, "location_border_thickness": 2},
   {"name": "Mining Passage", "img": "area_images/southern_outskirts/8-7-6-9-15.png", "location_size": 32, "location_border_thickness": 2},
 
-  {"name": "Eastern Hearth", "img": "area_images/eastern_hearth/0-1-3-5-6-8-15-16-17.png", "location_size": 32, "location_border_thickness": 2},
-  {"name": "Eastern Hearth Waterfall", "img": "area_images/eastern_hearth/4-7.png", "location_size": 32, "location_border_thickness": 2},
-  {"name": "Eastern Hearth Buckler's Bluff", "img": "area_images/eastern_hearth/11.png", "location_size": 32, "location_border_thickness": 2},
-  {"name": "Eastern Hearth Interiors", "img": "area_images/eastern_hearth/a52_19-20_a53_18-21-23-24-26.png", "location_size": 32, "location_border_thickness": 2},
+  {"name": "Eastern Heath", "img": "area_images/eastern_heath/0-1-3-5-6-8-15-16-17.png", "location_size": 32, "location_border_thickness": 2},
+  {"name": "Eastern Heath Waterfall", "img": "area_images/eastern_heath/4-7.png", "location_size": 32, "location_border_thickness": 2},
+  {"name": "Eastern Heath Buckler's Bluff", "img": "area_images/eastern_heath/11.png", "location_size": 32, "location_border_thickness": 2},
+  {"name": "Eastern Heath Interiors", "img": "area_images/eastern_heath/a52_19-20_a53_18-21-23-24-26.png", "location_size": 32, "location_border_thickness": 2},
 
   {"name": "Ossex Courtyard", "img": "area_images/ossex/a153_10-11-12-20_a144_10-15.png", "location_size": 32, "location_border_thickness": 2},
   {"name": "Ossex", "img": "area_images/ossex/4-5-6.png", "location_size": 32, "location_border_thickness": 2},

@@ -30,7 +30,7 @@ IMPORTS = (
     ")\n"
     "from ...rules.state_rules import (\n"
     "   HasLadder, HasRepairedShorelineGenerator, HasAccessToTorch, StartedInOssex, \n"
-    "   AnyThreeAstralPlatforms, HasRepairedAllGenerators, InFinale, HasKear, \n"
+    "   AnyThreeAstralPlatforms, HasRepairedAllGenerators, HasKear, HasSparks, \n"
     "   HasRepairedSolemnGenerator, HasRepairedSwampyGenerator, HasRepairedWindyGenerator,\n"
     "   HasRepairedShorelineGenerator, HasRepairedFrozenGenerator, HasRepairedStarryGenerator,\n"
     "   HasRepairedOneGenerator,\n"

@@ -11,7 +11,7 @@ from ...rules.ability_rules import (
 )
 from ...rules.state_rules import (
    HasLadder, HasRepairedShorelineGenerator, HasAccessToTorch, StartedInOssex, 
-   AnyThreeAstralPlatforms, HasRepairedAllGenerators, InFinale, HasKear, 
+   AnyThreeAstralPlatforms, HasRepairedAllGenerators, HasKear, HasSparks,
    HasRepairedSolemnGenerator, HasRepairedSwampyGenerator, HasRepairedWindyGenerator,
    HasRepairedShorelineGenerator, HasRepairedFrozenGenerator, HasRepairedStarryGenerator,
    HasRepairedOneGenerator,

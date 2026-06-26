@@ -11,7 +11,7 @@ from ...rules.ability_rules import (
 )
 from ...rules.state_rules import (
    HasLadder, HasRepairedShorelineGenerator, HasAccessToTorch, StartedInOssex, 
-   AnyThreeAstralPlatforms, HasRepairedAllGenerators, InFinale, HasKear, 
+   AnyThreeAstralPlatforms, HasRepairedAllGenerators, HasKear, HasSparks,
    HasRepairedSolemnGenerator, HasRepairedSwampyGenerator, HasRepairedWindyGenerator,
    HasRepairedShorelineGenerator, HasRepairedFrozenGenerator, HasRepairedStarryGenerator,
    HasRepairedOneGenerator,
@@ -154,7 +154,7 @@ transitions: dict[str, Transition] = {
     'Coltrane Peak Frozen Horror Arena South Transition': Transition('Coltrane Peak Frozen Horror Arena', 'Coltrane Peak Icebound Cavern Pit Upper', DirectionType.SOUTH, TransitionType.SCREENS, PowerLevelThreshold(power=30)),
     'Coltrane Peak Frozen Mirror Room Mirrors': Transition('Coltrane Peak Frozen Mirror Room', 'Astral Orrery Coltrane Peak Mirror', DirectionType.OVERWORLD, TransitionType.MIRRORS, True_()),
     'Coltrane Peak Frozen Mirror Room West Burrow': Transition('Coltrane Peak Frozen Mirror Room', 'Coltrane Peak Frozen Pipe', DirectionType.WEST, TransitionType.BURROW, CanBurrow()),
-    'Coltrane Peak Frozen Pass South Area Transition': Transition('Coltrane Peak Frozen Pass', 'Eastern Hearth Frozen Pass Top', DirectionType.SOUTH, TransitionType.AREA_SCREENS, True_()),
+    'Coltrane Peak Frozen Pass South Area Transition': Transition('Coltrane Peak Frozen Pass', 'Eastern Heath Frozen Pass Top', DirectionType.SOUTH, TransitionType.AREA_SCREENS, True_()),
     'Coltrane Peak Frozen Pass Top North Transition': Transition('Coltrane Peak Frozen Pass Top', 'Coltrane Peak Station', DirectionType.NORTH, TransitionType.SCREENS, True_()),
     'Coltrane Peak Frozen Pipe Doors': Transition('Coltrane Peak Frozen Pipe', 'Coltrane Peak Spiral Summit Underlab', DirectionType.NORTH, TransitionType.DOORS, True_()),
     'Coltrane Peak Frozen Pipe East Burrow': Transition('Coltrane Peak Frozen Pipe', 'Coltrane Peak Frozen Mirror Room', DirectionType.EAST, TransitionType.BURROW, CanBurrow()),

@@ -11,7 +11,7 @@ from ...rules.ability_rules import (
 )
 from ...rules.state_rules import (
    HasLadder, HasRepairedShorelineGenerator, HasAccessToTorch, StartedInOssex, 
-   AnyThreeAstralPlatforms, HasRepairedAllGenerators, InFinale, HasKear, 
+   AnyThreeAstralPlatforms, HasRepairedAllGenerators, HasKear, HasSparks,
    HasRepairedSolemnGenerator, HasRepairedSwampyGenerator, HasRepairedWindyGenerator,
    HasRepairedShorelineGenerator, HasRepairedFrozenGenerator, HasRepairedStarryGenerator,
    HasRepairedOneGenerator,
@@ -211,7 +211,7 @@ transitions: dict[str, Transition] = {
     'Septemburg Wastewater Canal Boxes North Transition': Transition('Septemburg Wastewater Canal Boxes', 'Septemburg Wastewater Canal Hog Secret', DirectionType.NORTH, TransitionType.SCREENS, True_()),
     'Septemburg Wastewater Canal Boxes Pipes South Transition': Transition('Septemburg Wastewater Canal Boxes Pipes', 'Septemburg Wastewater Canal Well Rope', DirectionType.SOUTH, TransitionType.SCREENS, True_()),
     'Septemburg Wastewater Canal Hog North Transition': Transition('Septemburg Wastewater Canal Hog', 'Septemburg Wastewater Canal Pumps Bottom', DirectionType.NORTH, TransitionType.SCREENS, True_()),
-    'Septemburg Wastewater Canal Hog Secret Doors': Transition('Septemburg Wastewater Canal Hog Secret', 'Septemburg Wastewater Luxy Pipe', DirectionType.NORTH, TransitionType.DOORS, Has(PlayerUpgrades.SPARK_CONTAINER.value, count=2)),
+    'Septemburg Wastewater Canal Hog Secret Doors': Transition('Septemburg Wastewater Canal Hog Secret', 'Septemburg Wastewater Luxy Pipe', DirectionType.NORTH, TransitionType.DOORS, HasSparks(count=2)),
     'Septemburg Wastewater Canal Hog Secret South Transition': Transition('Septemburg Wastewater Canal Hog Secret', 'Septemburg Wastewater Canal Boxes', DirectionType.SOUTH, TransitionType.SCREENS, True_()),
     'Septemburg Wastewater Canal Pipe South Transition': Transition('Septemburg Wastewater Canal Pipe', 'Septemburg Wastewater Canal Pumps Top', DirectionType.SOUTH, TransitionType.SCREENS, True_()),
     'Septemburg Wastewater Canal Pipe Stairs': Transition('Septemburg Wastewater Canal Pipe', 'Septemburg Windy Pipe', DirectionType.NORTH, TransitionType.STAIRS, True_()),

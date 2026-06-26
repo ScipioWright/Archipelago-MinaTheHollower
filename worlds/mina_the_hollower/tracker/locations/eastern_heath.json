@@ -19,7 +19,7 @@
         ],
         "map_locations": [
             {
-                "map": "Eastern Hearth",
+                "map": "Eastern Heath",
                 "x": 82,
                 "y": 589
             }
@@ -32,7 +32,7 @@
         ],
         "map_locations": [
             {
-                "map": "Eastern Hearth",
+                "map": "Eastern Heath",
                 "x": 129,
                 "y": 1166
             }
@@ -46,7 +46,7 @@
         ],
         "map_locations": [
             {
-                "map": "Eastern Hearth",
+                "map": "Eastern Heath",
                 "x": 1364,
                 "y": 1105
             }
@@ -59,7 +59,7 @@
         ],
         "map_locations": [
             {
-                "map": "Eastern Hearth",
+                "map": "Eastern Heath",
                 "x": 882,
                 "y": 1169
             }
@@ -72,7 +72,7 @@
         ],
         "map_locations": [
             {
-                "map": "Eastern Hearth",
+                "map": "Eastern Heath",
                 "x": 946,
                 "y": 654
             }
@@ -85,7 +85,7 @@
         ],
         "map_locations": [
             {
-                "map": "Eastern Hearth",
+                "map": "Eastern Heath",
                 "x": 1457,
                 "y": 301
             }
@@ -98,7 +98,7 @@
         ],
         "map_locations": [
             {
-                "map": "Eastern Hearth Waterfall",
+                "map": "Eastern Heath Waterfall",
                 "x": 978,
                 "y": 1265
             }
@@ -111,7 +111,7 @@
         ],
         "map_locations": [
             {
-                "map": "Eastern Hearth Waterfall",
+                "map": "Eastern Heath Waterfall",
                 "x": 881,
                 "y": 1198
             }
@@ -125,7 +125,7 @@
         ],
         "map_locations": [
             {
-                "map": "Eastern Hearth Waterfall",
+                "map": "Eastern Heath Waterfall",
                 "x": 770,
                 "y": 60
             }
@@ -138,7 +138,7 @@
         ],
         "map_locations": [
             {
-                "map": "Eastern Hearth Buckler's Bluff",
+                "map": "Eastern Heath Buckler's Bluff",
                 "x": 259,
                 "y": 55
             }
@@ -151,7 +151,7 @@
         ],
         "map_locations": [
             {
-                "map": "Eastern Hearth Interiors",
+                "map": "Eastern Heath Interiors",
                 "x": 125,
                 "y": 780
             }
@@ -164,7 +164,7 @@
         ],
         "map_locations": [
             {
-                "map": "Eastern Hearth Interiors",
+                "map": "Eastern Heath Interiors",
                 "x": 113,
                 "y": 1058
             }
@@ -177,7 +177,7 @@
         ],
         "map_locations": [
             {
-                "map": "Eastern Hearth",
+                "map": "Eastern Heath",
                 "x": 780,
                 "y": 530
             }

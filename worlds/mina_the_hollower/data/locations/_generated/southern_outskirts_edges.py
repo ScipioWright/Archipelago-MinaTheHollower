@@ -11,7 +11,7 @@ from ...rules.ability_rules import (
 )
 from ...rules.state_rules import (
    HasLadder, HasRepairedShorelineGenerator, HasAccessToTorch, StartedInOssex, 
-   AnyThreeAstralPlatforms, HasRepairedAllGenerators, InFinale, HasKear, 
+   AnyThreeAstralPlatforms, HasRepairedAllGenerators, HasKear, HasSparks,
    HasRepairedSolemnGenerator, HasRepairedSwampyGenerator, HasRepairedWindyGenerator,
    HasRepairedShorelineGenerator, HasRepairedFrozenGenerator, HasRepairedStarryGenerator,
    HasRepairedOneGenerator,
@@ -181,7 +181,7 @@ transitions: dict[str, Transition] = {
     'Southern Outskirts Mining Passage Fence East Transition': Transition('Southern Outskirts Mining Passage Fence', 'Southern Outskirts Mining Passage Empty', DirectionType.EAST, TransitionType.SCREENS, CanBurrow()),
     'Southern Outskirts Mining Passage Fence West Transition': Transition('Southern Outskirts Mining Passage Fence', 'Southern Outskirts Mining Passage Entrance Exit', DirectionType.WEST, TransitionType.SCREENS, True_()),
     'Southern Outskirts Mining Passage Secret East Burrow': Transition('Southern Outskirts Mining Passage Secret', 'Southern Outskirts Mining Passage Exit', DirectionType.EAST, TransitionType.BURROW, CanBurrow()),
-    'Southern Outskirts Moonbath North Area Transition': Transition('Southern Outskirts Moonbath', 'Eastern Hearth Bush Room', DirectionType.NORTH, TransitionType.AREA_SCREENS, True_()),
+    'Southern Outskirts Moonbath North Area Transition': Transition('Southern Outskirts Moonbath', 'Eastern Heath Bush Room', DirectionType.NORTH, TransitionType.AREA_SCREENS, True_()),
     'Southern Outskirts Moonbath West Transition': Transition('Southern Outskirts Moonbath', 'Southern Outskirts Commons East Ossex', DirectionType.WEST, TransitionType.SCREENS, True_()),
     'Southern Outskirts Poppit North Burrow': Transition('Southern Outskirts Poppit', 'Southern Outskirts Commons Cliff', DirectionType.NORTH, TransitionType.BURROW, CanBurrow()),
     'Southern Outskirts Rebel Barracks Companion End Stairs': Transition('Southern Outskirts Rebel Barracks Companion End', 'Southern Outskirts Rebel Barracks Fight', DirectionType.NORTH, TransitionType.STAIRS, True_()),

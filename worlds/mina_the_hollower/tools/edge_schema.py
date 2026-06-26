@@ -40,7 +40,7 @@ RULE_ALLOWED_CALLS = {
     "HasVialsCount", "CanJumpTiles", "HasReachingSideArm", "HasFishingRod",
     "HasRepairedSolemnGenerator", "HasRepairedSwampyGenerator", "HasRepairedWindyGenerator", "HasRepairedShorelineGenerator",
     "HasRepairedFrozenGenerator", "HasRepairedStarryGenerator", "HasRepairedAllGenerators",
-    "HasLadder", "HasAccessToTorch", "AnyThreeAstralPlatforms","InFinale", "CanSpring"
+    "HasLadder", "HasAccessToTorch", "AnyThreeAstralPlatforms","HasSparks", "CanSpring"
 }
 
 

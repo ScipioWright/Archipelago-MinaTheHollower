@@ -11,7 +11,7 @@ class AreaKears(ItemTypeEnum):
     BAYOU_KEARS = ("Bayou Kears", ITEMS_OFFSET_KEARS + 502, ItemClassification.progression)
     BONE_BEACH_KEARS = ("Bone Beach Kears", ITEMS_OFFSET_KEARS + 503, ItemClassification.progression)
     COLTRANE_PEAK_KEARS = ("Coltrane Peak Kears", ITEMS_OFFSET_KEARS + 504, ItemClassification.progression)
-    EASTERN_HEARTH_KEARS = ("Eastern Hearth Kears", ITEMS_OFFSET_KEARS + 505, ItemClassification.progression)
+    EASTERN_HEATH_KEARS = ("Eastern Heath Kears", ITEMS_OFFSET_KEARS + 505, ItemClassification.progression)
     KINDLEWOOD_KEARS = ("Kindle Wood Kears", ITEMS_OFFSET_KEARS + 506, ItemClassification.progression)
     LONERS_LANDING_KEARS = ("Loner's Landing Kears", ITEMS_OFFSET_KEARS + 507, ItemClassification.progression)
     MOURNERS_MILE_KEARS = ("Mourner's Mile Kears", ITEMS_OFFSET_KEARS + 508, ItemClassification.progression)
@@ -34,11 +34,11 @@ class SingleKears(ItemTypeEnum):
     ASTRAL_ORREY_MIRROR_ROOM_RIGHT_SIDE_KEAR = ("Astral Orrey Mirror Room Right Side Kear", ITEMS_OFFSET_KEARS + 277, ItemClassification.progression)
     ASTRAL_ORREY_MIRROR_ROOM_LEFT_SIDE_KEAR = ("Astral Orrey Mirror Room Left Side Kear", ITEMS_OFFSET_KEARS + 278, ItemClassification.progression)
     CHOPPE_SHOPPE_KEAR = ("Choppe Shoppe Kear", ITEMS_OFFSET_KEARS + 225, ItemClassification.progression)
-    EASTERN_HEARTH_MOUNTAIN_PATH = ("Eastern Hearth Mountain Path Kear", ITEMS_OFFSET_KEARS + 222, ItemClassification.progression) #missing kear
-    EASTERN_HEARTH_BUCKLERS_BLUFF_KEAR = ("Eastern Hearth Bucklers Bluff Kear", ITEMS_OFFSET_KEARS + 224, ItemClassification.progression)
+    EASTERN_HEATH_MOUNTAIN_PATH = ("Eastern Heath Mountain Path Kear", ITEMS_OFFSET_KEARS + 222, ItemClassification.progression) #missing kear
+    EASTERN_HEATH_BUCKLERS_BLUFF_KEAR = ("Eastern Heath Bucklers Bluff Kear", ITEMS_OFFSET_KEARS + 224, ItemClassification.progression)
     MOURNERS_MILES_BIKE_KEAR = ("Mourners miles bike Kear", ITEMS_OFFSET_KEARS + 307, ItemClassification.progression)
-    EASTERN_HEARTH_WATERFALL_KEAR = ("Eastern Hearth Waterfall Kear", ITEMS_OFFSET_KEARS + 1, ItemClassification.progression)
-    EASTERN_HEARTH_GRASSLAND_BUSHROOM_KEAR = ("Eastern Hearth Grassland Bushroom Kear", ITEMS_OFFSET_KEARS + 236, ItemClassification.progression)
+    EASTERN_HEATH_WATERFALL_KEAR = ("Eastern Heath Waterfall Kear", ITEMS_OFFSET_KEARS + 1, ItemClassification.progression)
+    EASTERN_HEATH_GRASSLAND_BUSHROOM_KEAR = ("Eastern Heath Grassland Bushroom Kear", ITEMS_OFFSET_KEARS + 227, ItemClassification.progression)
     MOURNERS_MILE_AFTER_GENERATOR_KEAR = ("Mourners mile After Generator Kear", ITEMS_OFFSET_KEARS + 304, ItemClassification.progression)
     QUEENSBURY_CRYPT_BONNET_TOMB_KEAR = ("Queensbury Crypt Bonnet Tomb Kear", ITEMS_OFFSET_KEARS + 55, ItemClassification.progression)
     FROZEN_PASS_KEAR = ("Frozen Pass Kear", ITEMS_OFFSET_KEARS + 109, ItemClassification.progression)
@@ -76,12 +76,12 @@ kear_area_lookup = {
     SingleKears.WESTERN_WILDS_FOUNDRY_KEAR.value : AreaKears.WESTERN_WILDS_KEARS,
     SingleKears.ASTRAL_ORREY_MIRROR_ROOM_RIGHT_SIDE_KEAR.value : AreaKears.ASTRAL_ORRERY_KEARS,
     SingleKears.ASTRAL_ORREY_MIRROR_ROOM_LEFT_SIDE_KEAR.value : AreaKears.ASTRAL_ORRERY_KEARS,
-    SingleKears.CHOPPE_SHOPPE_KEAR.value : AreaKears.EASTERN_HEARTH_KEARS,
-    SingleKears.EASTERN_HEARTH_MOUNTAIN_PATH.value : AreaKears.EASTERN_HEARTH_KEARS,
-    SingleKears.EASTERN_HEARTH_BUCKLERS_BLUFF_KEAR.value : AreaKears.EASTERN_HEARTH_KEARS,
+    SingleKears.CHOPPE_SHOPPE_KEAR.value : AreaKears.EASTERN_HEATH_KEARS,
+    SingleKears.EASTERN_HEATH_MOUNTAIN_PATH.value : AreaKears.EASTERN_HEATH_KEARS,
+    SingleKears.EASTERN_HEATH_BUCKLERS_BLUFF_KEAR.value : AreaKears.EASTERN_HEATH_KEARS,
     SingleKears.MOURNERS_MILES_BIKE_KEAR.value : AreaKears.MOURNERS_MILE_KEARS,
-    SingleKears.EASTERN_HEARTH_WATERFALL_KEAR.value : AreaKears.EASTERN_HEARTH_KEARS,
-    SingleKears.EASTERN_HEARTH_GRASSLAND_BUSHROOM_KEAR.value : AreaKears.EASTERN_HEARTH_KEARS,
+    SingleKears.EASTERN_HEATH_WATERFALL_KEAR.value : AreaKears.EASTERN_HEATH_KEARS,
+    SingleKears.EASTERN_HEATH_GRASSLAND_BUSHROOM_KEAR.value : AreaKears.EASTERN_HEATH_KEARS,
     SingleKears.MOURNERS_MILE_AFTER_GENERATOR_KEAR.value : AreaKears.MOURNERS_MILE_KEARS,
     SingleKears.QUEENSBURY_CRYPT_BONNET_TOMB_KEAR.value : AreaKears.QUEENSBURY_KEARS,
     SingleKears.FROZEN_PASS_KEAR.value : AreaKears.COLTRANE_PEAK_KEARS,

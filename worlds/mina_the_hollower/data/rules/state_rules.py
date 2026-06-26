@@ -28,6 +28,17 @@ class HasKear(Rule[MinaTheHollowerBase], game=MINA_THE_HOLLOWER):
             else:
                 return False_().resolve(world)
 
+@dataclasses.dataclass(kw_only=True)
+class HasSparks(Rule[MinaTheHollowerBase], game=MINA_THE_HOLLOWER):
+    count: int
+
+    @override
+    def _instantiate(self, world: MinaTheHollowerBase) -> Rule.Resolved:
+        if Has(Trinkets.SPARK_CATCHER.value):
+            self.count =- 1
+        if self.count < 0:
+            return True_().resolve(world)
+        return Has(PlayerUpgrades.SPARK_CONTAINER.value, count=self.count).resolve(world)
 
 @dataclasses.dataclass(kw_only=True)
 class HasAllKears(Rule[MinaTheHollowerBase], game=MINA_THE_HOLLOWER):
