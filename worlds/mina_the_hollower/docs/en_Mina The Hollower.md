@@ -10,6 +10,14 @@ If you are reading this, you have either been invited to or are interested in he
 The randomizer is currently believed to be completable. Below is an ever-changing list of implemented features and their current state. Please let us know how your experience goes!
 
 Use [Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases?q=Tracker) to keep track of what you can access. There is also an in-progress map tracker built into UT that is actively being worked on.
+- Game Breaking Bugs:
+  - Legovich isn't able to be talked to after defeating Armand 
+  - Backer code breaks any save created in AP. Remove backer code for AP.
+  - Selling to pawnty is broken and can crash your game
+  - some kears give you the vanilla item in addition to the AP item
+  - You are forced to teleport to ossex if transitions take you to ropes without you having climb
+  - Vitality Vest in Atelier doesnt send checks
+
 - Ability randomization is implemented. Please test all abilities and report any bugs.
 - Randomizing Burrow can make starts significantly more difficult. Be careful when enabling it, and please share any ideas for improving the experience.
 - Randomizing starting items can cause funny starts. Feedback and suggestions Welcome.
@@ -20,7 +28,7 @@ Use [Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases?
 
 ### Tracker
 
-The [Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases?q=Tracker) map tracker is currently complete for Loner's Landing, Southern Outskirts, and Eastern Hearth. Please limit map tracker feedback to these areas for now.
+The [Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases?q=Tracker) map tracker is currently complete for Train, Ossex, Loner's Landing, Southern Outskirts, and Eastern Hearth. Please limit map tracker feedback to these areas for now.
 
 We would also appreciate feedback on how the map tracker is organized and whether you find it useful as development continues.
 
