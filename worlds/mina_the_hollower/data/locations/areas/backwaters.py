@@ -1,7 +1,6 @@
 from BaseClasses import LocationProgressType
 from rule_builder.options import OptionFilter
 from rule_builder.rules import Has, True_
-from worlds.hk.Options import count
 from ... import RegionConnection, Transition, LocationData
 from ...items import Trinkets, SingleKears, Sidearms, FishingUpgrades
 from ...rules.ability_rules import CanBurrow, CanJumpTiles, CanBounce, CanSwim, CanCarry, CanClimb, \
