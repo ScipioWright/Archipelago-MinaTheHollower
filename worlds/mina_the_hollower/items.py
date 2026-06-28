@@ -1,4 +1,4 @@
-from BaseClasses import Item, Location, ItemClassification, CollectionRule, Region
+from BaseClasses import Item, Location, ItemClassification, CollectionRule
 from rule_builder.rules import True_, Rule
 from .world_base import MinaTheHollowerBase
 from .constants import MINA_THE_HOLLOWER
